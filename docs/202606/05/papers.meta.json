@@ -1,0 +1,39 @@
+{
+  "label": "2026-06-05",
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T21:02:37",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202606/05/2605.31038v1-towards-neuromorphic-event-based-sensing-for-high-speed-multi-spectral-classification-and-tracking-of-microparticles",
+      "section": "deep",
+      "title_en": "Towards Neuromorphic Event-Based Sensing for High-Speed Multi-Spectral Classification and Tracking of Microparticles",
+      "authors": "Joana M. Teixeira, Tomás Lopes, Tiago D. Ferreira, Catarina S. Monteiro, Pedro A. S. Jorge, Nuno A. Silva",
+      "date": "2026-05-29",
+      "pdf": "https://arxiv.org/pdf/2605.31038v1",
+      "score": "8.0",
+      "evidence": "微流控微粒传感平台与EPFL MicroBos实验室研究方向一致",
+      "tldr": "传统微流控成像在高速多光谱微粒分析中存在速度、带宽和精度难以兼顾的问题。本文提出一种神经形态事件基传感平台，通过集成RGB滤波掩模与异步事件传感器，在感测阶段直接编码光谱和运动信息。系统实现亚毫秒时间分辨率，对0.08-0.18mm多色微粒分类准确率达82%，数据带宽较传统高速成像降低240倍以上。该平台为高速无标记筛选提供了可扩展的解决方案，适用于临床诊断和环境监测。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Conventional image-based microfluidic systems face an inherent trade-off between throughput, imaging speed, and data bandwidth, limiting their ability to monitor high-velocity flows without significant motion blur or prohibitive data generation. Event-based sensing has emerged as a high-speed, low-power alternative, but has so far been largely restricted to tracking monodisperse, spherical particles. In this work, we introduce a microfluidic sensing platform that enables the simultaneous extraction of kinematic and spectral information from polydisperse microparticles using a neuromorphic imaging approach. By integrating a spatially multiplexed RGB filter mask with an asynchronous event-based sensor, spectral signature and motion are encoded directly at the sensing stage, eliminating the need for image reconstruction or learning-based inference. The system achieves sub-millisecond temporal resolution and maintains robust classification performance across a broad range of particle sizes and flow velocities, including under non-laminar conditions, reaching up to 82% accuracy for classification of colored particles within the 0.08-0.18 mm range. The event-driven architecture reduces data bandwidth by >240x compared to conventional high-speed imaging, while sustaining an area throughput of 460 mm^2/s. By providing a computationally efficient and low-latency particle characterization, this framework paves the way for a scalable solution towards high-speed, label-free screening of heterogeneous analytes in clinical diagnostics and environmental monitoring.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/05/biorxiv-10-64898-2026-06-04-730176-v1-microfluidic-based-high-throughput-isolation-enhances-the-recovery-of-novel-strains-and-diversity-from-arctic-soil-microbiome",
+      "section": "quick",
+      "title_en": "Microfluidic-based high-throughput isolation enhances the recovery of novel strains and diversity from Arctic soil microbiome",
+      "authors": "Liao, L., Lai, T., Jiang, W., Duan, Z., Peng, F., Zhang, S., Sun, P., Zhao, Y.",
+      "date": "2026-06-04",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.04.730176v1.full.pdf",
+      "score": "7.0",
+      "evidence": "微流控液滴技术用于微生物分离，与EPFL MicroBos实验室微流控研究方向相关",
+      "tldr": "北极土壤微生物组富含难培养的“暗物质”，传统平板法回收率极低。本研究首次将微流控液滴技术（MDT）应用于北极活性层土壤，在相同起始条件下，MDT的菌株回收率比平板法提高6.5-8.1倍，分离通量提升180倍以上。16S rRNA基因测序显示，MDT捕获的分类丰富度更高，且群落分布更均匀，约50%序列为潜在新种（<98.46%相似度），27%为潜在新属。经Sanger测序验证，17株中有12株为候选新种，其中一株代表Devosiaceae属的潜在新属。该工作证明MDT是挖掘极地土壤未培养微生物的有力平台，为获取冷适应新菌株提供了高效途径。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Microbial cultivation remains essential for understanding the physiology, ecology, and biotechnological potential of environmental microbes, yet conventional plate-based methods (CPM) recover only a minute fraction of the environmental microbiome. Polar regions, particularly Arctic soils, represent unique reservoirs of \"microbial dark matter\" that remain challenging to cultivate, owing to oligotrophic conditions, low temperatures and freeze-thaw cycles that impose severe physiological constraints on microbial growth. Here, we report the first systematic application of microfluidic droplet technology (MDT) to Arctic active-layer soil microbiota and benchmark its performance against CPM using identical starting cell numbers, R2A medium, and incubation at 15{degrees}C. MDT achieved 6.5- to 8.1-fold higher recovery rates than CPM and improved isolation throughput by >180-fold. Near-full-length 16S rRNA gene sequencing (PacBio) revealed that MDT recovered significantly higher taxonomic richness across all taxonomic levels, with 256 genera detected in the high-cell-input group (DropAS_H) versus 211 in the corresponding plate group (PlateAS_H). Notably, MDT yielded a more even community distribution, significantly reducing the dominance of fast-growing copiotrophs such as Pseudomonas and Flavobacterium. Moreover, approximately 50% of sequences from MDT were affiliated with potential novel species (<98.46% identity to type strains), and 27% with potential novel genera (<95% identity). Strain verification by Sanger sequencing confirmed 12 of 17 isolates as candidate novel species, among which one strain represented a potential novel genus within Devosiaceae. This study demonstrates that MDT is a powerful platform for accessing the uncultured majority of polar soil microbiota and establishes a pipeline for high-throughput isolation of novel cold-adapted bacteria.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
