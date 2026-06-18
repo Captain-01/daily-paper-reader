@@ -1,0 +1,57 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-18T20:47:46.796974+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2606.18523v1",
+      "source": "arxiv",
+      "title": "DART: A design-aware microfluidic chip paradigm for real-time live-cell image analysis",
+      "abstract": "High-throughput microfluidic live-cell imaging generates rich single-cell data. Yet semi-automated procedures for locating regions of interest (RoIs), each containing one cell population, and removing surrounding microfluidic structures from recorded images, scale with the number of RoIs. This prevents real-time image analysis and delays time-to-insight by hours to days. We introduce the Design-Aware and Real-Time capable (DART) paradigm for microfluidic cultivation chips, which aligns the CAD blueprint with the physical chip and thereby enables throughput-independent localization of all RoIs and fully automated image processing across diverse RoI geometries and chip layouts. DART establishes this alignment through embedded fiducial markers and deep-learning-based marker detection. We validate DART using the Swiss Army Knife chip, which combines eight structurally distinct RoI designs across 1164 RoI locations. DART localizes all RoIs in five minutes, removes microfluidic structures from raw microscopy images in 40 ms, and performs fully automated image analysis, including cell segmentation, in under 1.1 s per image. Together, these capabilities establish DART as an end-to-end hardware-software paradigm with real-time-capable analysis that paves the way toward closed-loop and outcome-driven smart microscopy.",
+      "authors": [
+        "Johannes Seiffarth",
+        "Matthias Pesch",
+        "Lukas Scholtes",
+        "Dietrich Kohlheyer",
+        "Hanno Scharr",
+        "Katharina Nöh"
+      ],
+      "primary_category": "q-bio.QM",
+      "categories": [
+        "q-bio.QM",
+        "cs.CV"
+      ],
+      "published": "2026-06-16T22:38:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.18523v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Microfluidic chip paradigm for real-time live-cell imaging, aligns with EPFL MicroBos lab focus",
+      "llm_evidence_cn": "微流控芯片设计用于实时活细胞成像，与EPFL MicroBos实验室方向一致",
+      "llm_evidence": "微流控芯片设计用于实时活细胞成像，与EPFL MicroBos实验室方向一致",
+      "canonical_evidence": "微流控芯片设计用于实时活细胞成像，与EPFL MicroBos实验室方向一致",
+      "llm_tldr_en": "Introduces DART paradigm that aligns CAD blueprint with physical microfluidic chip to enable throughput-independent ROI localization and automated image processing, achieving real-time live-cell analysis.",
+      "llm_tldr_cn": "针对高吞吐量微流控活细胞成像中ROI定位耗时且无法扩展的问题，提出设计感知实时（DART）范式，通过嵌入式基准标记将CAD蓝图与物理芯片对齐，实现通量无关的ROI定位和全自动图像处理。该方法消除了手动干预，将延迟从数小时降至分钟级，适用于多样芯片布局和几何形状，为实时单细胞分析提供了可扩展的解决方案，加速生物学发现。",
+      "llm_tldr": "针对高吞吐量微流控活细胞成像中ROI定位耗时且无法扩展的问题，提出设计感知实时（DART）范式，通过嵌入式基准标记将CAD蓝图与物理芯片对齐，实现通量无关的ROI定位和全自动图像处理。该方法消除了手动干预，将延迟从数小时降至分钟级，适用于多样芯片布局和几何形状，为实时单细胞分析提供了可扩展的解决方案，加速生物学发现。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-18",
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18T20:50:11",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/18/2606.18523v1-dart-a-design-aware-microfluidic-chip-paradigm-for-real-time-live-cell-image-analysis",
+      "section": "deep",
+      "title_en": "DART: A design-aware microfluidic chip paradigm for real-time live-cell image analysis",
+      "authors": "Johannes Seiffarth, Matthias Pesch, Lukas Scholtes, Dietrich Kohlheyer, Hanno Scharr, Katharina Nöh",
+      "date": "2026-06-16",
+      "pdf": "https://arxiv.org/pdf/2606.18523v1",
+      "score": "9.0",
+      "evidence": "微流控芯片设计用于实时活细胞成像，与EPFL MicroBos实验室方向一致",
+      "tldr": "高吞吐量微流控活细胞成像中，半自动定位感兴趣区域和去除微流控结构耗时，无法实时分析。DART范式通过将CAD蓝图与物理芯片对齐，利用嵌入式标记和深度学习检测，实现吞吐量无关的自动定位和图像处理。在含1164个RoI的芯片上，5分钟定位所有区域、40ms去除结构、1.1秒内完成图像分析。该方法建立了实时端到端硬件软件范式，推动闭环智能显微镜发展。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "High-throughput microfluidic live-cell imaging generates rich single-cell data. Yet semi-automated procedures for locating regions of interest (RoIs), each containing one cell population, and removing surrounding microfluidic structures from recorded images, scale with the number of RoIs. This prevents real-time image analysis and delays time-to-insight by hours to days. We introduce the Design-Aware and Real-Time capable (DART) paradigm for microfluidic cultivation chips, which aligns the CAD blueprint with the physical chip and thereby enables throughput-independent localization of all RoIs and fully automated image processing across diverse RoI geometries and chip layouts. DART establishes this alignment through embedded fiducial markers and deep-learning-based marker detection. We validate DART using the Swiss Army Knife chip, which combines eight structurally distinct RoI designs across 1164 RoI locations. DART localizes all RoIs in five minutes, removes microfluidic structures from raw microscopy images in 40 ms, and performs fully automated image analysis, including cell segmentation, in under 1.1 s per image. Together, these capabilities establish DART as an end-to-end hardware-software paradigm with real-time-capable analysis that paves the way toward closed-loop and outcome-driven smart microscopy.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
