@@ -1,0 +1,66 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-19T20:33:19.898521+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-16-732526-v1",
+      "source": "biorxiv",
+      "title": "Servo-Actuated 3D-Printed Disposable Microvalves for Automated, Scalable Organoid Culture in Standard Incubators",
+      "abstract": "Automation of organoid and cell culture processes is essential for achieving scalable and standardized experimentation in regenerative medicine and stem cell research. However, existing microfluidic platforms often rely on complex setups, limiting their integration within standard incubator environments. To address these challenges, we developed a compact, scalable multi-well platform featuring 3D-printed, servo-actuated disposable microvalves for fully automated media and drug exchange. This design eliminates the need for external pressure sources and control channels, providing a simplified and cost-effective solution for organoid culture. The platform integrates an internet-connected microscopy module with a motorized XYZ stage, allowing continuous, real-time imaging of individual wells directly within the incubator. It supports precise and reliable fluid handling under physiological conditions, improving throughput, reproducibility, and accessibility. We validate the platform through bench-top testing and in both mouse and human organoid models. Morphological analysis, immunohistochemistry (IHC), and qPCR demonstrate comparable viability, growth, and gene expression profiles between automated and manual culture conditions. These results establish a robust and scalable framework for fully automated organoid culture, offering a simplified and accessible alternative to conventional microfluidic systems with broad applications in regenerative medicine, drug discovery, and scalable biological screening.",
+      "authors": [
+        "Zeraatkar, M.",
+        "Ehrlich, D.",
+        "Hernandez Cifuentes, J. S.",
+        "Schweiger, H.",
+        "Pessoa de Melo, M.",
+        "Wachtel, E.",
+        "Ozcakir, D.",
+        "Seiler, S.",
+        "Voitiuk, K.",
+        "Rosen, Y.",
+        "Josephson, C.",
+        "Mostajo-Radji, M.",
+        "Haussler, D.",
+        "R. Salama, S.",
+        "Teodorescu, M."
+      ],
+      "primary_category": "bioengineering",
+      "categories": [
+        "bioengineering"
+      ],
+      "published": "2026-06-17T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.16.732526v1.full.pdf",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "3D-printed microvalves for automated organoid culture, relevant to EPFL MicroBos lab's microfluidics research",
+      "llm_evidence_cn": "3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关",
+      "llm_evidence": "3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关",
+      "canonical_evidence": "3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关",
+      "llm_tldr_en": "This paper presents a compact multi-well platform with 3D-printed servo-actuated disposable microvalves for fully automated media and drug exchange in organoid culture, eliminating external pressure sources and enabling integration with standard incubators and internet-connected microscopy.",
+      "llm_tldr_cn": "针对现有微流控平台复杂、难以集成到标准培养箱的问题，本文开发了一种紧凑的多孔板平台，采用3D打印伺服驱动一次性微阀，实现了全自动的培养基和药物交换，无需外部压力源。该平台成功在标准培养箱中自动化培养了类器官，并集成了互联网连接的显微镜模块。这一设计提供了一种简化、低成本的解决方案，有望推动类器官培养的标准化和大规模应用。",
+      "llm_tldr": "针对现有微流控平台复杂、难以集成到标准培养箱的问题，本文开发了一种紧凑的多孔板平台，采用3D打印伺服驱动一次性微阀，实现了全自动的培养基和药物交换，无需外部压力源。该平台成功在标准培养箱中自动化培养了类器官，并集成了互联网连接的显微镜模块。这一设计提供了一种简化、低成本的解决方案，有望推动类器官培养的标准化和大规模应用。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

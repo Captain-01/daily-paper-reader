@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-19",
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19T20:33:37",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/19/biorxiv-10-64898-2026-06-16-732526-v1-servo-actuated-3d-printed-disposable-microvalves-for-automated-scalable-organoid-culture-in-standard-incubators",
+      "section": "quick",
+      "title_en": "Servo-Actuated 3D-Printed Disposable Microvalves for Automated, Scalable Organoid Culture in Standard Incubators",
+      "authors": "Zeraatkar, M., Ehrlich, D., Hernandez Cifuentes, J. S., Schweiger, H., Pessoa de Melo, M., Wachtel, E., Ozcakir, D., Seiler, S., Voitiuk, K., Rosen, Y., Josephson, C., Mostajo-Radji, M., Haussler, D., R. Salama, S., Teodorescu, M.",
+      "date": "2026-06-17",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.16.732526v1.full.pdf",
+      "score": "7.0",
+      "evidence": "3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关",
+      "tldr": "类器官培养自动化面临微流控系统复杂、难以集成于标准培养箱的挑战。本文提出一种紧凑、可扩展的多孔板平台，采用3D打印伺服驱动一次性微阀实现全自动培养基和药物交换，无需外部压力源，并集成互联网连接显微镜与电动XYZ台，可在培养箱内实时成像。在鼠和人源类器官模型中验证，形态学、免疫组化及qPCR表明自动与手动培养的活力、生长和基因表达相当。该平台简化了微流控系统，为再生医学、药物筛选提供了可及的全自动解决方案。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Automation of organoid and cell culture processes is essential for achieving scalable and standardized experimentation in regenerative medicine and stem cell research. However, existing microfluidic platforms often rely on complex setups, limiting their integration within standard incubator environments. To address these challenges, we developed a compact, scalable multi-well platform featuring 3D-printed, servo-actuated disposable microvalves for fully automated media and drug exchange. This design eliminates the need for external pressure sources and control channels, providing a simplified and cost-effective solution for organoid culture. The platform integrates an internet-connected microscopy module with a motorized XYZ stage, allowing continuous, real-time imaging of individual wells directly within the incubator. It supports precise and reliable fluid handling under physiological conditions, improving throughput, reproducibility, and accessibility. We validate the platform through bench-top testing and in both mouse and human organoid models. Morphological analysis, immunohistochemistry (IHC), and qPCR demonstrate comparable viability, growth, and gene expression profiles between automated and manual culture conditions. These results establish a robust and scalable framework for fully automated organoid culture, offering a simplified and accessible alternative to conventional microfluidic systems with broad applications in regenerative medicine, drug discovery, and scalable biological screening.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

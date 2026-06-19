@@ -6,24 +6,24 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-18
-- 运行时间：2026-06-18 20:50:03 UTC
+- 最新运行日期：2026-06-19
+- 运行时间：2026-06-19 20:33:31 UTC
 - 运行状态：成功
 - 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 精读区：0
+- 速读区：1
 
 ### 今日简报（AI）
-今日精读高分论文《DART》，聚焦实时活细胞图像分析的微流控芯片设计范式。核心亮点在于设计感知（design-aware）框架与实时成像的融合，显著提升动态细胞监控精度。建议微流控或生物成像领域读者深入其设计思路，探索实验应用新可能。
-- 详情：[/202606/18/README](/202606/18/README)
+今日收录1篇关于伺服驱动3D打印一次性微阀实现类器官自动化培养的研究。该技术利用低成本微阀在标准培养箱中实现可扩展的类器官培养，有望简化操作流程。建议关注其如何降低手工操作误差并推动类器官技术的标准化应用。
+- 详情：[/202606/19/README](/202606/19/README)
 
 ### 精读区论文标签
-1. [DART: A design-aware microfluidic chip paradigm for real-time live-cell image analysis](/202606/18/2606.18523v1-dart-a-design-aware-microfluidic-chip-paradigm-for-real-time-live-cell-image-analysis)  
-   标签：评分：9.0/10、query:sakar-selman
-   evidence：微流控芯片设计用于实时活细胞成像，与EPFL MicroBos实验室方向一致
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Servo-Actuated 3D-Printed Disposable Microvalves for Automated, Scalable Organoid Culture in Standard Incubators](/202606/19/biorxiv-10-64898-2026-06-16-732526-v1-servo-actuated-3d-printed-disposable-microvalves-for-automated-scalable-organoid-culture-in-standard-incubators)  
+   标签：评分：7.0/10、query:sakar-selman
+   evidence：3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关
 
 
 <div class="dpr-home-promo-card">
