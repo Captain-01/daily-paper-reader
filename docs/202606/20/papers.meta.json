@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-20",
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T20:30:53",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/20/biorxiv-10-64898-2026-06-13-732095-v1-orion-towards-lab-automation-with-computer-using-agents",
+      "section": "quick",
+      "title_en": "Orion: Towards Lab Automation with Computer-Using Agents",
+      "authors": "Ma, C., Trinh, L., Bucci, M., Regev, A., Wang, H.",
+      "date": "2026-06-16",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.13.732095v1.full.pdf",
+      "score": "6.0",
+      "evidence": "用于生物医学图像分析的实验室自动化AI代理，与MicroBos实验室相关",
+      "tldr": "实验室计算工作流依赖人工操作和视觉检查，效率低下。Orion结合大语言模型与终端、GUI控制及多步推理，可自主操作科学软件和网络资源。在检索任务中准确率超90%，100小时自主探索生成52份研究报告，其中22个合理假设。该方法扩展了实验室自动化，实现了从成像数据到分析、报告和假设的可扩展可审计流程。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Laboratory discovery increasingly depends on computational workflows that connect experimental data to analysis, interpretation and follow-up hypotheses. Yet these workflows remain constrained by labor-intensive use of specialized software, visual inspection through graphical user interfaces, and integration of knowledge across multiple sources. Here, we present Orion, a computer-using AI agent for biomedical image analysis and interpretation that moves towards lab automation by automating this computational layer of laboratory work. Orion combines large language models with terminal execution, GUI control and adaptive multi-step reasoning in a shared computing environment. It can inspect visual data, operate standard scientific software, mine web resources and conduct end-to-end analysis and interpretation workflows without requiring bespoke software integrations. Across benchmarks, Orion achieved over 90% accuracy on biomedical database and literature retrieval tasks, learned to use the popular tools CellProfiler and QuPath for quantitative analysis of cellular and tissue images, respectively, and facilitated autonomous discovery in experimental imaging data. In 100 hours of autonomous exploration of a large-scale perturbation imaging dataset, Orion generated 52 research reports, of which human scientist review prioritized 22 plausible mechanistic hypotheses. These results show that computer-using AI agents can substantially expand the reach of laboratory automation, providing a scalable and auditable route from experimental imaging data to quantitative analysis, reports and biologically grounded hypotheses.\n\n\n\nO_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=45 SRC=\"FIGDIR/small/732095v1_ufig1.gif\" ALT=\"Figure 1\">\nView larger version (20K):\norg.highwire.dtl.DTLVardef@af6486org.highwire.dtl.DTLVardef@f0ba97org.highwire.dtl.DTLVardef@6a2dbcorg.highwire.dtl.DTLVardef@e09b15_HPS_FORMAT_FIGEXP  M_FIG Overview of Orion\n\nOrion operates within a digital lab environment, using both graphical user interfaces and terminals just like a human scientist. This dual approach allows Orion to interact seamlessly with scientific software while also viewing figures and web databases to capture their nuanced visual information.\n\nC_FIG",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-06-20 <!--dpr-date:20260620-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/20/biorxiv-10-64898-2026-06-13-732095-v1-orion-towards-lab-automation-with-computer-using-agents" data-sidebar-item="{&quot;title&quot;: &quot;Orion: Towards Lab Automation with Computer-Using Agents&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-06-13-732095-v1-orion-towards-lab-automation-with-computer-using-agents&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;用于生物医学图像分析的实验室自动化AI代理，与MicroBos实验室相关&quot;}">Orion: Towards Lab Automation with Computer-Using Agents</a>
   * 2026-06-19 <!--dpr-date:20260619-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/19/biorxiv-10-64898-2026-06-16-732526-v1-servo-actuated-3d-printed-disposable-microvalves-for-automated-scalable-organoid-culture-in-standard-incubators" data-sidebar-item="{&quot;title&quot;: &quot;Servo-Actuated 3D-Printed Disposable Microvalves for Automated, Scalable Organoid Culture in Standard Incubators&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-06-16-732526-v1-servo-actuated-3d-printed-disposable-microvalves-for-automated-scalable-organoid-culture-in-standard-incubators&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;3D打印微阀用于自动化类器官培养，与EPFL MicroBos实验室的微流控研究相关&quot;}">Servo-Actuated 3D-Printed Disposable Microvalves for Automated, Scalable Organoid Culture in Standard Incubators</a>
