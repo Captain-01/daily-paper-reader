@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-06-23 <!--dpr-date:20260623-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/23/biorxiv-10-1101-2025-10-20-683587-v2-physically-intelligent-insect-inspired-antenna-sensors-enhance-tactile-feature-perception-by-active-touch" data-sidebar-item="{&quot;title&quot;: &quot;Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-1101-2025-10-20-683587-v2-physically-intelligent-insect-inspired-antenna-sensors-enhance-tactile-feature-perception-by-active-touch&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关&quot;}">Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch</a>
   * 2026-06-20 <!--dpr-date:20260620-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/20/biorxiv-10-64898-2026-06-13-732095-v1-orion-towards-lab-automation-with-computer-using-agents" data-sidebar-item="{&quot;title&quot;: &quot;Orion: Towards Lab Automation with Computer-Using Agents&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-64898-2026-06-13-732095-v1-orion-towards-lab-automation-with-computer-using-agents&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;用于生物医学图像分析的实验室自动化AI代理，与MicroBos实验室相关&quot;}">Orion: Towards Lab Automation with Computer-Using Agents</a>

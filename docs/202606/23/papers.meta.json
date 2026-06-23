@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-23",
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T21:08:56",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/23/biorxiv-10-1101-2025-10-20-683587-v2-physically-intelligent-insect-inspired-antenna-sensors-enhance-tactile-feature-perception-by-active-touch",
+      "section": "quick",
+      "title_en": "Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch",
+      "authors": "Meng, L., McDonnell, P., Jayaram, K., Mongeau, J.-M.",
+      "date": "2026-06-15",
+      "pdf": "https://www.biorxiv.org/content/10.1101/2025.10.20.683587v2.full.pdf",
+      "score": "7.0",
+      "evidence": "昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关",
+      "tldr": "软体机器人触觉传感器处理复杂场景计算成本高。受昆虫触角启发，本文提出结合刚度梯度与主动触摸的物理智能天线传感器。通过触觉场分析，蟑螂仿生天线力学与主动触摸速度显著提升特征分类精度。sim-to-real迁移验证了该设计降低计算负载并增强适应性。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Soft robotic sensors today struggle to interpret complex tactile scenes without incurring significant computational costs. Inspired by insect antennae--compliant, distributed sensors that efficiently process tactile information through physical intelligence--we investigated whether mechanical design and active touch sensing strategies could enhance robotic tactile feature perception. We hypothesized that insect-inspired antenna dynamics, specifically flexural stiffness gradients and active touch speed, could simplify tactile classification. Using a sim-to-real framework that bridges bioinspired computational models with a multi-link soft robot antenna, we introduce the notion of tactile fields--spatiotemporal representations of tactile stimuli shaped by contact location, feature type, and active touch speed. Our analyses show that cockroach-inspired antenna mechanics jointly with active touch speeds improve feature classification accuracy compared to conventional sensors with uniform flexural stiffness gradient by increasing tactile data sparsity and dispersion. An exploration of stiffness and damping of antenna mechanics revealed design trade-offs that influence tactile discrimination and structural stability. Through sim-to-real transfer, stiffness gradients and structured active touch motions were demonstrated on a miniature distributed soft robotic antenna, validating their effectiveness in real-world robotic systems. Taken together, this work presents a biologically grounded framework for tactile sensor design that reduces computational load and enhances adaptability.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

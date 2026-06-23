@@ -1,0 +1,54 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-23T21:08:40.510090+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-1101-2025-10-20-683587-v2",
+      "source": "biorxiv",
+      "title": "Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch",
+      "abstract": "Soft robotic sensors today struggle to interpret complex tactile scenes without incurring significant computational costs. Inspired by insect antennae--compliant, distributed sensors that efficiently process tactile information through physical intelligence--we investigated whether mechanical design and active touch sensing strategies could enhance robotic tactile feature perception. We hypothesized that insect-inspired antenna dynamics, specifically flexural stiffness gradients and active touch speed, could simplify tactile classification. Using a sim-to-real framework that bridges bioinspired computational models with a multi-link soft robot antenna, we introduce the notion of tactile fields--spatiotemporal representations of tactile stimuli shaped by contact location, feature type, and active touch speed. Our analyses show that cockroach-inspired antenna mechanics jointly with active touch speeds improve feature classification accuracy compared to conventional sensors with uniform flexural stiffness gradient by increasing tactile data sparsity and dispersion. An exploration of stiffness and damping of antenna mechanics revealed design trade-offs that influence tactile discrimination and structural stability. Through sim-to-real transfer, stiffness gradients and structured active touch motions were demonstrated on a miniature distributed soft robotic antenna, validating their effectiveness in real-world robotic systems. Taken together, this work presents a biologically grounded framework for tactile sensor design that reduces computational load and enhances adaptability.",
+      "authors": [
+        "Meng, L.",
+        "McDonnell, P.",
+        "Jayaram, K.",
+        "Mongeau, J.-M."
+      ],
+      "primary_category": "bioengineering",
+      "categories": [
+        "bioengineering"
+      ],
+      "published": "2026-06-15T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.10.20.683587v2.full.pdf",
+      "tags": [
+        "keyword:sakar-selman"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Insect-inspired antenna sensors for active touch, relevant to bio-inspired robotics at EPFL MicroBos",
+      "llm_evidence_cn": "昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关",
+      "llm_evidence": "昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关",
+      "canonical_evidence": "昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关",
+      "llm_tldr_en": "Insect-inspired antenna designs with flexural stiffness gradients and active touch speed simplify tactile classification in soft robotics, demonstrated via a sim-to-real framework.",
+      "llm_tldr_cn": "软体机器人触觉传感器面临计算成本高的问题。本文受昆虫触角启发，研究了机械设计和主动触摸策略对触觉特征感知的影响。通过模拟到真实的框架，引入触觉场概念，结果显示，利用弯曲刚度梯度和主动触摸速度能够简化触觉分类。该工作展示了物理智能在机器人触觉感知中的潜力。",
+      "llm_tldr": "软体机器人触觉传感器面临计算成本高的问题。本文受昆虫触角启发，研究了机械设计和主动触摸策略对触觉特征感知的影响。通过模拟到真实的框架，引入触觉场概念，结果显示，利用弯曲刚度梯度和主动触摸速度能够简化触觉分类。该工作展示了物理智能在机器人触觉感知中的潜力。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
