@@ -1,0 +1,54 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-26T21:44:54.179158+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2606.21716v1",
+      "source": "arxiv",
+      "title": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
+      "abstract": "The capability to encode spatially distinct magnetization patterns within soft materials enables remote control over complex deformations. This characteristic is especially important for microfluidic platforms, where limited dynamic control of channel boundaries and laminar flow conditions usually restrict fluid transport and interactions. The present study introduces a shape-programmable magnetic soft membrane actuator as an active microchannel component that can dynamically modulate its shape under magnetic fields and therefore the microfluidic environment. The membrane is magnetically programmed using a template-based approach, which allows it to be controllably deformed in the form of a sinusoid under the influence of an external magnetic field. The membrane's integration into a microchannel converts a passive channel wall into a dynamically changeable interface, allowing active fluid manipulation and enhancing micromixing in laminar flow conditions. The proposed approach establishes a versatile platform for wirelessly controlled deformable interfaces in next-generation microfluidic and lab-on-chip systems.",
+      "authors": [
+        "Direnc Akyildiz",
+        "Fatih Kocabas",
+        "Xiangyi Tan",
+        "Yunus Alapan"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-19T20:05:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.21716v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Shape-programmable magnetic soft membranes for microchannels - core research of MicroBos lab",
+      "llm_evidence_cn": "用于微通道的形状可编程磁性软膜 - MicroBos实验室核心研究",
+      "llm_evidence": "用于微通道的形状可编程磁性软膜 - MicroBos实验室核心研究",
+      "canonical_evidence": "用于微通道的形状可编程磁性软膜 - MicroBos实验室核心研究",
+      "llm_tldr_en": "This paper introduces shape-programmable magnetic soft membranes as actuators for microchannels, enabling remote control of deformations via magnetic fields, directly addressing the lab's focus on micro-robotic and microfluidic systems.",
+      "llm_tldr_cn": "微流控平台对通道边界的动态控制有限，该研究提出一种形状可编程磁性软膜致动器，通过模板化磁化在外磁场下实现可控正弦变形，从而动态调控微流控环境。实验验证了磁编程和变形能力，为主动微流控和微机器人应用提供了新方案。",
+      "llm_tldr": "微流控平台对通道边界的动态控制有限，该研究提出一种形状可编程磁性软膜致动器，通过模板化磁化在外磁场下实现可控正弦变形，从而动态调控微流控环境。实验验证了磁编程和变形能力，为主动微流控和微机器人应用提供了新方案。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

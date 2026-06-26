@@ -1,0 +1,1026 @@
+Title: 
+
+URL Source: https://arxiv.org/pdf/2606.21716v1
+
+Published Time: Tue, 23 Jun 2026 01:17:42 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+Abstract — The capability to encode spatially distinct 
+
+magnetization patterns within soft materials enables remote 
+
+control over complex deformations . This characteristic is 
+
+especially important for microfluidic platforms, where limited 
+
+dynamic control of channel boundaries and laminar flow 
+
+conditions usually restrict fluid transport and interactions . The 
+
+present study introduces a shape -programmable magnetic soft 
+
+membrane actuator as an active microchannel component that 
+
+can dynamically modulate its shape under magnet ic fields and 
+
+therefore the microfluidic environment. The membrane is 
+
+magnetically programmed using a template -based approach, 
+
+which allows it to be controllably deformed in the form of a 
+
+sinusoid under the influence of an external magnetic field. The 
+
+membrane's integration into a microchannel convert s a passive 
+
+channel wall into a dynamically changeable interface , allow ing 
+
+active fluid manipulation and enhancing micromixing in 
+
+laminar flow conditions . The proposed approach establishes a 
+
+versatile platform for wirelessly controlled deformable 
+
+interfaces in next -generation microfluidic and lab -on -chip 
+
+systems . 
+
+> I.
+
+INTRODUCTION 
+
+Magnetically actuated soft materials have gained 
+
+substantial interest in a vast variety of fields, ranging from soft 
+
+robotics to biomedical devices and adaptive engineering 
+
+systems due to their ability to provide contactless actuation and 
+
+capability to generate complex shape -morphing under external 
+
+magnetic fields [1-4]. These materials , consisting of 
+
+ferro magnetic micro particles embedded in a soft polymer 
+
+matrix, enable remotely actuated , pre -programmed, and 
+
+reversible deformations via spatially distributed magnetization 
+
+profile, thus distributed magnetic forces an d torques under 
+
+external magnetic fields [5 -11]. The capability to program 
+
+complex shape -morphing has been widely explored in s mall
+
+scale soft robotics for multi -modal locomotion, targeted drug 
+
+delivery and tissue manipulation [2, 3, 12,13 ]. 
+
+Another potential area that could greatly benefit from such 
+
+shape -morphing material systems is microfluidic and lab -on -
+
+a-chip platforms . Microfluidic technologies have been widely 
+
+employed in drug discovery , fabrication of 
+
+microparticle s/emulsion s, micromixing, cell/analyte capture 
+
+from complex biofluids, and cell culture under physiological 
+
+conditions [14-18]. Efficacy of microfluidic systems are 
+
+constrained by fluid physics governed at microscale , where 
+
+channel diameter or height span tens to hundreds of 
+
+micrometers with intrinsically low Reynolds number s (Re =          
+
+> 1D. Akyildiz, F. Kocabas, X. Tan, and Y. Alapan are with the Bio -
+> integrated Robotics Lab at Mechanical Engineering Department, University
+> of Wisconsin -Madison, Madison, WI 53706 USA ( alapan@wisc.edu ).
+> 2X. Tan is with the Department of Electronic and Electrical Engineering,
+> University College London, London ,WC1E 7JE UK .
+
+ρVD h/μ), leading to laminar flow that restricts fluid flow 
+
+interactions . This limitation becomes especially critical for 
+
+applications such as micromixing, separation of cells/analytes, 
+
+and cell -based sensing platforms, where the performance is 
+
+often affected by fluid -channel interactions. Overcoming this 
+
+constraint usually requires complex channel geometries or 
+
+application of external forces to creat e intricate flow patt erns 
+
+that enhance fluid interactions [15] . In conventional 
+
+microfluidic platforms, forces are generally exerted through 
+
+deformation of thin membrane systems in tegrated into channel 
+
+walls and triggered via pneumatic pressure [1 9]. However, 
+
+requirement of additional pneumatic channels increases 
+
+complexity and limits robustness of pneumatically actuated 
+
+membrane systems. 
+
+On the other hand , wirelessly activated magnetic soft 
+
+membranes have been explored as diaphragm -based pumps 
+
+and active valve components [20 -22]. In addition ,
+
+magnetically actuated soft membranes were further used for 
+
+active mixing in microfluidic channels [2 3]. Magnetic soft 
+
+membranes have been shown to generate periodic deflection s
+
+created under external magnetic field s and improve the mixing 
+
+performance . However, these systems employ simple and 
+
+uniform deformations of the membrane structure, akin to 
+
+pneumatically actuated valves and pumps. As a result, most of 
+
+the existing magnetic mic romixers and membrane actuators 
+
+are limited to global vibration or un iform deformation 
+
+mechanisms , thus pre -programmed shape transformations 
+
+cannot be obtained within the channel structure .
+
+In this study, we introduce shape -programmable magnetic 
+
+soft membrane actuators for mechanically active 
+
+microchannels . Magnetic soft patches integrated within 
+
+continuous PDMS (Polydimethylsiloxane) membranes are 
+
+fabricated via micromolding , magnetically programmed 
+
+within an impulse magnetizer, and bonded to microchannels, 
+
+details of which are described in Section II. Effect of magnetic 
+
+particle ratio within magnetic patches to deformation 
+
+performance , sinusoidal shape -morphing within closed 
+
+microchannels, and application of shape -morphing magnetic 
+
+soft membranes in microfluidic micromixing are provided in 
+
+Section III, along with concluding remarks in Section IV .
+
+Magnetic soft membrane strategy proposed here offers real -
+
+time reconfigurable mi crochannel walls with complex shape -
+
+morphing capabilities, with wide ranging applications in 
+
+mixing, pumping, and biophysical stimulation of cells.    
+
+> 3Y. Alapan is with the Biomedical Engineering Department, University of
+> Wisconsin -Madison, Madison, WI 53706 USA.
+> 4Y. Alapan is with the Carbone Cancer Center, University of Wisconsin -
+> Madison, Madison, WI 53706 USA.
+
+# Shape -programmable Magnetic Soft Membranes for Mechanically 
+
+# Active Microchannels 
+
+Direnc Akyildiz 1, Fatih Kocabas 1, Xiangyi Tan 1,2 and Yunus Alapan 1,3,4 II. MATERIALS AND METHODS 
+
+A. Concept 
+
+This work presents a continuous magnetic soft membrane 
+
+designed as an active interface for adaptive microfluidic 
+
+systems. Under externally applied magnetic fields, the 
+
+proposed membrane's compliant soft structure and spatially 
+
+programmable magnetic characteristics allow for controlled 
+
+deformation , thereby enabling the membrane to function as a 
+
+soft actuator that uses magnetic fields to produce consistent 
+
+mechanical movements for fluid flow control in microscale 
+
+environments (Fig . 1) .
+
+B. Fabrication and Programming of Magnetic Soft 
+
+Membrane 
+
+The shape -programmable soft magnetic membrane was 
+
+fabricated from PDMS using a two -step process (Fig. 2A ).
+
+First, a PDMS - Sylgard 184 mixture (10:1 base to curing agent 
+
+ratio) poured onto a 50.8 mm × 76.2 mm glass slide . To control 
+
+the thickness of the membrane, strips of adhesive tape with a 
+
+thickness of 200 μm were placed along two opposite edges of 
+
+the glass slide, acting as spacers and guide lines . The PDMS 
+
+mixture across the substrate using a razor blade, which was 
+
+guided along the edges of the tape. The sample was cured at 
+
+110 °C for 10 minutes on a hot plate . After curing, the tape 
+
+spacers were removed carefully, and the membrane was 
+
+allow ed to cool to room temperature. A rectangular area of 10 
+
+mm x 6 mm was then removed from the center of the PDMS 
+
+membrane using a razor blade. To prepare the soft magnetic 
+
+composite, NdFeB was mixed with 10:1 PDMS mixture in the 
+
+weight ratio (wt) of 75% , spread into the excised section to 
+
+create a continuous magnetic soft membrane , and then cured 
+
+at 110 °C for 10 minutes. 
+
+Magnetic shape programm ing of the magnetic soft 
+
+membrane is achieved by using an impulse magnetizer (ASC 
+
+Scientific, Model IM -10 ) operating at 1.2 T ( Fig. 2 B). Prior to 
+
+magnetization, t he membrane is mechanically constrained by 
+
+fold ing 180° along the mid line parallel to the long edge, 
+
+bringing opposing membrane surfaces into contact. This 
+
+folding configuration enabled spatial encoding of magnetic 
+
+orientation during impulse magnetization. The folded 
+
+membrane was then positioned vertically inside the 
+
+magnetiz er and exposed to a 1.2 T uniform magnetic field .
+
+When external magnetic field s were applied to the system, the 
+
+opposing magnetic domains within the same continuous patch 
+
+create d distributed magnetic forces and torques that cause d the 
+
+membrane to experience alternating deformations .                          
+
+> Fig ure 1. Shape -programmable magnetic soft membrane –integrated microchannel and its magnetically induced actuation mechanism. A) Schematic
+> illustration of the complete microfluidic device consisting of two inlets and one outlet, with the shape -programmable magnetic soft membrane integrated into
+> the microchannel. The inset shows the programmed magnetization profile of the magneti csoft patch .B) Flow pattern inside the microchannel with the
+> magnetic membrane in the non -actuated state, showing no observable mixing befor e and after the membrane region. The inset shows the cross -sectional
+> profile of the non -actuated membrane, where no deformation is present. C) Flow pattern inside the microchannel after magnetic actuation of the membrane,
+> where mixing is observed over and downstream of the membrane region .The inset shows the cross -sectional profile of the magnetically actuated membrane
+> exhibiting sinusoidal deformation.
+> Fig ure 2 .Fabrication and programming of the magnetic soft membrane s.A)
+> Fabrication of the membrane and magnetic patch .The PDMS layer is
+> uniformly spread on a glass slide using 200 μm -thick spacer tapes as guides
+> and then cured. A defined region at the center is then cut and excised, filled
+> with an NdFeB –PDMS composite, and subsequently cured. B) Magnetic
+> programming of the membrane . The magnetic soft membrane is folded 180°
+> along the midline parallel to its long edge and magnetized using an impulse
+> magnetizer , purple lines indicate magnetization direction. A fter unfolding, a
+> 180° opposite magnetization p rofile is obtained ,represented with red and blue
+> arrows.
+
+C. Fabrication and Assembly of PDMS Microchannel 
+
+The PDMS microchannels were fabricated using a laser -
+
+cut double -sided adhesive tape mold defining a Y -shaped 
+
+channel geometry, with inlet lengths and widths of 17 mm and 
+
+2.5 mm, respectively, a main channel width of 5 mm, and a 
+
+channel length of 50 mm. The channel height (300 μm) was 
+
+established through the attachment of two stacked layers of 3 -
+
+mil double -sided adhesive tape (3M, USA ) onto a glass slide, 
+
+which served as spacers . A 10:1 PDMS mixture (Sylgard 184) 
+
+was poured over the prepared mold and cured on a hot plate at 
+
+160 °C for 30 min. The PDMS layer was peeled off after the 
+
+curing proce ss, and the microchannels were formed through 
+
+the removal of the patterned areas (Fig . 3A ).
+
+For microchannel assembly, both the PDMS channel and 
+
+the membrane were cleaned with ethanol and bonded 
+
+following oxygen plasma treatment (Fig . 3B ).
+
+D. Magnetic Actuation and Deformation Characterization 
+
+Magnetic actuation –induced deformation of the soft 
+
+magnetic membranes was characterized using ten 
+
+microchannel –membrane assemblies (n = 5 for 50 wt% 
+
+NdFeB –PDMS and n = 5 for 75 wt%) . All membranes were 
+
+magnetized using the programming method shown in Fig. 2B 
+
+but without folding, resulting in a uniform magnetization 
+
+orientation along the membrane. Consequently, the 
+
+membranes exhibited single convex -concave (curved) 
+
+deformation when subjected to external magnetic fields .
+
+Microchannel cross sections were positioned vertically and 
+
+imaged using a stereomicroscope (ZEISS Stemi 305 , 2x front 
+
+optics objective ) equipped with a digital microscope camera 
+
+(Swiftcam 25 MP) operated via Swift Imaging software . Static 
+
+magnetic fields were generated by positioning 2 x N35 
+
+neodymium cylinder magnet (25.4 mm in diameter and 6.35 
+
+mm in height, Radial Magnets, Inc.) at predefined distances 
+
+from the membrane to produce magnetic field strengths of 10 
+
+mT, 30 mT, 70 mT, and 150 mT, which were me asured and 
+
+set using a magnetometer (PCE -MFM 3500, PCE 
+
+Instruments) .
+
+Magnet orientation was reversed to create push and pull 
+
+actuation modes for each field level, which led to con cave and 
+
+con vex membrane deformation, respectively. 
+
+Sinusoidal deformation of the shape -programmed 
+
+membranes, obtained through the 180° folding -assisted 
+
+magnetization procedure shown in Fig. 2 B, was characterized 
+
+using an optical profilometer (Zygo New view 9000) . I n
+
+accordance with the deformation performance of the 
+
+uniformly magnetized membranes, o nly membranes made 
+
+with 75 wt% NdFeB -PDMS were subjected to measurements .
+
+Surface measurements were obtained by scanning a localized 
+
+section of the magnetic patch in the direction of the sinusoidal 
+
+deformation that occurs along the channel width under 
+
+magnetic activation. During measurement, the same 
+
+permanent magnet configuration used in previous 
+
+characterization was positioned beneath the microchannel 
+
+assembly to generate an approximately 120 mT magnetic field. 
+
+The optical profilometer was used to collect surface height 
+
+data, which were then analyzed using ZygoMx software . After 
+
+that, the generated .datx files were loaded into MATLAB 
+
+(MathWorks, USA), where positional height information was 
+
+taken out for additional analysis. For three separate samples, 
+
+MATLAB was used to create three -dimensional surface 
+
+reconstructions and deformation profiles , and the resulting 
+
+surface measurement data were smoothed in OriginPro 
+
+(OriginLab Corporation, USA) using a Savitzky –Golay filter 
+
+while preserving the overall surface profile. 
+
+E. Experimental Setup 
+
+An experimental configuration was implemented to enable 
+
+controlled magnetic actuation of the membrane and 
+
+subsequent observation of fluid behavior within the 
+
+microchannel. To induce dynamic actuation of the 
+
+programmed magnetic membrane, a rotating magnetic field 
+
+was utilized to dynamically change the direction of the applied 
+
+magnetic field. An actuation platform consisting of an N52 
+
+neodymium cylinder magnet (25 .4 mm in diameter and 25 .4 
+
+mm in height, KJ magnetics) mounted on a ste pper motor 
+
+using a 3D prin ted adapter was used for this purpose , allowing 
+
+the magnet to rotate together with the motor shaft . The motor 
+
+was controlled by an Arduino Uno microcontroller through a 
+
+digital stepper driver (DM542T ), powered by an external 
+
+power supply, which served as the power interface between 
+
+the controller and the motor. Control signals generated by the 
+
+Arduino enabled periodic rotation of the magnet at a user -
+
+defined actuation frequency. The microchannel –membrane 
+
+assembly was then fixed above the actuation platform. 
+
+Two fluids consisting of deionized water mixed with a 
+
+water -based blue and yellow food dye (Herbeklab) at different 
+
+concentrations were injected into microchannel using a
+
+syringe pump (InfusionONE 300 series , New Era Pump 
+
+Systems Inc .) through separate inlet tubing while continuous 
+
+discharge was mainta ined through outlet tubing. Both fluids 
+
+contained Tween 20 at the same concentration (0.5% v/v) to 
+
+reduce surface tension, while blue and yellow dyes were used 
+
+at concentrations of 4.93 wt% and 5.35 wt% to pro vide optical 
+
+contrast for visualization of mixing. The flow rate was set to 
+
+4.55 mL/h, corresponding to a Reynolds number (Re = 
+
+ρVD h / μ ) of 0.5, ensuring laminar flow conditions. A camera 
+
+(iPhone 16 Pro , Apple Inc.) positioned above the microchannel 
+
+was used to record mixing of infused dyes within the 
+
+microchannel .           
+
+> Fig ure 3.PDMS microc hannel fabrication and device assembly.
+> A) Fabrication of the micro channel. PDMS mixture is poured onto the
+> channel mold on a glass slide, cured, and demolded to obtain the PDMS
+> channel. B) Assembly of the microchannel. The surfaces of the PDMS
+> channel and magnetic patch are plasma treated and bonded together to
+> assemble the microchannel.
+
+F. Quantitative Image Analysis of Membrane Deformation 
+
+and Mixing Performance 
+
+At each field strength (10, 30, 70, and 150 mT), 
+
+deformation of uniformly magnetized membrane s was 
+
+captured and subsequently used for curvature analysis (Fig. 
+
+4A). Curvatures were quantified using ImageJ Fiji (National 
+
+Institutes of Health) by tracking three nodes on the membrane: 
+
+two located at the edges of the channel cross section and one 
+
+at the point of maximum deformation at the center of the patch. 
+
+The coordinates of these three points were denoted as 
+
+P1=( x1,y1) and  P3=( x3,y3) for the two edge nodes, and 
+
+P2=( x2,y2) for the point of maximum deformation. These three 
+
+points define a three -point circle whose radius (R) was 
+
+calculated , and the curvature was defined as the reciprocal of 
+
+the radius, ( κ = 1/R) given in (1) . For each image, an individual 
+
+pixel -to -length calibration was performed to convert pixel 
+
+measurements into physical dimensions. 
+
+κ = 2|(x2-x1)(y3-y1)-(y2-y1)(x3-x1)|
+
+d23 ∙d13 ∙d12 
+
+(1)
+
+where  dij = √(xi-xj)2+ (yi-yj)2
+
+Visual characterization of the mixing process was made 
+
+possible by the green coloration created by the combination of 
+
+the blue and yellow dyes as the fluids mixed downstream of 
+
+the magnetic membrane. This color -based mixing activity was 
+
+quantified by analyzing the collected images with ImageJ Fiji .
+
+Images were transformed from RGB to HSV color space, 
+
+where the hue channel represents the primary color 
+
+information independent of brightness, reducing the impact of 
+
+illumination fluctuations. The green pixel int ensity was 
+
+employed as a quantitative measure of mixing performance 
+
+since green coloration is only observed when the two fluids are 
+
+physically mixed. To determine the green pixel intensity inside 
+
+a specific region of interest (ROI), the hue channel was div ided 
+
+into blue, yellow, and green regions and green pixel intensity, 
+
+defined as the percentage of green pixels in the ROI, was 
+
+extracted. Locally Estimated Scatterplot Smoothing (LOESS) 
+
+function then was applied to the data to reduce oscillations 
+
+caused by the 2 Hz operating frequency while preserving the 
+
+overall trend of the intensity variation. ROI was defined near 
+
+the outlet of the magnetic patch . This location was selected 
+
+because the fluid passing through the magnetic patch fully 
+
+occupies the microchannel at this position, ensuring that the 
+
+ROI captures the mixed flow downstream of the actuated 
+
+region .
+
+III. RESULTS 
+
+A. Deformation Response of Uniformly Magnetized 
+
+Magnetic Soft Membranes 
+
+We first characterized the deformation behavior of 
+
+magnetic soft membranes depending on their magnetic particle 
+
+weight ratio . Magnetic soft membranes fabricated with 50 
+
+wt% and 75 wt% NdFeB microparticle ratios were uniformly 
+
+magnetized and exposed to varying levels of external magnetic 
+
+fields and gradients, resulting in deformation of membranes 
+
+(Fig. 4A). Under opposing magnetic actuation directions (push 
+
+and pull), reversible convex and concave deformation modes 
+
+were seen . Membrane deformation gradually i ncreased in both 
+
+actuation directions for both particle ratios as the applied 
+
+magnetic field strength increased from 10 mT to 150 mT, 
+
+exhibiting a consistent field -dependent response (Fig. 4A ,
+
+Supplementary Video ). The quantitative image analysis results 
+
+support this observation, showing that the membrane 
+
+curvature increases monotonically in both directions as the 
+
+strength of the applied magnetic field increases (Fig. 4B) .
+
+The 75 wt% samples show larger values in curvature 
+
+compared to the 50 wt% samples under same magnetic fields 
+
+in both push and pull modes (Fig. 4 A, B ), demonstrating the 
+
+enhanced performance of magnetic soft membranes with 
+
+greater magnetic particle ratios . Based on this characterization, 
+
+membranes fabricated with 75 wt% NdFeB –PDMS were 
+
+selected for subsequent sinusoidal shape -programming 
+
+experiments , including microfluidic mixing analysis.            
+
+> Figure 4. Characterization of uniformly magnetized patch deformation under
+> magnetic actuation. A) Deformation of uniformly magnetized patch under
+> magnetic fields. The upper row shows the NdFeB –PDMS (50 wt%) patch,
+> and the lower row shows the NdFeB –PDMS (75 wt%) patch. Deformations
+> are presented for magnet pushing, neutral/away, and pulling configurations
+> at magnetic field strengths of 150, 70 , 30, and 10 mT. B) Comparison of
+> deformation curvature for NdFeB –PDMS patches with different particle
+> weight ratios under the pushing and pulling conditions shown in A.Each
+> data point represents the mean curvature obtained from five samples, with
+> error bars indicating the standard error.
+
+B. Sinusoidal Deformation of Shape -programmed Magnetic 
+
+Soft Membranes 
+
+Next, t hree -dimensional surface measurements acquired 
+
+using optical profilometry (Fig. 5A) confirm the formation of 
+
+sinusoidal deformation along the membrane width. A
+
+representative three -dimensional surface reconstruction 
+
+obtained from one of the samples is presented in Fig. 5B . The 
+
+deformation pattern persists throughout the scanned area, 
+
+indicating a proper and continuous shape programming of the 
+
+magnetic patch .
+
+To understand reproducibility, three different samples 
+
+were characterized. All samples showed similar sinusoidal 
+
+deformation trends with comparable wavelengths and overall 
+
+shapes (Fig. 5C). Quantitative analysis yielded an average 
+
+absolute peak displacement of  146 ± 22.48  μm and a half 
+
+wavelength of  1.94 ± 0.38  mm across the tested samples. This 
+
+indicates consistent deformation behavior among the 
+
+fabricated membranes. Small differences in displacement 
+
+amplitude can be attributed to tolerances in fabrication and 
+
+magnetic programming of soft membranes .
+
+C. Magnetically Induced Mixing 
+
+To demonstrate the applicability of the proposed 
+
+magnetic soft membrane as an active microfluidic component, 
+
+magnetically induced mixing was investigated as a
+
+representative application (Supplementary V ideo) . Under the 
+
+rotating magnetic field , the membrane showed periodic 
+
+changes in its sinusoidal shape which caused the wave peaks 
+
+and wave troughs to move up and down between their 
+
+maximum and minimum points. 
+
+Mixing behavior induced by sinusoidal shape -morphing 
+
+of the membrane was investigated through controlled 
+
+experiments using the experimental set -up shown in Fig. 6A .
+
+Blue and yellow dye solutions were introduced from the two 
+
+inlets of the microchannel , and a n external magnetic field was 
+
+applied by rotating a permanent magnet beneath the magnetic 
+
+patch using a stepper motor at 2 Hz, generating a maximum 
+
+field strength of 120 mT (Fig. 6A, B ). The progression of 
+
+magnetically induced mixing in the microchannel is shown in 
+
+Fig . 6C, D .
+
+Continuous magnetic actuation induces alternating 
+
+deformation of the membrane, promoting mixing both within 
+
+the magnetic patch region and downstream of it along the flow 
+
+direction. This process results in the gradual development and 
+
+growth of the green colored region . The progression of mixing 
+
+along the direction flow is visually demonstrated by the 
+
+growing dominance of green coloration between t = 5 s and t 
+
+= 1 6 s (Fig. 6C, Supplementary Video ). This observation is 
+
+supported by the corresponding quantitati ve analysis shown in 
+
+Fig. 6D , where the green pixel intensity within the ROI 
+
+increases rapidly during actuation, rising from 6.0 % to 80 .0 %
+
+over 1 3 seconds and reaching 93. 1% by the end of actuation at 
+
+16 seconds. 
+
+IV. CONCLUSION 
+
+In this paper, we present a shape -programmable magnetic 
+
+soft membrane capable of acting as an active interface in 
+
+microfluidic systems. The proposed membrane's spatially 
+
+distributed magnetization profile allows it to create periodic 
+
+sinusoidal deformation under the applied external magnetic 
+
+field s. This dynamic shape -morphing within closed 
+
+microchannels enables effective manipulation of the 
+
+microfluidic fl ow environment through transforming the 
+
+static channel border into a dynamic surface , offe ring a more 
+
+versatile and multipurpose microfluidic platform . Magnetic 
+
+actuation characterization s showed that membrane 
+
+deformation changes in a controlled and reversible manner 
+
+depending on the applied magnetic field strength and                         
+
+> Fig ure 5 .Characterization of magnetically induced sinusoidal deformation .
+> A) Laser profilometer setup used for sinusoidal deformation measurements.
+> The closed microchannel with magnetic soft patch is placed beneath the
+> objective and actuated using external magnets during profilometry. B) Three -
+> dimensional deformation profile of an NdFeB –PDMS (75 wt%) patch
+> magnetized with 180° folding and actuated under an applied magnetic field
+> of 120 mT, obtained from optical profilometry measurements. C) Optical
+> profilometer measurements of the sinu soidal deformation for three NdFeB –
+> PDMS (75 wt%) patch samples. The X -axis corresponds to the scan direction
+> along the short axis of the patch during optical profilometry.
+
+direction. These actively deformable surfaces can allow for 
+
+dynamic control of localized flow regulation, cell /exosome 
+
+transport and isolation in liquid biopsy applications , and 
+
+dynamically adjustable biophysical environments in 
+
+microphysiological and organ -on -a-chip systems without 
+
+requiring complex channel geometry or mechanical 
+
+components that are permanently connected. Future work 
+
+may employ heat -assisted magnetic programming methods 
+
+that enable high -resolution encoding to achieve more 
+
+complex and discrete magnetization profiles in magnetic soft 
+
+membranes [ 9-11]. The integration of these capabilities with 
+
+closed -loop sensing systems may enable more adaptive and 
+
+programmable microfluidic platforms. 
+
+REFERENCES 
+
+[1]  M. Cianchetti, C. Laschi, A. Menciassi, and P. Dario, “Biomedical 
+
+applications of soft robotics,” Nature Reviews Materials , vol. 3, no. 6, 
+
+pp. 143 –153, May 2018, doi: https://doi.org/10.1038/s41578 -018 -
+
+0022 -y. 
+
+[2]  W. Hu, G. Z. Lum, M. Mastrangeli, and M. Sitti, “Small -scale soft -
+
+bodied robot with multimodal locomotion,” Nature , vol. 554, no. 7690, 
+
+pp. 81 –85, Jan. 2018, doi: https://doi.org/10.1038/nature25443. 
+
+[3]  T. Xu, J. Zhang, M. Salehizadeh, O. Onaizah, and E. Diller, 
+
+“Millimeter -scale flexible robots with programmable three -
+
+dimensional magnetization and motions,” Science Robotics , vol. 4, no. 
+
+29, Apr. 2019, doi:  https://doi.org/10.1126/scirobotics.aav4494 .
+
+[4]  Y. Yan et al., “Soft magnetic skin for super -resolution tactile sensing 
+
+with force self -decoupling,” Science Robotics , vol. 6, no. 51, Feb. 2021, 
+
+doi:  https://doi.org/10.1126/scirobotics.abc8801 .
+
+[5]  Y.H. Kim and X. Zhao, “Magnetic Soft Materials and Robots,” 
+
+Chemical Reviews , vol. 122, no. 5, pp. 5317 –5364, Feb. 2022, doi: 
+
+https://doi.org/10.1021/acs.chemrev.1c00481 .
+
+[6]  J. Kim, S. E. Chung, S. -E. Choi, H. Lee, J. Kim, and S. Kwon, 
+
+“Programming magnetic anisotropy in polymeric microactuators,” 
+
+Nature Materials , vol. 10, no. 10, pp. 747 –752, Aug. 2011, doi: 
+
+https://doi.org/10.1038/nmat3090. 
+
+[7]  G. Z. Lum et al., “Shape -programmable magnetic soft matter,” 
+
+Proceedings of the National Academy of Sciences , vol. 113, no. 41, Sep. 
+
+2016, doi: https://doi.org/10.1073/pnas.1608193113. 
+
+[8]  Y. Kim, H. Yuk, R. Zhao, S. A. Chester, and X. Zhao, “Printing 
+
+ferromagnetic domains for untethered fast -transforming soft materials,” 
+
+Nature , vol. 558, no. 7709, pp. 274 –279, Jun. 2018, doi: 
+
+https://doi.org/10.1038/s41586 -018 -0185 -0. 
+
+[9]  A. C. Karacakol, Yunus Alapan, S. O. Demir, and Metin Sitti, “Data -
+
+driven design of shape -programmable magnetic soft materials,” Nature 
+
+Communications , vol. 16, no. 1, Mar. 2025, doi: 
+
+https://doi.org/10.1038/s41467 -025 -58091 -z. 
+
+[10]  Y. Alapan, A. C. Karacakol, S. N. Guzelhan, I. Isik, and M. Sitti, 
+
+“Reprogrammable shape morphing of magnetic soft machines,” 
+
+Science Advances , vol. 6, no. 38, Sep. 2020, doi: 
+
+https://doi.org/10.1126/sciadv.abc6414 .
+
+[11]  F. Kocabas, O. Oguztuzun, Y. Zhou, and Y. Alapan, “Magnetic 
+
+Programming of Soft Materials Using Digitally Processed Laser 
+
+Heating,” 2025 IEEE International Conference on Robotics and 
+
+Automation (ICRA) , pp. 15350 –15355, May 2025, doi: 
+
+https://doi.org/10.1109/icra55743.2025.11127804 .
+
+[12]  Z. Yang, C. Xu, J. X. Lee, and G. Z. Lum, “Magnetic Miniature Soft 
+
+Robot with Reprogrammable Drug‐Dispensing Functionalities: Toward 
+
+Advanced Targeted Combination Therapy,” Advanced Materials , vol. 
+
+36, no. 48, Sep. 2024, doi:  https://doi.org/10.1002/adma.202408750 .
+
+Fig ure 6. Micromixing experiment. A) Experimental setup for micromixing. B) Detailed view of the micro fluidic setup and rotating permanent magnetic for 
+
+external field generation . C) Captured microchannel images at t = 0 s, 5 s, 10 s, and 16 s after the magnetic soft membrane is activated under an applied 
+
+magnetic field of 120 mT, initiated at t = 0 s. ; the ROI at the end of the magnetic patch near the outlet is labeled for subsequent image processing. D) Green 
+
+pixel intensity within the ROI versus actuation time of the microchannel operating at 2 Hz under an applied magnetic field of 120 mT, corresponding to the 
+
+region shown in C.[13]  Y. Zhou, Fatih Kocabas, and Yunus Alapan, “Microporous Magnetic 
+
+Soft Materials with Programmable Locomotion and On -Demand 
+
+Liquid Cargo Release,” 2025 International Conference on 
+
+Manipulation, Automation and Robotics at Small Scales (MARSS) , pp. 
+
+01 –06, Jul. 2025, doi: 
+
+https://doi.org/10.1109/marss65887.2025.11072793. 
+
+[14]  P. S. Dittrich and A. Manz, “Lab -on -a-chip: microfluidics in drug 
+
+discovery,” Nature Reviews Drug Discovery , vol. 5, no. 3, pp. 210 –218, 
+
+Mar. 2006, doi:  https://doi.org/10.1038/nrd1985 .
+
+[15]  G. Cai, L. Xue, H. Zhang, and J. Lin, “A Review on Micromixers,” 
+
+Micromachines , vol. 8, no. 9, p. 274, Sep. 2017, doi: 
+
+https://doi.org/10.3390/mi8090274 .
+
+[16]  S. Gimondi, H. Ferreira, R. L. Reis, and N. M. Neves, “Microfluidic 
+
+Devices: A Tool for Nanoparticle Synthesis and Performance 
+
+Evaluation,” ACS Nano , vol. 17, no. 15, pp. 14205 –14228, Jul. 2023, 
+
+doi:  https://doi.org/10.1021/acsnano.3c01117 .
+
+[17]  R. Nasiri et al., “Microfluidic‐Based Approaches in Targeted 
+
+Cell/Particle Separation Based on Physical Properties: Fundamentals 
+
+and Applications,” Small , vol. 16, no. 29, p. 2000171, Jun. 2020, doi: 
+
+https://doi.org/10.1002/smll.202000171 .
+
+[18]  D. Huh, B. D. Matthews, A. Mammoto, M. Montoya -Zavala, H. Y. 
+
+Hsin, and D. E. Ingber, “Reconstituting organ -level lung functions on a 
+
+chip,” Science , vol. 328, no. 5986, pp. 1662 –8, 2010, doi: 
+
+https://doi.org/10.1126/science.1188302. 
+
+[19]  J. -Y. Qian, C. -W. Hou, X. -J. Li, and Z. -J. Jin, “Actuation Mechanism 
+
+of Microvalves: A Review,” Micromachines , vol. 11, no. 2, p. 172, Feb. 
+
+2020, doi:  https://doi.org/10.3390/mi11020172 .
+
+[20]  M. Shen and M. A. M. Gijs, “High -performance magnetic active -valve 
+
+micropump,” TRANSDUCERS 2009 - 2009 International Solid -State 
+
+Sensors, Actuators and Microsystems Conference , pp. 1234 –1237, Jun. 
+
+2009, doi: https://doi.org/10.1109/sensor.2009.5285881. 
+
+[21]  Muzalifah Mohd Said, Jumril Yunas, B. Bais, Azrul Hamzah, and 
+
+Burhanuddin Yeop Majlis, “The Design, Fabrication, and Testing of an 
+
+Electromagnetic Micropump with a Matrix -Patterned Magnetic 
+
+Polymer Composite Actuator Membrane,” Micromachines , vol. 9, no. 
+
+1, pp. 13 –13, Dec. 2017, doi:  https://doi.org/10.3390/mi9010013 .
+
+[22]  H. Sun, J. Zhao, Y. Zhang, and M. Xu, “Flexible pump for small -scale 
+
+soft robotics: actuation, design and prospects,” Measurement , vol. 237, 
+
+p. 115299, Sep. 2024, doi: 
+
+https://doi.org/10.1016/j.measurement.2024.115299 .
+
+[23]  J. Li, M. Zhang, L. Wang, W. Li, P. Sheng, and W. Wen, “Design and 
+
+fabrication of microfluidic mixer from carbonyl iron –PDMS composite 
+
+membrane,” Microfluidics and Nanofluidics , vol. 10, no. 4, pp. 919 –
+
+925, Oct. 2010, doi:  https://doi.org/10.1007/s10404 -010 -0712 -2.

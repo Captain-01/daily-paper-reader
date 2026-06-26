@@ -1,0 +1,24 @@
+{
+  "label": "2026-06-26",
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26T21:45:55",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202606/26/2606.21716v1-shape-programmable-magnetic-soft-membranes-for-mechanically-active-microchannels",
+      "section": "deep",
+      "title_en": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
+      "authors": "Direnc Akyildiz, Fatih Kocabas, Xiangyi Tan, Yunus Alapan",
+      "date": "2026-06-19",
+      "pdf": "https://arxiv.org/pdf/2606.21716v1",
+      "score": "8.0",
+      "evidence": "用于微通道的形状可编程磁性软膜 - MicroBos实验室核心研究",
+      "tldr": "微流控平台中通道边界动态控制有限，限制了流体输运和混合。本研究提出一种形状可编程磁软膜执行器，通过模板方法编程磁化图案，在磁场下可逆变形为正弦形状。集成到微通道中，将被动壁面变为动态界面，实现主动流体操控和增强层流微混合。该方法为下一代微流控和芯片实验室系统提供了无线控制可变形界面的通用平台。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "The capability to encode spatially distinct magnetization patterns within soft materials enables remote control over complex deformations. This characteristic is especially important for microfluidic platforms, where limited dynamic control of channel boundaries and laminar flow conditions usually restrict fluid transport and interactions. The present study introduces a shape-programmable magnetic soft membrane actuator as an active microchannel component that can dynamically modulate its shape under magnetic fields and therefore the microfluidic environment. The membrane is magnetically programmed using a template-based approach, which allows it to be controllably deformed in the form of a sinusoid under the influence of an external magnetic field. The membrane's integration into a microchannel converts a passive channel wall into a dynamically changeable interface, allowing active fluid manipulation and enhancing micromixing in laminar flow conditions. The proposed approach establishes a versatile platform for wirelessly controlled deformable interfaces in next-generation microfluidic and lab-on-chip systems.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-06-26 <!--dpr-date:20260626-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/26/2606.21716v1-shape-programmable-magnetic-soft-membranes-for-mechanically-active-microchannels" data-sidebar-item="{&quot;title&quot;: &quot;Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2606.21716v1-shape-programmable-magnetic-soft-membranes-for-mechanically-active-microchannels&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;用于微通道的形状可编程磁性软膜 - MicroBos实验室核心研究&quot;}">Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels</a>
   * 2026-06-23 <!--dpr-date:20260623-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202606/23/biorxiv-10-1101-2025-10-20-683587-v2-physically-intelligent-insect-inspired-antenna-sensors-enhance-tactile-feature-perception-by-active-touch" data-sidebar-item="{&quot;title&quot;: &quot;Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/biorxiv-10-1101-2025-10-20-683587-v2-physically-intelligent-insect-inspired-antenna-sensors-enhance-tactile-feature-perception-by-active-touch&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;昆虫启发的触角传感器用于主动触觉，与EPFL MicroBos实验室的生物启发机器人研究相关&quot;}">Physically intelligent insect-inspired antenna sensors enhance tactile feature perception by active touch</a>
