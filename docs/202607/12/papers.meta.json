@@ -1,0 +1,24 @@
+{
+  "label": "2026-07-12",
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T20:29:10",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202607/12/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion",
+      "section": "deep",
+      "title_en": "Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion",
+      "authors": "Huaizhi Li, Kyoungtae Kevin Park, Donglei Emma Fan",
+      "date": "2026-07-07",
+      "pdf": "https://arxiv.org/pdf/2607.06705v1",
+      "score": "9.0",
+      "evidence": "微型机器人传感与MicroBos实验室方向一致",
+      "tldr": "传统高分辨率表面表征方法如原子力显微镜在液体中应用复杂。本文提出利用无束缚微机器人的运动作为传感信号，通过3D电动力学镊子控制金微球沿扫描路径运动，当遇到表面化学或结构变化时运动状态改变，从而检测生物分子图案和微脊阵列。该工作首次实现无束缚机器人液体环境传感，建立了运动传感新范式。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Surface characterization is essential for revealing the structural, chemical, and physical properties of materials. Yet high-resolution methods such as atomic force microscopy (AFM) require complex equipment and delicate skillsets, making them particularly challenging for applications involving soft and biological materials in liquids. Here, we propose and validate an innovative motion-enabled sensing scheme that uses untethered micromotors as robotic probes to interact with surfaces or objects, with their motion responses serving as sensing signals for characterization. This sensing concept is validated by employing 3D electrokinetic tweezers, which control micro/nanoparticles with up to 20 nm positioning precision in solution, to drive Au microsphere motors along designed scanning paths. When the motors encounter local chemical or structural variations, their locomotion changes, allowing motion itself to serve for the detection. This effort enables untethered motors, for the first time, to detect biomolecular patterns and lithographically defined microridge arrays in liquid environments. The work establishes robotic locomotion as a new sensing modality, opening a wireless, solution-compatible, and low-cost technical pathway to standard surface sensing.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

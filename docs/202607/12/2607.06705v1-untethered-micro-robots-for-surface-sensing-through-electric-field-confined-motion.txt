@@ -1,0 +1,826 @@
+Title: 2607.06705v1.pdf
+
+URL Source: https://arxiv.org/pdf/2607.06705v1
+
+Published Time: Thu, 09 Jul 2026 00:05:13 GMT
+
+Number of Pages: 20
+
+Markdown Content:
+Untethered Micro -Robot s for Surface Sensing through Electric -Field Confined 
+
+Motion 
+
+Huaizhi Li a, Kyoungtae Kevin Park a, and Donglei Emma Fan a, b, c 
+
+a.  Materials Science and Engineering Program, Texas Materials Institute, The University of 
+
+Texas at Austin, Austin, Texas, USA, 78712 
+
+b.  Walker Department of Mechanical Engineering, The University of Texas at Austin, Austin, 
+
+Texas, USA, 78712 
+
+c.  Chandra Family Department of Mechanical Engineering, The University of Texas at 
+
+Austin, Austin, Texas, USA, 78712 
+
+Correspondence and requests for materials should be addressed to the authors: Donglei 
+
+Emma Fan (dfan@austin.utexas.edu). 
+
+Abstract 
+
+Surface characterization is essential for revealing the structural, chemical, and physical 
+
+properties of materials. Yet high -resolution methods such as atomic force microscopy (AFM) 
+
+require complex equipment and delicate skillsets, making them particularly challenging for 
+
+applications involving soft and biological materials in liquids. Here, we propose and validate an 
+
+innovative motion -enabled sensing scheme that uses untethered micromotors as robotic probes to 
+
+interact with surfaces or objects, with their motion responses serving as sensing signals for 
+
+characterization. This sensing concept is validated by employ ing 3D electrokinetic tweezers, 
+
+which control micro/nanoparticles with up to 20 nm positioning precision in solution , to drive 
+
+Au microsphere motors along designed scanning paths. When the motors encounter local 
+
+chemical or structural variations, their locomotion changes, allowing motion itself to serve for 
+
+the detection . This effort enables untethered motors, for the first time, to detect biomolecular 
+
+patterns and lithographically defined microridge arrays in liquid environments. Th e work 
+
+establish es robotic locomotion as a new sensing modality , opening a wireless, solution -
+
+compatible, and low -cost technical pathway to standard surface sensing .
+
+## Introduction 
+
+Surface characterization plays a crucial role in understanding the chemical, physical, and 
+
+topographical properties of materials , important to diverse fields , ranging from optoelectronics, 
+
+biomedicine, mechanics, to life science . Traditional techniques such as atomic force microscopy 
+
+(AFM) and scanning electron microscopy (SEM) provide high -resolution imaging and precise 
+
+measurements but have grand challenges . These methods typically require controlled 
+
+environmental conditions, complex instrumentation, and advanced skill sets, making them 
+
+possible but challenging to use for soft biological samples and in liquid conditions. For AFM, enabled by a tip tethered to a one -end -fixed cantilever, the level of force is derived from the spring 
+
+constant, k, of the cantilever, which typically ranges from 0.1 to 100 N/m. To reach cellular - and 
+
+molecular -level forces in the pN range, it means that the deflection should be controlled to ~0.1 
+
+nm, requiring atomic -level precision . Thus, specialized AFM probes are made for biological 
+
+samples with k values of ~0.01 N/m. This still requires ge ntle tip displacement of ~1 nm, 
+
+highlighting the importance of equipment accuracy and user skill of AFM to detect molecular 
+
+features. In contrast, untethered micro/nanorobots not only can be easily controlled in locomotion 
+
+for targeted probing, but also offer an intrinsic force level in the pN range, corresponding to ~1 
+
+μm in size in water , when driven by widely used magnetic, electric, or optical fields. This force 
+
+level , which is tunable by size , can readily match those of molecules and soft samples , such as 
+
+gels . Moreover, untethered motors can offer multimodal sensing capability 1 through designed 
+
+chemistry and structures, such as surface -enhanced Raman scattering (SERS) for bio chemical 
+
+detection 2. Indeed , micromotors’ abilit ies in controlled locomotion over large areas, wireless 
+
+operation , and multiplexed sensing make them promising complementary tools for surface and 
+
+fine structure and object characterization where traditional methods are much constrained 3.
+
+Particular ly , a micromotor’s native motion in response to its environment has great 
+
+potential for sensing applications. However, such a motion -based sensing mechanism has not been 
+
+well explored. The most relevant studies are based on the equilibrium of a particle unde r two 
+
+oppositely applied forces. One example is the use of optical tweezers for trapping a micro -object, 
+
+whose trapping conditions 4,5 can be used to map flow profiles 6,7 and detect cellular 8 and molecular 
+
+bonding forces 9. Similarly, magnetic -tweezer -controlled motors have been applied to determine 
+
+molecular forces and local viscoelasticity 10,11 . These measurements are based on balancing 
+
+external force/torque with drag forces from molecules or fluids, both applied to the trapped 
+
+particle. Intriguingly, a particle’s Brownian motion itself, without applied external physical forces, 
+
+can be used to in fer the local temperature in solution 12 . In this case , thermal energy acting together 
+
+with liquid viscous drag results in the observed Brownian motion, whose statistics determine the characteristic diffusivity in a solution. Nevertheless, Brownian motion is random and passive, and 
+
+it does not permit active probing of targeted objects with sustained, controlled interactions. 
+
+In this work, we propose a n innovative motion -based sensing method for revealing 
+
+structural and chemical patterns and objects using 3D electrokinetic tweezers 13 . The tweezer is our 
+
+recent invention with an embedded capability to counter both translational and rotational Brownian 
+
+motion, enabling control of micro/nanoparticles with a positioning precision of 20 nm and an 
+
+angular precision of 0.5° under a standard optical microscope. This capability could open a new 
+
+pathway for controlling untethered microrobots along desig ned pathways to scan targeted locations 
+
+or interesting entities on a surface . T he micromotors’ motion as a response of their interactions 
+
+with the targets could naturally work as a sensing reporter for revealing regions with distinct 
+
+structures , morphology , chemistry distribution, and electronic propertie s.
+
+To validate this concept, we carry out systematic experimentation assisted by theoretical 
+
+calculations. In experiments, w e employ simple Au colloidal microspheres of 1.5 μm in size as 
+
+robotic motors and control their movement forward and backward along designed one -dimensional 
+
+(1D) pathways using a feedback -control algorithm. The m otion versus time is obtained. Here, a 
+
+key challenge in electrokinetic manipulation is the influence of electric double layers formed near 
+
+electrodes, which nonlinearly change the electric -field strength in solution and are extremely 
+
+difficult to study. To overcome this issu e, we develop a switching -current compensation method 
+
+to enable quantitative electric -field calculation with high accuracy. With this effort, w e robustly 
+
+detect both biomolecular patterns and lithographed microridge arrays on a surface, demonstrating 
+
+the system’s capability to distinguish both chemical and structural variations on surfaces using a 
+
+motor’s locomotion. Together, the reported motion -enabled sensing method expands the potential 
+
+of micromotors and robots as untethered probes for non -invasive, wireless, and high -resolution 
+
+surface characterization. The technique could potentially serve as a complementary technique to 
+
+AFM while bei ng much more affordable, easy to use, simple in equipment, and compatible with 
+
+soft materials and solution environments. Working Principle 
+
+In a typical experiment, a micromotor , such as a Au sphere of 1.5 μm in diameter , is 
+
+controlled by the electrokinetic traps to prob a targeted object . We cho ose Au micro sphere s, which 
+
+are of high density and inert surface , to leverage their gravitational sedimentation effect to the 
+
+substrate. This allows the Au spheres —acting as untethered motor probe s—to remain close to a
+
+surface , ensuring consistent particle –surface interaction. Instead of the proportional -integral (PI) 
+
+control algorithm used in our earlier work for precisely controlling particles’ motion , we employ 
+
+a bang -bang controller , which offers simple amplitude -constant electric outputs at 2 V ( VA) and -
+
+2 V (-VA). During the operation, VA drives the propulsion. When the position of the motor exceeds 
+
+the set point, - VA is applied to push the motor back to the set point; when the position of the motor 
+
+falls below the set point, VA is applied to push it back. As a result, the motor oscillates around the 
+
+set point. The position of the motor , x, is recorded at each video frame (n), along with the 
+
+corresponding time , t. Therefore, t he time and position at the nth frame are t[n] and x[n], 
+
+respectively. The displacement ( d) of the motor within frame n is given by  𝑑 [𝑛 ] = ∆𝑥 [𝑛 ] =
+
+𝑥 [𝑛 + 1] − 𝑥 [𝑛 ]. Using this displacement, the velocity v can be calculated as  𝑣 = 𝑑 ∆𝑡 ⁄ , where Δt 
+
+is the time interval between frames . The motor ’s mobility μ can be determined by  𝜇 = 𝑣 /𝐸  at an 
+
+applied electric field (E). For simplicity, we use d within a single frame rather than μ to report the 
+
+sensing signal at a given frame rate. This strategy enables us to directly compare d with other 
+
+quantities, such as imaging resolution and Brownian motion displacement. 
+
+As the mobility of the motor reflects the interaction s between the motor and its 
+
+environment , to further analyze the directional motion, we categorize the displacement as 
+
+rightward (dright ) and leftward (dleft ), under positive and negative voltages, respectively . In the 
+
+absence of external interference , dright and dleft have the same magnitud e but opposite directions .
+
+Under this convention, both dright and dleft are treated as positive quantities .
+
+Under applied electric field, t he velocity of electroosmotic flow is proportional to the 
+
+substrate's zeta potential, expressed as  𝑢 𝑠 = − 𝜖 𝜁 𝑠 𝐸  
+
+> 𝜂
+
+, where ε is the permittivity, ζs is the substrate 
+
+zeta potential, and η is the fluid viscosity. If the substrate consists of different materials with varying zeta potentials, the mobility of the particle will differ depending on its location .
+
+Specifically, when the particle is over a region with higher or lower zeta potential, both dright and 
+
+dleft will be changed to be larger or smaller. In addition, particle responds to the same E-field under 
+
+electrophoretic force, which is also proportional to the particle surface zeta potential, given by 
+
+𝑢 𝑝 = 𝜖 𝜁 𝑝 𝐸  
+
+> 𝜂
+
+. As the particle is the same in  𝑢 𝑝 , by monitoring these directional displacements, which 
+
+is the total of  𝑢 𝑠 +𝑢 𝑝 , one can infer the local zeta potential of the substrate. Scanning the particle 
+
+across different set points allows for the determining a zeta -potential profile of the surface. 
+
+If an external disturbing force Fext is present , it will act on the spherical particle and cause 
+
+a movement. The force is balanced by the drag force, given by  𝐹 𝑑𝑟𝑎𝑔 = −6𝜋𝜂𝑎𝑣 , where a is the 
+
+radius of the particle. This results in a terminal velocity of  𝑣 𝑒𝑥𝑡 = 𝐹 𝑒𝑥𝑡 
+
+> 6𝜋𝜂𝑎
+
+. As a result, t he total 
+
+velocity of the particle becomes the sum of the velocity induced by the applied voltages, vV, and 
+
+the velocity due to external force, vext : 𝑣 𝑡𝑜𝑡𝑎𝑙 = 𝑣 𝑉 + 𝑣 𝑒𝑥𝑡 . Importantly, vext remains in the same 
+
+direction regardless of the applied voltage , whereas vV change s sign when the polarity of the 
+
+voltage is reverse d. Therefore, we have: 
+
+𝑑 𝑟𝑖𝑔 ℎ𝑡 = 𝜇 𝑉 
+
+> 𝑑 𝑔𝑎𝑝
+
+∆𝑡 + 𝑣 𝑒𝑥𝑡 ∆𝑡 , (1)
+
+𝑑 𝑙𝑒𝑓𝑡 = − (−𝜇 𝑉 
+
+> 𝑑 𝑔𝑎𝑝
+
+∆𝑡 + 𝑣 𝑒𝑥𝑡 ∆𝑡 ) = 𝜇 𝑉 
+
+> 𝑑 𝑔𝑎𝑝
+
+∆𝑡 − 𝑣 𝑒𝑥𝑡 ∆𝑡 , (2)
+
+here dgap is the distance between the electrode pairs and the electric field is given by  𝐸 = 𝑉 𝑑 𝑔𝑎𝑝 ⁄ .
+
+From the above , we derive : 
+
+> 𝑑 𝑟𝑖𝑔 ℎ𝑡 −𝑑 𝑙𝑒𝑓𝑡
+> 2
+
+= 𝑣 𝑒𝑥𝑡 ∆𝑡 , (3) 
+
+> 𝑑 𝑟𝑖𝑔 ℎ𝑡 +𝑑 𝑙𝑒𝑓𝑡
+> 2
+
+= 𝜇 𝑉 
+
+> 𝑑 𝑔𝑎𝑝
+
+∆𝑡 . (4)
+
+By measuring dright and dleft , both the external velocity  𝑣 𝑒𝑥𝑡  and the particle mobility  𝜇  can 
+
+be determined simultaneously . As a result, any physical effect that either exerts a force on the 
+
+particle or alters its mobility can be probed at the same time. For example, the external Force Fext 
+
+and zeta potential of the substrates ζs can be calculated using the following equations: 
+
+𝐹 𝑒𝑥𝑡 = 3𝜋𝜂𝑎 (𝑑 𝑟𝑖𝑔 ℎ𝑡 −𝑑 𝑙𝑒𝑓𝑡 ) 
+
+> ∆𝑡
+
+, (5) 
+
+𝜁 𝑠 = − 𝜂 𝑑 𝑔𝑎𝑝 (𝑑 𝑟𝑖𝑔 ℎ𝑡 +𝑑 𝑙𝑒𝑓𝑡 ) 
+
+> 2𝜖𝑉 ∆𝑡
+
++ 𝜁 𝑝 . (6) Electric -Double -Layer Effect Analysis and Method 
+
+At the interface between the electrode and the solution, ions form an electric double layer 
+
+(EDL) if a potential difference is presented. The EDL behaves like a capacitor, storing charge and 
+
+producing a voltage drop denoted as VC. When calculating the electric field strength E, the equation 
+
+𝐸 = 𝑉 𝑑 𝑔𝑎𝑝 ⁄ is used, where V is the effective voltage drop across the fluid . However, due to the 
+
+presence of the EDL, not all of the applied voltage VA contributes to the electric field strength E
+
+applied to a particle in solution . Instead, a portion of the voltage is consumed in charging the EDL .
+
+As illustrated in the equivalent circuit in Figure 1 , the electrode -water system can be modeled as 
+
+a series of resistors and capacitors. The EDL can be modeled by a capacitor CEDL , the water 
+
+between two electrodes can be modelled as a resistor Rwater , and the electrochemical reactions 
+
+occurring at the electrode -solution interface can be represented by a charge transfer resistor Rct ,
+
+where ct stands for charge transfer. 
+
+Figure 1: A schematic of the electrodes system and the equivalent circuit. 
+
+The applied voltage VA is distributed between the EDL capacitor CEDL and the solution 
+
+resistance Rwater . Since Rct and CEDL are in parallel, they share the same voltage. The total voltage 
+
+stored across the capacitors is denoted as VC, while the voltage across Rwater is denoted as VR. This 
+
+gives the relationship :     
+
+> 𝑉 𝐴 =𝑉 𝐶 +𝑉 𝑅 .(7)
+
+Only VR contributes to the electric field strength, as given by  𝐸 = 𝑉 𝑅 𝑑 𝑔𝑎𝑝 ⁄ . The EDL 
+
+capacitance effect is clearly seen in Figure 2 . When a constant voltage is applied between the electrode pairs, the velocity of the particle drops exponentially from -20 μm/s to near 0 μm/s 
+
+instead of maintaining a steady velocity . This behavior arises because the EDL is charging over 
+
+time, causing the voltage across water, as well as the electric field strength, to decrease 
+
+exponentially. The red line in the figure is an exponential fit , showing excellent agreement between 
+
+the experimental data and theoretical prediction. 
+
+Therefore, to accurately apply the technique discussed in the previous section, it is essential 
+
+to determine the actual voltage drop across the fluid , VR , which is unknown, rather than relying 
+
+solely on the known applied voltage, VA.
+
+Figure 2: The exponential decay of velocity of the particle due to the Electric Double Layer 
+
+capacitance effect. Applied voltage: 0.75V. 
+
+## Theor etical Analysis 
+
+Real -time measurement of the voltage drop across the EDL is challenging, as the 
+
+capacitance of the EDL is a function of both the voltage and the ion concentration. In most of the 
+
+literature 41 , the applied voltage VA is used directly to calculate the electric field strength, while the 
+
+capacitor effect is often ignored. In this section, a new method is introduced to determine both VC
+
+and VR by monitoring the current during the switching of the applied voltages. 
+
+Before switching, the applied voltage is VA and the capacitor is charged to VC, and the 
+
+voltage drop in water is:       
+
+> 𝑉 𝑅 ,𝑏𝑒𝑓𝑜𝑟𝑒 =𝑉 𝐴 −𝑉 𝐶 .(8)
+
+The corresponding current before switching is: 
+
+𝑖 𝑏𝑒𝑓𝑜𝑟𝑒 = 𝑉 𝑅 ,𝑏𝑒𝑓𝑜𝑟𝑒 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ = (𝑉 𝐴 − 𝑉 𝐶 ) 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ . (9)
+
+After switching, the applied voltage becomes – VA, but the switching is so rapid that both 
+
+VC and Rwater remain unchanged. The new voltage drop in water becomes :
+
+𝑉 𝑅 ,𝑎𝑓𝑡𝑒𝑟 = −𝑉 𝐴 − 𝑉 𝐶 . (10 )
+
+And the current immediately after switching is: 
+
+𝑖 𝑎𝑓𝑡𝑒𝑟 = 𝑉 𝑅 ,𝑎𝑓𝑡𝑒𝑟 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ = (−𝑉 𝐴 − 𝑉 𝐶 ) 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ . (11 )
+
+With simple derivation , we obtain :
+
+𝑖 𝑏𝑒𝑓𝑜𝑟𝑒 − 𝑖 𝑎𝑓𝑡𝑒𝑟 = 2𝑉 𝐴 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ , (12)
+
+𝑖 𝑏𝑒𝑓𝑜𝑟𝑒 + 𝑖 𝑎𝑓𝑡𝑒𝑟 = −2𝑉 𝑐 𝑅 𝑤𝑎𝑡𝑒𝑟 ⁄ , (13) 
+
+> 𝑖 𝑏𝑒𝑓𝑜𝑟𝑒
+> (𝑖 𝑏𝑒𝑓𝑜𝑟𝑒 −𝑖 𝑎𝑓𝑡𝑒𝑟 )/2
+
+= 𝑉 𝑅 ,𝑏𝑒𝑓𝑜𝑟𝑒 
+
+> 𝑉 𝐴
+
+, (14) 
+
+> 𝑖 𝑎𝑓𝑡𝑒𝑟
+> (𝑖 𝑏𝑒𝑓𝑜𝑟𝑒 −𝑖 𝑎𝑓𝑡𝑒𝑟 )/2
+
+= 𝑉 𝑅 ,𝑎𝑓𝑡𝑒𝑟 
+
+> 𝑉 𝐴
+
+. (15)
+
+By measuring the current immediately before and after each voltage switch, and knowing VA, we 
+
+can calculate Rwater , VC and VR. Notably, Rwater may vary over time due to ion s generated from 
+
+electrochemical reactions. Thanks to the nature of the bang -bang controller, where the voltage 
+
+continuously switches between VA and -VA, these values can be calculated at each switching event. 
+
+The values between switching events can be estimated by interpolation, providing continuous 
+
+monitoring of Rwater , VC and VR throughout the experiment. 
+
+## Experimental Validation 
+
+The control algorithm determines when to switch the applied voltage by comparing the 
+
+current position of the particle to the set point. As a result, the duration of each applied voltage 
+
+pulse can vary before switching to the opposite voltage. Figure 3 shows the measured current as 
+
+a function of time when a particle is trapped by the bang -bang controller. The time intervals 
+
+between voltage switches vary, as the voltage may persist for more than one frame depending on 
+
+the particle’s motion. When the voltage is switched, the measured current also flips sign. Between 
+
+switching events , the current decays exponentially because of the charging of the EDL. T he values of ibefore and iafter can be determined from the plot and used to calculate VR and VC using Equations 
+
+(10 -13). 
+
+Figure 3: Plot of measured current, ibefore and iafter when a particle is trapped by the bang -
+
+bang controller. 
+
+To perform a scan rather than a single -point measurement, the set point is moved 
+
+sequentially according to a predefined scan pattern. At each set point, the particle is controlled for 
+
+a specified duration to collect data. In a line scan, a net average voltage is needed to move the 
+
+particle from one side to the other. This net voltage gradually charges the EDL, i ncreasing the 
+
+EDL voltage to VC and reducing the effective voltage drop across the fluid VR, as shown by  𝑉 𝑅 =
+
+𝑉 𝐴 − 𝑉 𝐶 . As a result, the particle’s displacement in the direction of the scan will decrease. On the 
+
+other hand, when the feedback voltage switches sign, the EDL discharges and the stored voltage 
+
+superimposes with the applied voltage -VA, leading to a larger magnitude of VR, given by  𝑉 𝑅 =
+
+−𝑉 𝐴 − 𝑉 𝐶 . As a result, the displacement opposite to the scanning direction will increase. This effect 
+
+is clearly seen in Figure 4a -b during rightward and leftward scans on a blank substrate, where 
+
+dright is smaller than dleft during a rightward scan, and larger than dleft during a leftward scanning. 
+
+To correct for this capacitive effect, VR is calculated using the switching current method. 
+
+Since the raw displacement is proportional to VR instead of VA, the observed discrepancy between 
+
+dright and dleft arises from variations in VR during the scan. To account for this, the raw displacement 0.09 0.10 0.11 0.12 0.13 0.14 0.15 0.16 
+
+> -0.000002
+> 0.000000
+> 0.000002
+> 0.000004
+> 0.000006
+> Current (A)
+> Time (s)
+> iibefore
+> iafter
+
+is normalized by dividing it by the ratio VR/VA. The corrected displacement corresponds to the 
+
+normalized displacement that would be measured if VR equals VA. As shown in Figure 4c -d, dright 
+
+and dleft align closely after the correction. As a result, the m obility (μ) can be calculated using the 
+
+corrected displacement (dright .c and dleft .c ), applied voltage (VR), frame rate, and electrode gap 
+
+distance, and is proportional to the corrected displacement. Since the corrected displacements 
+
+overlap, this indicates that the mobility is equal in both the rightward and leftward directions, 
+
+which is expected for a blank substrate , validating the method discussed above .
+
+Figure 4: (a -b) Raw displacement for (a) rightward and (b) leftward scanning, and (c -d) 
+
+The corrected displacement for (c) rightward and (d) leftward scanning on a substrate uniformly 
+
+coated with Bovine Serum Albumin . Frame rate: 169 FPS; applied voltage: 3V; electrode gap: 
+
+500 μm. 
+
+## Micromotor Scanning Robots for Motion -Enabled Biomolecule Pattern Detection 
+
+To create molecular patterns on a substrate , we employed the microcontact printing 
+
+method .83,84 The experiment begins with patterning photoresist on a substrate followed by its 
+
+passivat ion in a desiccator under vacuum along with 50 μl of Perfluorooctyltrichlorosilane (Alfa 
+
+Aesar ). Next, Polydimethylsiloxane (PDMS ) precursor solution is introduced and cured on the substrate . This step transfer s the substrate pattern to the PDMS stamp. Before print ing Bovine 
+
+Serum Albumin (BSA) to the microchip , the PDMS stamp side is treated with UV Ozone for 30 
+
+mins to generate silanol groups , followed by immers ion in 100 μg/ml BSA ( Sigma -Aldrich ) in 
+
+Phosphate -Buffered Saline (PBS ) buffer for 45 minutes . After rinsing with PBS (1×) and deionized 
+
+water (3×) , and airflow drying , the stamp is brought into contact with the microelectrode for 5 -10 
+
+seconds , transferring the BSA molecul ar pattern to the testing chip. 
+
+Next, a Au micromotor solution is pipetted into the PDMS well. The system utilizes a bang -
+
+bang controller, which applies either a positive voltage VA or a negative voltage -VA, to keep the 
+
+particle to the set point. A digital multimeter (Keithley DMM6500) is connected to measure the 
+
+currents passing through the system. The position of the particle, the applied voltage, and the 
+
+corresponding current are recorded, and the results at each point is calculated correspondingly. 
+
+The system supports both line scanning and map scanning by dynamically updating the set point 
+
+along a line or across a region of interest. At each set point, data are collected over a defined 
+
+sampling period, an d calculated . In addition to processing data according to the particle’s set point, 
+
+the data can also be processed based on the particle’s actual position, permitting post -processing 
+
+and more precise spatial mapping. 
+
+## Imaging Analysis Algorithm 
+
+We use OpenCV to analyze instant positions of a micromotor from its image. As the motor 
+
+is spherical , orientation is not important, and we only need to determine the positional information. 
+
+Therefore “cv::moments” is used , which calculates the center of mass by averaging the positions 
+
+of all pixels in the particle’s contour. As shown in Figure 5, this approach yields continuous 
+
+position al values and high precision within 2 pixels in variation, which could be due to the minor 
+
+stage drift over time , combined with vibration noise of the microscope body, camera, chip, and 
+
+camera’s image noise . The imaging algorithm selection is highly important for obtaining accura te 
+
+displacement measurements and mobility analysis. Figure 5: Imaging precision of the “cv:: moments ” method. Position versus time for a
+
+stationary 6-μm nanowire in deionized water in (a) X and (b) Y directions versus time. 
+
+## Molecular Pattern Detection 
+
+We scan the Au micromotor across an array of patterned BSA strips of 20 μm in width and 
+
+20 μm in gap. The strips are aligned and extended along the Y direction. A particle is scanned 
+
+along the X direction, allowing it to travel across a region of alternating glass –BSA strips . The 
+
+measured mobility on glass is consistently higher than that on BSA (Figure 6), showing the 
+
+corresponding alternating strip patterns of BSA on glass. The results validate the concept of using 
+
+mo tion of a controlled micromotor to detection variation of surface chemistry with high spatial 
+
+resolution. 
+
+Figure 6: Displacement versus position in a line scan on (a) glass, (b) BSA, and (c) 
+
+glass -BSA -glass -BSA alternating patterns. Scale bar: 1 pixel = 0.08 μm. 
+
+We further test the scanning along X directions at different Y coordination . Here the pattern 
+
+varies only along the X direction and remains same in chemistry along Y. The different scans performed along Y at 26 8 pixels and 753 pixels , respectively, show that same level of mobilities 
+
+are determined ( Figure 7) further validating the technique’s ability to characterize surface 
+
+properties. The same results are obtained regardless of rightward or leftward scans. 
+
+Figure 7: (a -b) Electrical -double -layer (EDL) effect corrected displacement versus position 
+
+at Y = 268 pixel, where (a) is the rightward scan and (b) is the leftward scan. (c -d) EDL -effect 
+
+Corrected displacement versus position at Y = 753 pixel, where (c) is the rightward scan and (d) 
+
+is the leftward scan. 
+
+The capability in detecting and characterizing the dimensions of patterned biomolecules is 
+
+further confirmed for a BSA pattern made with periodic of 2 μm in the through -pattern scans 
+
+(Figure 8 a-c) and between pattern scans (Figure 8 d-f). Here t he scanning is pixel based at 42 
+
+nm/px corresponding to ~6.3 um . We notice that the mobility of the micromotors show a gradual 
+
+transition between the glass surface and BSA patterns, which could be due to the diffusion of 
+
+BSA molecules as well as the size of the micromotor probe of 1.5 μm in diameter, which is on 
+
+the sa me scale of the patterns. Figure 8. Scanning through patterned BSA molecules on the chip with periodicity of 2 μm. The 
+
+through -pattern (a) forward and (b) backward scans correspond to the (c) patterned molecules. 
+
+The between -pattern (d) forward and (e) backward scans following paths in (f) further support 
+
+the robustness of the motion -based characterization .
+
+## Profiling Surface Structures 
+
+When a structured object present s on the su rface , collisions between the scanning motor 
+
+and the object can instantly change the motor’s motion. For example, if the object is located to the 
+
+right side of the particle, it can exert a ‘kick’ that bounces the particle toward the left . As a result, 
+
+dleft can be larger than dright , making dright – dleft negative. Vice and verse when the object is on the 
+
+left side of the particle .
+
+To test this understanding , we pattern periodic photoresist strips (4.5 μm in width; 7.5 μm 
+
+in gap) on a quadruple electrod e (Figure 9a). The thickness is controlled to be ~ 1 μ m. A 1.5 -μm 
+
+Au sphere is trapped and scanned across the strips towards the right in X direction at 4px/s through 
+
+240 targeted locations, across 960 pixels in total. At each pixel, dright and dleft is calculated and 
+
+plotted versus position (Figure 9b; dright orange, dleft green) As expected, when the particle is near 
+
+the left edge of the strip, (dright – dleft ) ( Figure 9b, blue curve) becomes negative , indicating 
+
+resistance from the pattern on the right. Conversely, when the particle is near the right edge of the strip (dright – dleft ) become positive . The effect is robust, repeated during the scanning of the 
+
+patterning. The signal pattern well correlates to the spatial pattern , indicating success in profiling 
+
+the structural features of the surface . During the measurement of the mobility of the micromotor 
+
+along the X -direction, we also monitor its mobility along Y -direction. Also shown in Figure 9c,
+
+the transport also show s periodic with well overlapped dright and dleft . As aforediscussed, ( dright +
+
+dleft ) reflects the surface chemistry differences during scanning. The measured signals of ( dright +
+
+dleft ) is periodic, well corroborat ing with the respective positions of photoresist strips and glass -
+
+surfaced gaps. The results further reveal the distinct chemical nature of photoresist and glass. 
+
+Because dright and dleft in the Y direction essentially overlaps, resulting in a flat line of ( dright - dleft )
+
+in blue, it indicates that the structural difference in Y direction is minimal, agreeing with the 
+
+longitudinal feature of the strip patterns. Finally, the micromotor is propelled to scan along the Y 
+
+direction on the glass area between strips. The results show clear flat -featured signals in both 
+
+structure and chemistry, further validating the method ( Figure 1 0). Overall , the scanning 
+
+measurement and analysis not only unravel the structures of the pattern but also its chemistry 
+
+variation, demonstrating the effectiveness and consistence of the proposed sensing and analysis 
+
+method. Figure 9: (a) Optical microscopy image of a gold colloidal micromotor on the patterned 
+
+photoresist strips. The inset shows a n optical microscopy image of the patterned photoresist strip 
+
+array. The scanning is conducted from right to left in the direction of X -axis. (b) In X -direciton, 
+
+(dright - dleft ) correlates with the structural features and (c) ( dright + d left ) in the Y axis reveals the 
+
+chemical differences between photoresist strips and glass surface. Here dright and dleft in the Y 
+
+direction essentially overlaps, resulting in a flat line of ( dright - dleft ) in blue, which agrees that 
+
+during the scan, the structural difference in Y direction is minimal. 
+
+Figure 1 0. The micromotor is scanned along the Y axis on the glass area between the photoresist 
+
+strip patterns, both +Yand -Y directional scans show flat features for both structure (dright - dleft )
+
+and chemistry (dright + d left ) of the scanned area . The results align with the characteristics of the 
+
+flat uniform glass substrate .5.6 Discussions 
+
+This work proposed and successfully demonstrated that electrokinetically trapped, 
+
+untethered colloidal micromotors can serve as sensitive scanning probes for surface 
+
+characterization. By measuring directional mobilities under bang -bang control, the system is able 
+
+to detect variations in both surface chemistry and structure . Changes in surface chemistry, such as 
+
+differences in zeta potential, are reflected in the total ma gnitude of two directional scanning 
+
+mobilities along the same axis . In contrast, topographical features are revealed by the difference 
+
+between the two directional scanning mobilities, which capture the mechanical interactions 
+
+between the particle and the surface . The switching -current -measurement method is original, 
+
+enabl ing accurate accounting for electric double layer (EDL) effects, which significantly improv es 
+
+the reliability of the mobility calculations and sensing performance . Th e demonstrated capability 
+
+in probing the EDL -associated parameters may also benefit other electrokinetic applications. 
+
+Here, we particularly emphasize the choice of t he bang -bang control scheme , offering 
+
+alternating application of positive and negative voltages, serves important purposes: (1) it 
+
+maintains confinement of the particle near the set point by counteracting Brownian motion; (2) it 
+
+generates switching currents that allow for real -time compensation of EDL capacitive effects; and 
+
+(3) it readily enables the separat ion of forward and backward displacements along a direction ,
+
+enabling simultaneous sensing of both the motor’s mobility on a surface and external instant forces 
+
+to the motor .
+
+Most state -of -the -art micro/nanoparticle manipulation techniques lack nanometer control 
+
+capability over particle motion. In contrast, the method described here enables active, controlled 
+
+scanning of the substrate with high spatial resolution of < 100 nm . The ability to trap and move a 
+
+particle along predefined paths while continuously collecting motion signals allows for robust 
+
+scanning and mapping capability of patterns and objects on a surface . With its wireless and non -
+
+invasive nature, high control precision , and compatibility with fluid environments, the electrical 
+
+driven scanning micromotors provide a n original, versatile , low -cost platform for applications in surface and structure sensing , soft material characterization , and microfluidics where traditional 
+
+cantilever -based methods or other untethered microrobots are often inadequate. References 
+
+1. Kim, K., Guo, J., Liang, Z. & Fan, D. Artificial Micro/Nanomachines for Bioapplications: 
+
+Biochemical Delivery and Diagnostic Sensing. Adv Funct Materials 28 , 1705867 (2018). 
+
+2. Xu, X., Kim, K. & Fan, D. Tunable Release of Multiplex Biochemicals by Plasmonically 
+
+Active Rotary Nanomotors. Angewandte Chemie 127 , 2555 –2559 (2015). 
+
+3. Wang, Q., Yang, S. & Zhang, L. Untethered Micro/Nanorobots for Remote Sensing: Toward 
+
+Intelligent Platform. Nano -Micro Lett. 16 , 40 (2024). 
+
+4. Bustamante, C. J., Chemla, Y. R., Liu, S. & Wang, M. D. Optical tweezers in single -
+
+molecule biophysics. Nat Rev Methods Primers 1, 25 (2021). 
+
+5. Schwingel, M. & Bastmeyer , M. Force Mapping during the Formation and Maturation of 
+
+Cell Adhesion Sites with Multiple Optical Tweezers. PLoS ONE 8, e54850 (2013). 
+
+6. Di Leonardo, R. et al. Multipoint Holographic Optical Velocimetry in Microfluidic Systems. 
+
+Phys. Rev. Lett. 96 , 134502 (2006). 
+
+7. Mushfique, H. et al. 3D Mapping of Microfluidic Flow in Laboratory -on -a-Chip Structures 
+
+Using Optical Tweezers. Anal. Chem. 80 , 4237 –4240 (2008). 
+
+8. Schwingel, M. & Bastmeyer , M. Force Mapping during the Formation and Maturation of 
+
+Cell Adhesion Sites with Multiple Optical Tweezers. PLoS ONE 8, e54850 (2013). 
+
+9. Fan, Y. -J. et al. A quantitative immunosensing technique based on the measurement of 
+
+nanobeads’ Brownian motion. Biosensors and Bioelectronics 25 , 688 –694 (2009). 
+
+10. Gosse, C. & Croquette, V. Magnetic Tweezers: Micromanipulation and Force Measurement 
+
+at the Molecular Level. Biophysical Journal 82 , 3314 –3329 (2002). 
+
+11. Pokki, J., Ergeneman, O., Bergeles , C., Torun, H. & Nelson, B. J. Localized viscoelasticity 
+
+measurements with untethered intravitreal microrobots. in 2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society 2813 –2816 (IEEE, 
+
+San Diego, CA, 2012). doi:10.1109/EMBC.2012.6346549. 
+
+12. Chung, K., Cho, J. K., Park, E. S., Breedveld, V. & Lu, H. Three -Dimensional in Situ 
+
+Temperature Measurement in Microsystems Using Brownian Motion of Nanoparticles. Anal. 
+
+Chem. 81 , 991 –999 (2009). 
+
+13. Li, H. et al. Precise electrokinetic position and three -dimensional orientation control of a 
+
+nanowire bioprobe in solution. Nat. Nanotechnol. 18 , 1213 –1221 (2023).

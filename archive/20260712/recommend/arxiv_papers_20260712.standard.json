@@ -1,0 +1,53 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-12T20:27:55.380414+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2607.06705v1",
+      "source": "arxiv",
+      "title": "Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion",
+      "abstract": "Surface characterization is essential for revealing the structural, chemical, and physical properties of materials. Yet high-resolution methods such as atomic force microscopy (AFM) require complex equipment and delicate skillsets, making them particularly challenging for applications involving soft and biological materials in liquids. Here, we propose and validate an innovative motion-enabled sensing scheme that uses untethered micromotors as robotic probes to interact with surfaces or objects, with their motion responses serving as sensing signals for characterization. This sensing concept is validated by employing 3D electrokinetic tweezers, which control micro/nanoparticles with up to 20 nm positioning precision in solution, to drive Au microsphere motors along designed scanning paths. When the motors encounter local chemical or structural variations, their locomotion changes, allowing motion itself to serve for the detection. This effort enables untethered motors, for the first time, to detect biomolecular patterns and lithographically defined microridge arrays in liquid environments. The work establishes robotic locomotion as a new sensing modality, opening a wireless, solution-compatible, and low-cost technical pathway to standard surface sensing.",
+      "authors": [
+        "Huaizhi Li",
+        "Kyoungtae Kevin Park",
+        "Donglei Emma Fan"
+      ],
+      "primary_category": "physics.app-ph",
+      "categories": [
+        "physics.app-ph"
+      ],
+      "published": "2026-07-07T18:23:46+00:00",
+      "link": "https://arxiv.org/pdf/2607.06705v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "micro-robots for sensing aligns with MicroBos lab",
+      "llm_evidence_cn": "微型机器人传感与MicroBos实验室方向一致",
+      "llm_evidence": "微型机器人传感与MicroBos实验室方向一致",
+      "canonical_evidence": "微型机器人传感与MicroBos实验室方向一致",
+      "llm_tldr_en": "Proposes untethered micro-robots driven by electrokinetic tweezers for surface sensing achieving nanometer precision enabling soft material characterization in liquids.",
+      "llm_tldr_cn": "本文提出了一种基于3D电动力学镊子驱动的无束缚微型机器人表面传感方案。该方法利用微型马达的运动响应作为传感信号，实现了溶液中软材料的表面特性表征，定位精度达20纳米，为生物材料的高分辨率传感提供了新途径。",
+      "llm_tldr": "本文提出了一种基于3D电动力学镊子驱动的无束缚微型机器人表面传感方案。该方法利用微型马达的运动响应作为传感信号，实现了溶液中软材料的表面特性表征，定位精度达20纳米，为生物材料的高分辨率传感提供了新途径。",
+      "llm_tags": [
+        "query:sakar-selman:composite"
+      ],
+      "matched_query_tag": "query:sakar-selman:composite",
+      "matched_query_text": "Papers central to 查找sakar selman和epfl microbos实验室的最新论文及毕设, especially work that connects or combines: Sakar Selman publications; r; EPFL MicroBos laboratory; Find recent papers by Selman Sakar; Find latest publications from EPFL MicroBos lab.",
+      "matched_requirement_id": "req-composite-sakar-selman",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}
