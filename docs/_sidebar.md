@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-07-13 <!--dpr-date:20260713-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202607/13/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion" data-sidebar-item="{&quot;title&quot;: &quot;Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;微机器人表面传感，与Selman Sakar的微机器人研究方向一致&quot;}">Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion</a>
   * 2026-07-12 <!--dpr-date:20260712-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202607/12/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion" data-sidebar-item="{&quot;title&quot;: &quot;Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;微型机器人传感与MicroBos实验室方向一致&quot;}">Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion</a>
