@@ -1,0 +1,95 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-14T20:19:24.503633+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-06-30-735479-v1",
+      "source": "biorxiv",
+      "title": "The MicroTron: a microfluidic platform for single cell studies in P. patens",
+      "abstract": "O_LIThe effect of some bioactive compounds on living organisms is dependent on their concentration and gradients, as is the case of hormones and signalling peptides, determining cell identity, activity and organism development.\nC_LIO_LIThere are a handful of methods that allow to produce spatially confined peaks of concentration local application of biochemicals on plants, such as agar blocks and microinjection, but they lack in precision, throughput and/or simplicity.\nC_LIO_LIWe developed the MicroTron, a microfluidics-based method specifically for filamentous organisms or life cycle stages, like the moss plant Physcomitrium patens protonemata, that serves as a platform for the application of chemicals on single cells and study the cell response.\nC_LIO_LIWe show how chemical applications could be performed on cells, either on the side or apically with dyes and hormones, targeting the cell wall, cell membrane, cytosol and nucleus.\nC_LIO_LITreatments could be applied on single filaments and with a precision of up to single cells in optimal conditions.\nC_LIO_LIThis method could be used to study live responses to chemicals with high spatiotemporal resolution.\nC_LI",
+      "authors": [
+        "Floriach-Clark, J.",
+        "Willemsen, V."
+      ],
+      "primary_category": "plant biology",
+      "categories": [
+        "plant biology"
+      ],
+      "published": "2026-07-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735479v1.full.pdf",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Microfluidic platform for single cell studies, relevant to EPFL MicroBos lab's microfluidics and single-cell technology",
+      "llm_evidence_cn": "用于单细胞研究的微流控平台，与EPFL MicroBos实验室的微流控和单细胞技术相关",
+      "llm_evidence": "用于单细胞研究的微流控平台，与EPFL MicroBos实验室的微流控和单细胞技术相关",
+      "canonical_evidence": "用于单细胞研究的微流控平台，与EPFL MicroBos实验室的微流控和单细胞技术相关",
+      "llm_tldr_en": "Presents MicroTron, a microfluidic platform for precise chemical application on single cells of filamentous organisms like P. patens, enabling controlled gradient studies.",
+      "llm_tldr_cn": "针对丝状生物单细胞研究中化学物质局部应用的精度和通量不足问题，本文开发了MicroTron微流控平台。该平台能够对藓类植物原丝体单细胞施加可控浓度的化学信号，并实时观察细胞反应。实验证明其比传统的琼脂块和显微注射方法更精确、更高通量。该技术为植物发育生物学和信号转导研究提供了有力工具。",
+      "llm_tldr": "针对丝状生物单细胞研究中化学物质局部应用的精度和通量不足问题，本文开发了MicroTron微流控平台。该平台能够对藓类植物原丝体单细胞施加可控浓度的化学信号，并实时观察细胞反应。实验证明其比传统的琼脂块和显微注射方法更精确、更高通量。该技术为植物发育生物学和信号转导研究提供了有力工具。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-07-01-735821-v1",
+      "source": "biorxiv",
+      "title": "Microfluidic Tissue Array Platform for Personalized Drug Screening Using Tumor Explants or Biopsies",
+      "abstract": "Despite major improvements in molecular characterization of breast cancer, current biomarkers still fall short in accurate treatment prediction. Interrogating tumor tissue ex-vivo in its native conformation is a direct strategy for guiding treatment of individual patients but presents a challenge. In this study, we developed a microfluidic tissue array (FTA) using small biopsy samples (< 1mm3) mimicking physiological flow for consistent exchange of nutrients and waste, retaining the tumor native stroma. Cell/patient-derived breast cancer xenograft tissues were maintained over 2 weeks in the array and their response to therapeutic agents, doxorubicin or neratinib, were interrogated. Drug response in the uFTA showed >2-fold reduction in tumor cell viability which corroborated tumor size shrinkage in mice bearing the same tumor load. EdU/Ki67 assays indicated selective retention of cells with higher proliferative capacity after drug treatment, underscoring in vivo clinical relevance. We have also developed a valved-FTA to increase throughput and variety of treatment conditions on the same chip. Together, this FTA can be staged as a powerful, low-cost benchtop theranostic tool for personalized cancer therapeutics compatible with FDAs New Approach Methods.",
+      "authors": [
+        "Ahmed, A. H. R.",
+        "Shao, H.",
+        "Colon-Cartega, L.",
+        "Wang, L.",
+        "Jiang, X.",
+        "Pareja, F.",
+        "Chandarlapaty, S.",
+        "Wang, S."
+      ],
+      "primary_category": "cancer biology",
+      "categories": [
+        "cancer biology"
+      ],
+      "published": "2026-07-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.07.01.735821v1.full.pdf",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Microfluidic tissue array platform, relevant to EPFL MicroBos lab's microfluidics research",
+      "llm_evidence_cn": "微流控组织芯片平台，与EPFL MicroBos实验室微流控研究相关",
+      "llm_evidence": "微流控组织芯片平台，与EPFL MicroBos实验室微流控研究相关",
+      "canonical_evidence": "微流控组织芯片平台，与EPFL MicroBos实验室微流控研究相关",
+      "llm_tldr_en": "Develops a microfluidic tissue array for personalized drug screening using tumor explants, maintaining native stroma and enabling 2-week culture and drug response testing.",
+      "llm_tldr_cn": "针对肿瘤药物筛选需求，本文提出一种微流控组织芯片平台（FTA），利用小活检样本模拟生理流动，保留肿瘤天然基质，维持培养超过两周。实验显示该平台能有效检测多柔比星和来那替尼的药物反应，可指导个体化治疗。该方法为肿瘤精准医疗提供了一种低成本、高通量的体外检测工具。",
+      "llm_tldr": "针对肿瘤药物筛选需求，本文提出一种微流控组织芯片平台（FTA），利用小活检样本模拟生理流动，保留肿瘤天然基质，维持培养超过两周。实验显示该平台能有效检测多柔比星和来那替尼的药物反应，可指导个体化治疗。该方法为肿瘤精准医疗提供了一种低成本、高通量的体外检测工具。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "label": "2026-07-14",
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T20:22:38",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202607/14/biorxiv-10-64898-2026-06-30-735479-v1-the-microtron-a-microfluidic-platform-for-single-cell-studies-in-p-patens",
+      "section": "quick",
+      "title_en": "The MicroTron: a microfluidic platform for single cell studies in P. patens",
+      "authors": "Floriach-Clark, J., Willemsen, V.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.06.30.735479v1.full.pdf",
+      "score": "7.0",
+      "evidence": "用于单细胞研究的微流控平台，与EPFL MicroBos实验室的微流控和单细胞技术相关",
+      "tldr": "生物活性化合物的浓度梯度决定细胞命运，但现有植物局部施药方法精度低、通量小。我们开发了MicroTron微流控平台，专用于丝状生物如苔藓原丝体，实现单细胞级别的化学物质定位施加。实验表明，可在侧向或顶端对细胞壁、膜、胞质及细胞核施加染料或激素，最优条件下精度达单细胞。该平台为实时细胞响应研究提供了高时空分辨率工具。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "O_LIThe effect of some bioactive compounds on living organisms is dependent on their concentration and gradients, as is the case of hormones and signalling peptides, determining cell identity, activity and organism development.\nC_LIO_LIThere are a handful of methods that allow to produce spatially confined peaks of concentration local application of biochemicals on plants, such as agar blocks and microinjection, but they lack in precision, throughput and/or simplicity.\nC_LIO_LIWe developed the MicroTron, a microfluidics-based method specifically for filamentous organisms or life cycle stages, like the moss plant Physcomitrium patens protonemata, that serves as a platform for the application of chemicals on single cells and study the cell response.\nC_LIO_LIWe show how chemical applications could be performed on cells, either on the side or apically with dyes and hormones, targeting the cell wall, cell membrane, cytosol and nucleus.\nC_LIO_LITreatments could be applied on single filaments and with a precision of up to single cells in optimal conditions.\nC_LIO_LIThis method could be used to study live responses to chemicals with high spatiotemporal resolution.\nC_LI",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/14/biorxiv-10-64898-2026-07-01-735821-v1-microfluidic-tissue-array-platform-for-personalized-drug-screening-using-tumor-explants-or-biopsies",
+      "section": "quick",
+      "title_en": "Microfluidic Tissue Array Platform for Personalized Drug Screening Using Tumor Explants or Biopsies",
+      "authors": "Ahmed, A. H. R., Shao, H., Colon-Cartega, L., Wang, L., Jiang, X., Pareja, F., Chandarlapaty, S., Wang, S.",
+      "date": "2026-07-09",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.07.01.735821v1.full.pdf",
+      "score": "7.0",
+      "evidence": "微流控组织芯片平台，与EPFL MicroBos实验室微流控研究相关",
+      "tldr": "乳腺癌现有生物标志物难以准确预测疗效。本研究开发微流控组织阵列平台，仅需小于1mm³的活检样本，即可在模拟生理流动的微环境中维持肿瘤组织原有基质2周以上。该平台成功检测到阿霉素和neratinib处理后肿瘤细胞活力降低超过2倍，与小鼠体内肿瘤缩小结果一致，且EdU/Ki67染色显示高增殖能力细胞被选择性保留。基于此，平台兼容FDA新方法框架，有望成为低成本、高通量的个性化抗癌治疗台式诊疗工具。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Despite major improvements in molecular characterization of breast cancer, current biomarkers still fall short in accurate treatment prediction. Interrogating tumor tissue ex-vivo in its native conformation is a direct strategy for guiding treatment of individual patients but presents a challenge. In this study, we developed a microfluidic tissue array (FTA) using small biopsy samples (< 1mm3) mimicking physiological flow for consistent exchange of nutrients and waste, retaining the tumor native stroma. Cell/patient-derived breast cancer xenograft tissues were maintained over 2 weeks in the array and their response to therapeutic agents, doxorubicin or neratinib, were interrogated. Drug response in the uFTA showed >2-fold reduction in tumor cell viability which corroborated tumor size shrinkage in mice bearing the same tumor load. EdU/Ki67 assays indicated selective retention of cells with higher proliferative capacity after drug treatment, underscoring in vivo clinical relevance. We have also developed a valved-FTA to increase throughput and variety of treatment conditions on the same chip. Together, this FTA can be staged as a powerful, low-cost benchtop theranostic tool for personalized cancer therapeutics compatible with FDAs New Approach Methods.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

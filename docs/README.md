@@ -6,26 +6,27 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-13
-- 运行时间：2026-07-13 20:03:21 UTC
+- 最新运行日期：2026-07-14
+- 运行时间：2026-07-14 20:22:32 UTC
 - 运行状态：成功
-- 本次总论文数：1
-- 精读区：1
-- 速读区：0
+- 本次总论文数：2
+- 精读区：0
+- 速读区：2
 
 ### 今日简报（AI）
-今日精读9分高影响力论文，聚焦电场约束运动的无绳微型机器人实现表面传感新突破。  
-该研究核心亮点在于利用电场精确控制微型机器人运动，实现高灵敏度表面检测，可拓展至精密微操作领域。  
-建议关注其未来在生物医疗、环境监测等场景的落地进程，思考能否解决现有传感技术的微小化与灵活性问题。
-- 详情：[/202607/13/README](/202607/13/README)
+今天精选2篇微流控平台应用研究，分别聚焦苔藓单细胞分析与肿瘤药物筛选。最值得关注的是面向临床的肿瘤组织芯片用于个性化用药测试，以及植物单细胞微流控新方法。建议关注微流控技术在精准医疗和单细胞生物学中的交叉应用趋势。
+- 详情：[/202607/14/README](/202607/14/README)
 
 ### 精读区论文标签
-1. [Untethered Micro-Robots for Surface Sensing through Electric-Field Confined Motion](/202607/13/2607.06705v1-untethered-micro-robots-for-surface-sensing-through-electric-field-confined-motion)  
-   标签：评分：9.0/10、query:sakar-selman
-   evidence：微机器人表面传感，与Selman Sakar的微机器人研究方向一致
+- 本次无精读推荐。
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [The MicroTron: a microfluidic platform for single cell studies in P. patens](/202607/14/biorxiv-10-64898-2026-06-30-735479-v1-the-microtron-a-microfluidic-platform-for-single-cell-studies-in-p-patens)  
+   标签：评分：7.0/10、query:sakar-selman
+   evidence：用于单细胞研究的微流控平台，与EPFL MicroBos实验室的微流控和单细胞技术相关
+2. [Microfluidic Tissue Array Platform for Personalized Drug Screening Using Tumor Explants or Biopsies](/202607/14/biorxiv-10-64898-2026-07-01-735821-v1-microfluidic-tissue-array-platform-for-personalized-drug-screening-using-tumor-explants-or-biopsies)  
+   标签：评分：7.0/10、query:sakar-selman
+   evidence：微流控组织芯片平台，与EPFL MicroBos实验室微流控研究相关
 
 
 <div class="dpr-home-promo-card">

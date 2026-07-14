@@ -1,0 +1,770 @@
+Title: 44417610
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.07.01.735821v1.full.pdf
+
+Number of Pages: 24
+
+Markdown Content:
+Microfluidic Tissue Array Platform for Personalized Drug Screening Using Tumor Explants or Biopsies 
+
+## Authors: 
+
+Ahmed, A.H.R. 1; Shao, H. 2; Colón-Cartega, L. 2; Wang, L. 3; Jiang, X. 2; Pareja, F. 2; Chandarlapaty, S. 2;Wang, S. 1
+
+> 1
+
+The City College of the City University of New York, New York, NY, USA 
+
+> 2
+
+Memorial Sloan-Kettering Cancer Center, New York, NY, USA 
+
+> 3
+
+VivoZ Biolabs, LLC., New York, NY, USA 
+
+## Abstract 
+
+Despite major improvements in molecular characterization of breast cancer, current biomarkers still fall short in accurate treatment prediction. Interrogating tumor tissue ex-vivo in its native conformation is a direct strategy for guiding treatment of individual patients but presents a challenge. In this study, we developed a microfluidic tissue array (μFTA) using small biopsy samples (< 1mm3) mimicking physiological flow for consistent exchange of nutrients and waste, retaining the tumor native stroma. Cell/patient-derived breast cancer xenograft tissues were maintained over 2 weeks in the array and their response to therapeutic agents, doxorubicin or neratinib, were interrogated. Drug response in the uFTA showed >2-fold reduction in tumor cell viability which corroborated tumor size shrinkage in mice bearing the same tumor load. EdU/Ki67 assays indicated selective retention of cells with higher proliferative capacity after drug treatment, underscoring in vivo clinical relevance . We have also developed a valved-μFTA to increase throughput and variety of treatment conditions on the same chip. Together, this μFTA can be staged as a powerful, low-cost benchtop theranostic tool for personalized cancer therapeutics compatible with FDA’s New Approach Methods. 
+
+## Introduction 
+
+Cancer is a multifaceted disease resulting from the expression of accumulated genetic mutations and epigenetic triggers. The heterogenous complexity of a whole tumor microenvironment implies that drug screening platforms for cancers cannot be limited to traditional cell line models using homogenous populations of cells. Cancer treatment itself can be highly multi-modal, and 
+
+cancer drugs have a low 3.4% success rate of approval from Phase 1 clinical trials  [1] .
+
+Traditional 2D cell culture platforms do not facilitate understanding the resistance or adaptation to drugs that cells in a 3D environment modulate based on interactions with other cellular and 
+
+non-cellular stromal partners  [1] . Cellular components modulate drug sensitivity, especially 
+
+cancer associated fibroblasts and endothelial cells [2] . Non-cellular components, including 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+alterations in the matrix stiffness, biochemical gradients and interstitial flow/pressure properties, 
+
+also modulate tumor growth and maintenance.  [3–6]  A holistic reconstruction of these structural 
+
+and functional environmental cues are crucial to obtaining more faithful trajectories of drug treatment regimen. The ease of processing, handling, and scaling up of 2D cultures cannot override the prognostic reliability from a fully perfused 3D system. 
+
+3D culture models to address 2D limitations. Some limitations of traditional 2D cultures are being addressed with emerging 3D tumor models that recapitulate or do not disrupt physiological tumors. Recapitulation typically involves formulation of the optimal extracellular matrix (ECM) 
+
+within which isolated tumor and supporting cells are reconstituted  [4,7] . Currently recognized 
+
+models include patient derived xenograft (PDX) and patient derived (cancer) organoids (PDO/PDCO), which harness the 3D format of tumor tissue microarchitecture. PDX are 
+
+generated in animals from patient tumorigenic cells  [8–10] , while PDOs use patient-derived 
+
+cancer/stem cell population to generate a heterogeneous tumor with a mix of aptly differentiated 
+
+cell types [9,11–15] . Chemosensitivity to standard therapeutic drugs can bear a good correlation 
+
+to patients’ clinical outcome from whose tumors the PDX or PDCOs are generated, although a significant change in progressions-free survival (PFS) or overall survival (OS) is not predicted 
+
+by these models  [16] . The newer approach of tumor spheroids enjoys a prolific utility due to ease 
+
+of generation compared to a complete PDX/PDCO model  [13,15,17,18] , as spheroids can be 
+
+generated from highly proliferating cancer cells without using special stem-cell differentiation media or waiting for differentiation into a fully heterogeneously populated tumor organoid over 
+
+long time  [3,13,16–18] .
+
+On the other hand, approaches relying on maintenance of the environment utilize the whole tumor in its original excised form, cultured as explants after mechanical reduction to a working size, and are supplemented with appropriately optimized media formulations - a prevalent 
+
+procedure exercised in ex vivo organotypic cultures (explant or micro-dissected types)  [19–23] .
+
+Organotypic cultures rely on directly culturing tumor explants ex vivo, and direct histoculture of patient derived explants (PDEs) - or their animal analogs in preliminary trials - have been 
+
+employed since the 1960s  [24–28] .
+
+Microfluidics-based 3D Culture Systems. Emerging paradigms of patient-specific drug testing using microfluidics have also been in the forefront over the last decade, including microfluidics-based culture (better known as organs-on-chips) and micro-organospheres (MOS). 
+
+One of the more famous organ-on-a-chip systems is the lung-on-a-chip  [29] . MOS systems 
+
+utilize the fluidic manipulatory capability of microfluidic systems to combine microfluidics and PDOs/PDCOs, generating mini-ecosystems of organoids within sorted droplets. As with PDOs/PDCOs or PDEs, early passages contain stromal cells, and allow for various immune 
+
+checkpoint assays as well. [30] 
+
+3D models are inadequate for personalized medicine. All the current standard models - 2D culture, spheroids, PDOs/PDCOs, PDEs, Organ-on-chip, and MOS systems - pose their own burden in modeling clinical outcomes for patients. For these 3D models that are reconstructed 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+using cell lines or isolated primary cells with hydrogel, their homogeneously bioartificial design lacks the complexity of native tumor microenvironment (TME) and thus is not sufficient for the 
+
+evaluation of drug responses and is not recognized by insurance companies  [31] . In the case of 
+
+PDX models, tumors in animals do not always establish successfully, being as low as 21-35% 
+
+success rate for breast cancer  [32] , while highly metastatic forms (e.g., the breast cancer 
+
+metastasis into the brain) from certain patients could be engrafted with a 100% uptake rate  [8] .
+
+Although over 90% tumor engraftment success has been reported for other cancer type/mouse combinations, including prostate, non-small cell lung, and head and neck cancers in NSG, NOG, or NOD/SCID mice, the typical success rate has a wide variance from 21-100%, and is influenced by individual patients, tumor acquisition method, host strain, implantation site, 
+
+sample volume, carrier matrix, and hormonal supplementation  [8,32] . Successful establishment 
+
+in itself can be a lengthy process. For PDX, throughput by design is low due to in-vivo growth time in mice. Broad variation in successful establishment accompanies PDO generation as well, 
+
+varying from 15% to 100% across cancer types  [33] , with the tumorigenic content of the 
+
+originating sample being a strong determinant in the process (e.g. for breast cancer tissue there is 
+
+>80% success rate vs ~20% for healthy tissue [14] ). Multi-omics screening can provide some 
+
+characteristic drug regimen, but is not always fully predictive [34] . In instances where 
+
+multi-omics screening does not provide a clear selection, off-label use of agents are routinely considered and may be covered by insurance if the drug is listed in an approved 
+
+compendium [35,36] . All these issues necessitate the development of a new model that : (1) 
+
+recapitulates tumor tissue structure and heterogeneity, (2) permits rapid but clinically relevant mid-to-high throughput assay systems to evaluate drug or combination treatment efficacy, (3) deliver the screening results in weeks instead of months, and (4) has a lower cost than PDX/PDO models 
+
+Shift from generative 3D models to direct tissue interrogation. Several ex-vivo methods using intact tumor explants alleviate the aforementioned shortcomings of 3D platforms . Ex-vivo platforms include using resized tissue blocks, slices, or cored biopsies in: (1) standard cell/tissue 
+
+cultureware with customized media formulations [37] , (2) standard cultureware placed on moving 
+
+platforms for flow [4,19,38] , (3) microfluidic systems for tissue trapping [20,39] , (4) microfluidic 
+
+systems with perfusion along a tissue edge [20,40] , (4) macrofluidic/microfluidic systems of 
+
+modified or custom cultureware platforms with mechano-electrical systems promoting perfusion 
+
+through the tissue pieces [41–43] . These systems can include scaffolds to support the 
+
+microtissues, using niche geometries of processed tumors in their systems. The geometries vary from blocks or discs a few millimeters across and hundreds of micrometers thick to long, cored out tissues a few centimeters long. These systems have throughput limitations or unreliable fidelity in emulating the controlled perfused nature of natural tissues in vivo , showing noticeable 
+
+loss in viability or functional activity after 24-72 hours of culture  [40] . Sustained perfusion is a 
+
+critical ex vivo factor in continued advective delivery of nutrients to deeper regions, and in maintaining interstitial mechanostimulation drivers of tissue growth. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+A new model that conserves tissue architecture and sustains perfusion. Here we develop a platform that allows a mid-throughput culture of whole tumor tissue samples that are microdissected to size (500-1000μm along each dimension). Our patented microfluidic tissue 
+
+array (μFTA)  [44]  addresses critical concerns with the previously published ex vivo platforms. 
+
+The μFTA (1) works with 500-1000μm thick tissue samples ; (2) supplies continuous and tunable 
+
+perfusion matching 0.1-10 μm/sec interstitial flow rates, facilitating nutrient, gas, and waste exchange; (3) provides an automated trapping mechanism for seeding tumor pieces, (4) permits direct on-chip viability and proliferation assays for drug treatment ; (5) has a structured design of micro-chambers that enable medium self-conditioning. We highlight direct tumor tissue culture in our μFTA using several xenograft models here, focusing on 2 cell-line derived xenografts (CDX) for initial system validation and 3 patient derived xenografts (PDX) models, with both model sets having a triple negative (HER2-/ER-/PR-) breast cancer (TNBC) or HER2+ types. Doxorubicin (for TNBC) or neratinib (for HER2+) was evaluated for efficacy in the μFTA. Our μFTA was able to maintain explanted PDX samples for two weeks. Overall, the efficacy of drug treatment was also successfully interrogated in our μFTA explant cultures, showing a correlation to in vivo treatments in mice. 
+
+## Results 
+
+## μFTA Device Design, Optimization, and Implementation 
+
+μFTA Manufacture and Utilization. The μFTA device consisted three layers, top media feeding layer (500-700μm depth), bottom tissue seeding layer (400-600μm depth), and middle layer (40-60μm) with pores (2x2 sets of 200μm-diameter) dispersed to interface flow between top and bottom layers. Our design allows for flowing small tumor pieces of size 0.03-1mm 3 through the bottom layer and media through the top layer. A trapping mechanism (“catcher”) is integrated into each individual chamber of the bottom layer (Fig. 1.A) with a trapping efficiency of 60-90%. Of several array formats (2x4, 4x4, 4x8) of the μFTA, two 4x4 are shown in Figures 1B-C, with food dye-stained water permeating the channels. The top layer lays out the connectivity for providing perfused flow to the tissues within the bottom layer through the porous middle layer. The flow-driven mechanism for microtissue entrapment shows captured pieces of tissue visible in the catchers of the bottom layer (Fig 1D). 
+
+CFD simulation was utilized to optimize the μFTA design and flow rates to simulate in vivo 
+
+interstitial flow around microtissues. Simulation results of 1ml/day flowrate is shown in Figures 1E(i-iii). Figure 1E(i) shows flow velocity around the tissue on the order of 0.1μm/sec (maximum 0.24μm/sec). Higher flow rates (not shown) are obtained proportionally by increased flow rate at the top layer inlet of the μFTA, with 5ml/day and 10ml/day producing maxima ~1.2 μm/sec and ~2.4μm/sec respectively around the simulated tissue piece. Figures 1E(ii) and 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+1E(iii), depicting glucose and oxygen levels around the tissue respectively, indicate the healthy maintenance of both nutrients via continuous perfusion, with glucose dropping by only 1% (1 to 0.99 g/L) and oxygen only by 5% (0.2 to 0.19 mol/m 3) from the first to the last of the four serially connected tissue culture chambers. Particle image velocimetric (PIV) data based on the 1-10ml/day flow rates validate simulation results as shown in Figures 1F(i-iii), with three regions of interest tracked: (1) the constricted part of the top layers’ media channel (Fig. 1F(i)) tracked for 4.03s, (2) the wider section in the top layer above the catcher for 25 seconds (Fig. 1F(ii)), and (3) directly at the opening of the catcher for 500 seconds (Fig. 1F(iii)). Matching regions of interest (insets) were also probed in the simulation model and measured from the μFTA PIV. The average velocities of the experimentally traced particles were 21.7 (±3.38)μm/s, 2.83 (±0.76)μm/s, and 0.103 (±0.019)μm/s in regions of Figures 1F(i),(ii), and (iii) respectively, agreeing with corresponding simulation results of 22.7 (±3.35)μm/s, 2.73 (±0.32)μm/s, and 0.113(±0.067)μm/s. (Supp. Fig. 2) 
+
+The valve mechanism compartmentalizing rows from communicating with each other was implemented as a post-assembly modification μFTA, designed as a one-time push valve button shown schematically in orthographic view (Fig. 1G(i)) alongside operational cross-sectional views for the open (Fig. 1G(ii)) and closed (Fig. 1G(iii)) states. The real valve is shown via a cross-section in the open (Fig. 1G(iv)) and closed (Fig. 1G(v)) states. Leakage across the valve was visually evaluated with clear or dyed water in one channel juxtaposed with dyed water in the adjacent channel across the valve (Fig. 1G(vi-viii)), showing no short- or long-term cross-talk through the closed valve (Fig. 1G(vii,viii)). In the open state, even under steady flow, the violet dye leaks into the clear (water) channel within the first 2 minutes (Fig. 1G(vi)). Once the valve is closed, the leakage is stopped and the two streams do not cross talk, as seen in the well-separated violet/clear (Fig. 1G(vii)) and violet/orange food-dye channels (Fig. 1G(viii)). The channel separation images captured at 5 minutes (Fig. 1G(vii, viii)) stayed stable over 24 hours. Doxorubicin used as an autofluorescent drug to detect cross-talk (Fig 1.G(ix)) in a valved and non-valved system showed no detectable cross-talk across the valve (Chamber# 9) over a 24-hour duration in the valved setup, maintaining doxorubicin below the 0.02% background signal at the 0% Dox input side. 
+
+## Growth And Drug Response of Tumor Tissues in μFTA with Functional Assays 
+
+Cell-Derived Xenograft (CDX) Explant Growth. Microdissected MDA-MB 231-GFP CDX tissue (murine) cultured for a week to assess the μFTA utility shows structural conformation and cell spreading. A sparse population of rounded, stranded cells are seen on Day 2 around the tumor piece [Fig. 2A(i-ii)], but by Days 5-7 [Fig. 2A(iii,v)] a monolayer of spindle-shaped cells forms around the tissue, typical of MDA-MB231 phenotype [insets of Fig. 2A(iv,vi)]. We also observe tissue pieces losing their sharply defined edge and presenting a softer, more rounded edge by Day 5. Within 3 days of doxorubicin treatment, tissues clear out to look translucent under phase contrast microscopy and the monolayer around the tissue is removed, indicating massive cell loss. The cleared regions lack GFP signal, confirming absence of cells [Supp. Fig. 2]. Viability 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+assays of 1 week μFTA culture of wild type MDA-MB 231 (without GFP) revealed an overall 4-fold increase in peripheral viability (p<0.002). For BT474 CDX, there were no statistically strong differences between tissues cultured in the μFTA vs static culture measured through RFP signals or viability assay [Supp. Fig. 4A]. There was also no difference in the tumorigenic cell content between the two conditions, measured as the ratio of RFP to Hoechst stained cells. However, there are strong morphological differences between μFTA [Fig. 2B(ii-iii)] and static [Fig. 2B(iv-v)] conditions, observed in the formation of spontaneous “budding” spheroids on the edge of the tumors within the μFTA. These buds are rich in tumor cells (strong RFP signal), indicating the spontaneous outgrowth of tumorigenic cells not realized in static cultures. 
+
+PDX Explant Growth. A 2-week culture of M37 PDX samples in μFTA show an impetuous growth of spheroid “buds” of highly active and proliferating cells on tissue pieces [Fig. 2C(ii-v)]. In the sample shown, two buds sprouting by Day 3 [Fig. 2C(ii)] shift and merge into a larger, single spheroid by Day 5 [Fig. 2C(iii)], and by Day 14, this super-bud engulfs the originating tissue [Fig. 2C(v)]. In Fig. 2C(vi), the viability staining from the budding piece on top to a non-budding one at the bottom shows a vivid Calcein-AM signal on the buds themselves compared to the rest of the tissues around. M37 samples cultured under static conditions, on a culture plate or PDMS surface, show highly suppressed viability by Day 4 compared to Day 0 (p<0.0001, Supp. Fig. 5A). The μFTA maintains a comparable viability to Day 0, with the peripheral region indicating recovery and increased viability compared to the core (p<0.01). Doxorubicin treatment had no noticeable effect on the viability of M37 [Supp. Fig. 5B], and no negative effect on proliferation (EdU). In M156 PDX samples [Fig. 2D], a 7-day μFTA culture showed two-fold higher proliferative cell content compared to the initial tumor piece [Fig. 2D(ii)], especially closer to the periphery region (N = 9, p<0.01, Supp. Fig. 4(c)). Tissue core viability showed a modest but non-significant improvement. 
+
+PDX (M271) Explant and in vivo Analogue Drug Responses. On-chip M271 viability and proliferation micrographs are depicted in Figures 3A and 3B, respectively. Following a 72 hour culture period, a 96-hour 1X neratinib (180nM) treatment has a mild, non-significant effect on tumor viability compared to the vehicle [Fig.3A(iii) vs (i)]; however, a 10X dose (1800nM) causes significant cell death within the tumor mass [p<0.001, N=16, Fig. 3A(iv)] seen as large, dead regions marked via Ethidium Homodimer. Data is summarized in Fig. 3D(i). No significant difference in proliferation is seen between the drug vs vehicle samples in the μFTA [Fig. 3D(ii)]. Parallel experiments done in vivo in mice indicate similar trends, with all tumor volumes shrinking to <100 mm 3 for initially 130-200mm 3 tumors by day 30 of neratinib administration. All non-treated mice retain 125mm 3-215mm 3 tumors at the end of 30 days. Notably, the effect of neratinib on treated mice presented after Day 18 [Day 25 in Fig.3D(ii)] of treatment, compared to only 96 hours in the μFTA. Western blot results of excised tumors from the mice show absence of HER2+ expression in neratinib-treated mice. [Total HER2, Fig.3C]. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+M271: Histology/Immunostaining. Histological staining of μFTA-cultured tumor samples corroborate in-device viability/proliferation assay results [Fig 4B]. Ki67 indicating cell proliferation shows a significant (P<0.05) increase by about 30-45% (~32% and 36% between average values) between untreated (vehicle) vs drug-treated (1X or 10X) conditions for the same 7-day period [Fig 4.B, Ki67%]. TUNEL staining indicates a cellular death rate accentuated by drug treatment, (P<0.05) ramping up TUNEL expression by 75% under 10X Neratinib, while a statistically insignificant change of ~32% is seen in the 1X treated samples[Fig 4B, TUNEL%]. Severely elevated necrosis levels occur in Neratinib treated samples compared to low necrosis (~9%) in untreated tissue at Day 7: 1X Neratinib shows a necrosis level of ~40% (P<0.05), and 10X Neratinib at ~68% (P<0.01) [Fig 4.B, Necrosis%]. 
+
+## Discussion and Conclusion 
+
+The μFTA chip was designed to work with microdissected tumors of size <1 mm 3, with a minimum of 0.5mm along one dimension. We used optically clear, gas-permeable, biocompatible PDMS (polydimethylsiloxane) commonly employed in BioMEMS to facilitate gas exchange and imaging. Our μFTA design includes catchers that entrap tissue samples automatically as they are carried via flow. Design optimization is done through computational models and particle velocimetry verification to mimic the physiological flow regime around the tumor tissue (0.1-1μm/sec), to theoretically keep the tumors in their most native mechano-stimulatory state. Separating seeding and feeding layers allow independent tuning of each, with a defined porous zone connecting them for nutrient and waste exchange. The tunability of the flow profile is one of the major strengths of the μFTA compared to contemporary organotypic tissue culture 
+
+platforms.  [4,20,48] 
+
+Development of cancer therapies utilize ex vivo modalities, including tissue culture plates, transwells, microfluidic networks, or other custom-made culture platforms, available in 2D or 3D formats. 2D cultures are easy to handle but the results can severely detract from realistic 
+
+outcomes, often contradictory to their 3D counterparts [1,5,7,49] . 3D cultures entail many 
+
+formats - from the simplest cell-in-gel suspensions or spheroids to meticulously generated organoids, animal xenograft models, or complex pre-designed microfluidic architectures. While both patient-derived xenografts (PDX) or organoids (PDOs) can serve as concordant analogs to indicate treatment prognosis, model development can be arduously long, averaging up to 3-12 
+
+weeks for PDOs or PDXs inclusive of drug testing  [9,12,14,16,32] . Other detrimental factors 
+
+impacting these models are the digestion processes that remove the originating extracellular matrix (ECM), and reconstitute cells in foreign matrix (e.g. Matrigel) with custom growth factors (in PDOs), or, replaced by animal (non-human) ECM in PDX. Variable success rates in tumor establishment of PDX preclude high-yield capacity for personalized medicine. Regardless, PDX and PDO formats current ex vivo gold standards for the closest in vivo mimics. 
+
+Direct testing of primary tumor tissues without disseminating the integral architecture of the original tissue is a vital step up from PDX/PDO models. Successful culture and therapeutic 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+interrogation of primary tumor tissues should (1) reduce time and failure rate for tumor generation as a sustained culture; (2) preserve, at least short term, all cellular and extracellular components (including immune cell populations); (3) indicate functional drug response directly from a patient tumor to adjudicate well-tailored personalized therapeutics. Several works incorporating whole tissue using custom-made devices or defined culture protocols lack well-characterized mechanical (flow) and nutrient exchange parameters expected in vivo . Our work here addresses these shortcomings by engineering a μFTA which provides (1) physiologically matched continuous flow (0.1-1μm/sec) for mechanostimulation, (2) sustained delivery of fresh nutrients or therapeutic agents and removal of waste, (3) ease of automated flow-guided seeding of microdissected tissue pieces into an array for technical replicates, and (4) a culture unit structured for media self-conditioning. Interstitial flow-derived mechanotransduction is a crucial component for healthy or tumor tissue morphogenesis and 
+
+functional maintenance  [50–52] , and drug effects rely on proper advective drivers via interstitial 
+
+flow  [53] . The viability and physiological replicability of the ex vivo microdissected tissue 
+
+culture is enhanced by enabling these crucial flow and self-conditioning factors. The μFTA was able to sustain whole tissue from various tumor types over up to 2 weeks, maintaining the primary tumor’s biomarker expression and permitting concordant drug treatment results. 
+
+There is a strong incentive for cancer treatment screening technologies that significantly improve quality of life for patients by selecting an efficient treatment regimen conducive to successful remission with minimal recurrence risk tailored to the individual. Current US insurance policies lack support for whole tissue ex vivo testing as cost beneficial for personalized medicine coverage, while accepting the potential value of these platforms from several retrospective studies that fall short of tipping the scale beyond existing contemporary methods. Outside of the US, explant culture platforms are accepted by health insurance to be profound screening tools for personalized medicine, one such example in Japan where collagen droplet screening (spheroid cultures, or PDCOs) and histological drug resistance assays (HDRAs using whole explant) has 
+
+been supported by insurance since 2012 [16] . Through future validation and systemic 
+
+integrations, we anticipate our μFTA to be an everyday diagnostic tool alongside standard assay and sequencing measures to enhance the tailoring of much-needed treatments across individual patients. For validation, more patient samples comparable to their clinical outcomes are necessary. For systemic integrations, the current μFTA will be integrated with our work on a 
+
+recirculating chip module  [30] , such that immunological effects can be inserted onto the 
+
+interrogated biopsy samples. This will add another dimension towards a complete picture of physiological response that entails immunological interactions and biologics, especially involving immune checkpoint interactions. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+## Methods: 
+
+## Media/Drug Formulation 
+
+Unless otherwise stated, for all culture conditions, Fetal Bovine Serum, Premium (FBS) was from Atlanta Biologicals, USA; Penicillin-Streptomycin (P/S), Phosphate buffered saline (PBS), high glucose Dulbecco’s Modified Eagle Media (DMEM-HG) from Gibco/Thermo-Fisher Scientific, USA; Doxorubicin Hydrochloride (Dox) and Hybricare 46X Media (46X) from Sigma-Aldrich, USA; Neratinib (Cat #A8322) from APExBIO, USA . Any complete media (DMEM-HG or 46X) is formulated from the basal media by adding 10% FBS and 1% P/S. 
+
+## μFTA and Valve - Design and Manufacture 
+
+The μFTA was designed first by drawing the masks using Adobe Illustrator and KLayout. The 3-layer μFTA device comprises three separate layers - the top feeding, bottom tissue-seeding, and middle porous membranes as the integral parts. Trapping mechanisms (“catchers”) are integrated into the tissue-seeding layer to trap the tissue pieces within individual chambers. Various designs were created and tested before settling on a final prototype, in formats of 4x2, 4x4, or 8x4 arrays. The devices were manufactured through standard soft photolithography microfabrication techniques at our core fabrication facility (Nanofabrication Facility at the Advanced Science Research Center, CUNY, NY, USA), using negative photoresist SU-8 (Microchem, USA) as the molding photoresist and polydimethyl-siloxane (PDMS, Dow Corning, USA) as the casting material. 
+
+We used PE/3 tubing (Scientific Commodities, Inc, USA) for media flow, and 3/8in x 5/8in (ID x OD) medical grade Tygon tubing (US Plastics Corp., USA) for tissue seeding. The manufactured devices were tested with food dye or isopropyl alcohol (IPA) for leaks and to ensure fluid perfusion across the middle interface layer. The devices were then fully flushed with ethanol (70%v/v) and exposed to UV light for 1 hour for sterilization. 
+
+A physical valve was implemented into a cylindrical section cut away from a fully fabricated 4x2 array format μFTA (Fig. 1.G(i)). The cut-away section is located along the channel in between two rows on the bottom layer and was not removed from the μFTA. A leak-proof adapter was built atop this cut-away section, and a hermetic seal below it. The top adapter is structured to allow a plug (push button) to be pushed through it, dislocating the cut-away section of the device, by obstructing the bottom channel. The hermetic seal under the cut-away is a 0.5-1mm deep PDMS well that is structured within it, with a thin piece of glass (No. 2, Corning) bonded underneath for rigidity. The bottom seal and top adapter were then bonded under and over the valve cut-away section, respectively, using PDMS as an adhesive. Leakage was quantified by flowing two solutions at 1ml/day: (i) 100%: 10μg/ml Doxorubicin in 1X Phosphate Buffered Saline and (ii) 0%: just PBS. The two solutions are flowed parallel to each other across the valve, 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+and the fluorescence of the doxorubicin can be measured using 470/560 nm excitation/emission spectra to quantify dox levels leaking across the valve. The flow is maintained for 24 hours. As per the schematic shown in Fig. 1.D.(v), the 100% input chamber C4 and 0% input chamber C5 for the non-valved system are monitored for cross-talk of doxorubicin, representing the corresponding chambers that would be immediately across the valve. Thus, chambers C9 and C10 for the valved system are monitored for any doxorubicin leakage. 
+
+## CFD optimization 
+
+Computational Fluid Dynamics Model. The CFD software used for the simulation was COMSOL v5.0.The simulation was set up with standard physical parameters and a previously 
+
+measured glucose consumption rate  [45] . Briefly, standard water density (~1g/ml), standard 
+
+diffusion coefficients for glucose, O 2, and CO 2 in water and PDMS were used (on the order of 10 -9 m2/s). The glucose consumption rate as estimated from a previously conducted cell culture experiment is 5.2721x10 -5 mol/(m 3*s). The device was modeled using three feeding rates: receiving 1ml/day, 5ml/day, and 10ml/day of the appropriate media (glucose concentration of 1g/L). A central, elliptical cylinder (approximate volume of 263μl) was used as a region to model the tissue sample with a permeability of 10 -15 m2. The laminar flow module (Brinkman model) coupled with a Dilute Species Reaction module in COMSOL were used. 
+
+## Flow Verification via Particle Imaging Velocimetry (PIV) 
+
+Flow profile in the device was recorded through fluorescent particle tracking (particle imaging velocimetry, or PIV). Orange fluorescent latex beads of 2μm mean diameter and 1.012g/cm 3
+
+mean density (Sigma-Aldrich, USA) were suspended in water and flowed into the μFTA at various velocities corresponding to the 1,5,or 10 ml/day CFD simulations. The epifluorescent particles were tracked by our AxioObserver Z.1 microscope (Carl Zeiss), using time lapse or fixed framerate videography. The particles are traced over a certain time frame (4,10, or 50 seconds). Traces were tracked in Blender v2.7.1 or Adobe Photoshop CS6 (Adobe, Inc.), segmented in MATLAB v7 (Mathworks, Inc.), and matched to the framerate to calculate particle velocity. This velocimetry data was compared to CFD simulation under free flow conditions (without any tumor piece) to validate simulated flow profiles against observed recordings. 
+
+## Cell-line Derived Tumor Xenograft Models 
+
+Cell-derived (CDX) Models for device validation. MDA-MB231 triple negative (ER-/PR-/HER-) cancer cells (ATCC, USA) were cultured in complete high-glucose Dulbecco’s Modified Eagle Medium (DMEM-HG), formulated with 10% FBS and 1% Penn-Strep. MB231 cells with Green Fluorescent protein (GFP) were obtained from the Jiang Lab at MSKCC. Cells were inoculated by injecting 5 x 10 6 cells in 50% matrigel subcutaneously in the left and right flanks of 4-6-week-old female NOD/SCID mice. Tumor growth was externally monitored daily via 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+calipers. Mice were sacrificed when the tumor exceeded a 10mm diameter and tumors were harvested for ex vivo μFTA device experiments. BT474 (HER2+) cells with or without Red Fluorescent Protein (RFP) expression were similarly used to generate the HER2+ CDX model. 
+
+## Patient-Derived Tumor Xenograft Models 
+
+Patient derived (PDX) Models. M271(ER+/ PR- /HER2+), M37 (HER2+), and M156 (triple negative breast cancer, TNBC) are xenograft models that were derived from patient biopsies clinically characterized as breast cancer at the Chandarlapaty lab at MSKCC. The generation and 
+
+propagation of M37 was described in a prior work [46] . M271 and M156 PDXs were obtained 
+
+from patients who sign an informed consent form according to the Human Biological Samples 
+
+Policy. Six to eight week-old female NOD scid gamma (NSG) mice  [47]  were purchased from 
+
+the Jackson Laboratory . Three days before tumor implantation took place, estrogen pellets (0.18mg) were implanted subcutaneously into one flank of each mouse. Patient biopsies were dissected into thin 3x5 mm pieces and subcutaneously implanted into the opposite flank with a 10-gauge trochar. Animals were monitored daily for visible tumor growth, animal weights and tumor measurements were performed weekly to monitor changes in health. After the tumors reached 150 to 200 mm 3, the mice were sacrificed, and the tumors were excised in a sterile manner. Tumor re-implantation was performed similarly. This PDX establishment protocol was approved by the IACUC review board at MSKCC. 
+
+## Tissue transport, sizing and seeding into the μFTA 
+
+All harvested xenograft tumors (PDX or CDX) were transported in ice-cold PBS or RPMI media (with 1% Penn-Strep) within 45 minutes from MSKCC to CCNY. Each explanted tumor, about 0.5-1 cm diameter ellipsoids, were placed into a 10-cm petri dish with a 3-5ml mix of complete DMEM medium and PBS in a 1:1 ratio (DMEM-PBS) at room temperature. Each explant sample was carefully minced manually to around 0.5mmx0.5mmx0.5mm sized micro-dissected tissue pieces. These microtissues were seeded into the μFTA via syringe as a suspension of 20-30 pieces per 5ml of media. 
+
+The sterilized μFTA device was primed with IPA, then flushed with sterile DD water, PBS, and complete or serum-free media sequentially. A syringe containing 20-30 pieces of microtissues suspended in ~5ml of media was dispensed into the bottom layer at a controlled rate of 50-200 μl/sec. The pieces are secured in place by the catchers within the device μFTA. After tissue seeding, fresh complete media was introduced into the μFTA through the top and bottom layers. The outlets were sealed with waterproof inserts constructed of PDMS-filled tubing. The μFTA was then ready for culture via continuous media supply through the feeding layer. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+## Tissue Culture and Treatment 
+
+Our experimental conditions have been briefed in the following table (all conditions implicitly have carrier controls, and were cultured in the μFTA unless specified): 
+
+Xenograft Type  HER2 status 
+
+Culture Condition 
+
+(#N or #D) 
+
+Culture Substrate  Assays/Stains 
+
+MDA-MB 231 
+
+- GFP 
+
+- 7N+4D Dox  μFTA  Micrograph Observation 
+
+MDA-MB 231  - 3N+4D Dox (2μg/ml, 20μg/ml) 
+
+3N+4D Ner (180nM, 1800nM) 
+
+μFTA  Viability 
+
+BT-474 - RFP  + 7N  μFTA  Hoechst dye 
+
+BT-474  + 3N+4D Ner (180nM, 1800nM)  μFTA  Viability 
+
+M156 
+
+(BRCA1 mutant) 
+
+- 7N  μFTA  Viability, Proliferation 
+
+M37 
+
+(Ner resistant) 
+
++ 4N+3D Dox (2μg/ml, 20μg/ml)  TC well plate, PDMS-coated surface, μFTA 
+
+Viability, Proliferation 
+
+M271 
+
+(Ner sensitive) 
+
++ 3N+4D  μFTA  Viability, Proliferation, Histology 
+
+M271 
+
+(Ner sensitive) 
+
++ 7 days after tumor injection, 3 days/week p.o. of Ner (20mg/kg), up to 36 days 
+
+In-vivo (mice)  Physical measurement, Western Blot 
+
+Table 1: Culture conditions for each of the cell-derived xenograft (CDX) or patient derived xenograft (PDX) samples. #N = Number of days in normal culture media; #D = number of days in drug containing media; Ner = Neratinib, Dox = Doxorubicin. TC = Tissue Culture. MDA-MB 231 (CDX) and M156 are triple negative(ER-/PR-/HER2-). BT 474 (CDX), M37 (PDX), and 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+M271 (PDX) are HER2+, but only M37 is Neratinib resistant. “With GFP/RFP” indicates cells were transfected with GFP or RFP expressing genes. 
+
+## Functional Assays 
+
+All functional assay staining dyes were obtained from Fisher Scientific, USA, branded as Invitrogen™ Molecular Probes™, unless otherwise stated. The live/dead dyes used were Calcein-AM, Ethidium Homodimer-1, Hoechst (FluoroPure™ Hoechst 33342, Trihydrochloride, Trihydrate), while proliferation was assayed using the Invitrogen™ Molecular Probes™ Click-iT™ Plus EdU Alexa Fluor™ 555 or Alexa Fluor™ 488 Imaging Kit. Stock solutions for Calcein-AM and Ethidium Homodimer (EthD-1) were prepared as 2μg/μl formulations in DMSO. Hoechst 33342 was available as an aqueous stock solution of 1 mg/ml (16mM). For the μFTA, we use a working concentration of ~ 1:250 dilution each of Calcein-AM and EthD-1, and ~1:500 dilution of Hoechst in prepared in complete (CalEthHt-CM) or serum-free media (CalEthHt-SF) in the appropriate tissue culture media (DMEM-HG or 46X). 
+
+For viability assays, the μFTA is flushed through the feeding layer with 2.5-3ml of CalEthHt-CM prepared above at 200-300μl/min for the first 1.5ml, and then at 1ml/hr for 40 minutes. The dispensing solution is then changed to CalEthHt-SF and perfused for 1 hour at 1ml/hr. The μFTA is kept in the incubator at 37 oC and 5% CO 2 culture conditions during the staining steps. Finally, the μFTA was perfused with PBS for 1.5-2 hours at 1-1.5ml/hr to clear the staining solution and media. 
+
+For proliferation assays, the final EdU staining cocktails are formulated as per manufacturer’s protocol in 2.5ml batches. Tissue samples were cultured 16-18 hours in EdU to obtain distinctly stained signals. The 1000X EdU stock was diluted to a 2X dilution in complete media (DMEM-HG or 46-X) and replaced the normal culture media for overnight perfusion. The media was cleared out by washing with PBS for 25-30 minutes@100μl/min, followed by 4% PFA fixing for 2 hours@50-75μl/min. Any intermediate washing or blocking steps recommended in the manufacturer’s protocol for adherent cells on a slide was adopted as a 75μl/min flow rate into the μFTA, for a minimum of 30-45 minutes. The 2.5ml EdU staining cocktail was perfused over a duration of 1.5-2 hours in the μFTA. 
+
+Samples for immunohistochemistry of Neratinib treated M271 cells were sent for processing to the MSKCC core facility, for standard hematoxylin and eosin (H&E) staining, along with TUNEL , Ki67, and HER2 immunostaining. The stained samples were subsequently analyzed via the expertise of two breast pathologists (FP and LCC). 
+
+Static Culture/Out-of-Device Staining . Staining on tissue culture well plates were done at a similar time scale and concentration as the μFTA. For viability staining, tissue samples were kept on an orbital shaker set to 60 rpm with CalEthHt-CM for about 1 hour, followed by a PBS wash for another hour on the shaker. For proliferation staining, tissue samples were first placed in well 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+plates on an orbital shaker at 60 rpm with media containing 2X EdU for 2 hours in the incubator. The plates are then moved off the shaker to be left in the incubator overnight. The period of staining on the culture plate and μFTA was kept the same. The EdU staining cocktail was retained in the wells for 1.5-2 hours on the 60 rpm shaker. 
+
+Image Analysis. Tissue fluorescence image analysis algorithms were developed in-house in MATLAB v.2017b for automated segmentation and quantitative analysis, and an end-result graphic flowchart is depicted in Supp. Fig. 6. Optimized segmentation algorithms were used to differentiate live, active regions from dead regions. The tissue was also categorized into “peripheral” and “core” regions, where the peripheral region is defined up to a depth of ~100 μm from the surface, and the “core” as deeper regions. A nonlinear weighting compensates for depth-dependent signals. For “whole tissue” measures, both the “core” and “periphery” were included. 
+
+Statistical Analysis of Image Data. Quantitative live/dead or proliferation signal data acquired through the steps in “Image Analysis” section above are analyzed using the non-parametric Kruskall-Wallis test, followed by a post-hoc Dunn-Bonferroni test using Microsoft Excel. Since our samples do not strictly follow a parametric profile, we choose the non-parametric analytics over standard ANOVA. 
+
+## Acknowledgements: 
+
+Funding was provided by: (1) NIH/NCI U54 CA132378 (2) Pershing Square Sohn Prize for Young Investigators in Cancer Research, (3) NSF TI 1938430, and (4) CUNY ASRC CAT Program. 
+
+We would also like to acknowledge the substantial efforts and contributions of Dr. Helen Kang and Dr. Jiao Wu from the Jiang Lab at MSKCC. Dr. Helen Kang has been pivotal at the initial stages of the project when we tested our μFTA with CDX samples, which paved the way for great progress with PDX samples which are at the centerpiece of this paper. Dr. Jiao Wu has offered her technical expertise in preparing and analyzing histology sections and providing more CDX samples. 
+
+## References 
+
+[1]  Y. Imamura, T. Mukohara, Y. Shimono, Y. Funakoshi, N. Chayahara, M. Toyoda, N. 
+
+Kiyota, S. Takao, S. Kono, T. Nakatsura, H. Minami, Comparison of 2D- and 3D-culture 
+
+models as drug-testing platforms in breast cancer, Oncol. Rep. 33 (2015) 1837–1843. 
+
+https://doi.org/10.3892/or.2015.3767. 
+
+[2]  C.-W. Chi, Y.-H. Lao, A.H.R. Ahmed, E.C. Benoy, C. Li, Z. Dereli-Korkut, B.M. Fu, K.W. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+Leong, S. Wang, High-Throughput Tumor-on-a-Chip Platform to Study Tumor–Stroma 
+
+Interactions and Drug Pharmacokinetics, Adv. Healthc. Mater. 9 (2020) 2000880. 
+
+https://doi.org/10.1002/adhm.202000880. 
+
+[3]  Assessment of Breast Cancer Stem Cell Activity Using a Spheroid Formation Assay | 
+
+Springer Nature Experiments, (n.d.). 
+
+https://experiments.springernature.com/articles/10.1007/978-1-0716-1979-7_33 (accessed 
+
+February 13, 2024). 
+
+[4]  K.A.T. Naipal, N.S. Verkaik, H. Sánchez, C.H.M. van Deurzen, M.A. den Bakker, J.H.J. 
+
+Hoeijmakers, R. Kanaar, M.P.G. Vreeswijk, A. Jager, D.C. van Gent, Tumor slice culture 
+
+system to assess drug response of primary breast cancer, BMC Cancer 16 (2016) 78. 
+
+https://doi.org/10.1186/s12885-016-2119-2. 
+
+[5]  J.B. Kim, R. Stein, M.J. O’Hare, Three-dimensional in vitro tissue culture models of breast 
+
+cancer — a review, Breast Cancer Res. Treat. 85 (2004) 281–291. 
+
+https://doi.org/10.1023/B:BREA.0000025418.88785.2b. 
+
+[6]  M.J. Bissell, A. Rizki, I.S. Mian, Tissue architecture: the ultimate regulator of breast 
+
+epithelial function, Curr. Opin. Cell Biol. 15 (2003) 753–762. 
+
+[7]  T. Gudjonsson, L. Rønnov-Jessen, R. Villadsen, M.J. Bissell, O.W. Petersen, To create the 
+
+correct microenvironment: three-dimensional heterotypic collagen assays for human breast 
+
+epithelial morphogenesis and neoplasia, Methods San Diego Calif 30 (2003) 247–255. 
+
+[8]  M. Oshi, M. Okano, A. Maiti, O.M. Rashid, K. Saito, K. Kono, R. Matsuyama, I. Endo, K. 
+
+Takabe, Novel Breast Cancer Brain Metastasis Patient-Derived Orthotopic Xenograft 
+
+Model for Preclinical Studies, Cancers 12 (2020) 444. 
+
+https://doi.org/10.3390/cancers12020444. 
+
+[9]  J. Gao, J. Lan, H. Liao, F. Yang, P. Qiu, F. Jin, S. Wang, L. Shen, T. Chao, C. Zhang, Y. 
+
+Zhu, Promising preclinical patient-derived organoid (PDO) and xenograft (PDX) models in 
+
+upper gastrointestinal cancers: progress and challenges, BMC Cancer 23 (2023) 1205. 
+
+https://doi.org/10.1186/s12885-023-11434-9. 
+
+[10]  G.V. Echeverria, S. Cai, Y. Tu, J. Shao, E. Powell, A.B. Redwood, Y. Jiang, A. McCoy, 
+
+A.L. Rinkenbaugh, R. Lau, A.J. Trevarton, C. Fu, R. Gould, E.E. Ravenberg, L. Huo, R. 
+
+Candelaria, L. Santiago, B.E. Adrada, D.L. Lane, G.M. Rauch, W.T. Yang, J.B. White, J.T. 
+
+Chang, S.L. Moulder, W.F. Symmans, S.G. Hilsenbeck, H. Piwnica-Worms, Predictors of 
+
+success in establishing orthotopic patient-derived xenograft models of triple negative breast 
+
+cancer, Npj Breast Cancer 9 (2023) 1–9. https://doi.org/10.1038/s41523-022-00502-1. 
+
+[11]  Z. Dantes, L. Huang, J. Slawska, A. Manjunath, S. Zormaier, L. Ferreira, A. Steininger, F. 
+
+Mandlmeier, K. Steiger, N. Pfarr, M. Kiechle, R. Rosell, M. Dantes, K. Lindner, W. 
+
+Weichert, C. Peschel, S. Paepke, Onco-PDO test utilizing patient-derived organoids (PDOs) 
+
+and next-generation precision oncology in breast cancer., J. Clin. Oncol. 41 (2023) 
+
+e13594–e13594. https://doi.org/10.1200/JCO.2023.41.16_suppl.e13594. 
+
+[12]  Z. Zhao, X. Chen, A.M. Dowbaj, A. Sljukic, K. Bratlie, L. Lin, E.L.S. Fong, G.M. 
+
+Balachander, Z. Chen, A. Soragni, M. Huch, Y.A. Zeng, Q. Wang, H. Yu, Organoids, Nat. 
+
+Rev. Methods Primer 2 (2022) 1–21. https://doi.org/10.1038/s43586-022-00174-y. 
+
+[13]  W. Li, Z. Zhou, X. Zhou, B.L. Khoo, R. Gunawan, Y.R. Chin, L. Zhang, C. Yi, X. Guan, M. 
+
+Yang, 3D Biomimetic Models to Reconstitute Tumor Microenvironment In Vitro: 
+
+Spheroids, Organoids, and Tumor-on-a-Chip, Adv. Healthc. Mater. 12 (2023) 2202609. 
+
+https://doi.org/10.1002/adhm.202202609. 
+
+[14]  S. Mazzucchelli, F. Piccotti, R. Allevi, M. Truffi, L. Sorrentino, L. Russo, M. Agozzino, L. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+Signati, A. Bonizzi, L. Villani, F. Corsi, Establishment and Morphological Characterization 
+
+of Patient-Derived Organoids from Breast Cancer, Biol. Proced. Online 21 (2019) 12. 
+
+https://doi.org/10.1186/s12575-019-0099-8. 
+
+[15]  M. Zanoni, M. Cortesi, A. Zamagni, C. Arienti, S. Pignatta, A. Tesei, Modeling neoplastic 
+
+disease with spheroids and organoids, J. Hematol. Oncol.J Hematol Oncol 13 (2020) 97. 
+
+https://doi.org/10.1186/s13045-020-00931-0. 
+
+[16]  Y. Tsukamoto, Y. Hirashita, T. Shibata, S. Fumoto, S. Kurogi, C. Nakada, K. Kinoshita, T. 
+
+Fuchino, K. Murakami, M. Inomata, M. Moriyama, N. Hijiya, Patient-Derived Ex Vivo 
+
+Cultures and Endpoint Assays with Surrogate Biomarkers in Functional Testing for 
+
+Prediction of Therapeutic Response, Cancers 15 (2023) 4104. 
+
+https://doi.org/10.3390/cancers15164104. 
+
+[17]  M. Zanoni, F. Piccinini, C. Arienti, A. Zamagni, S. Santi, R. Polico, A. Bevilacqua, A. 
+
+Tesei, 3D tumor spheroid models for in vitro therapeutic screening: a systematic approach 
+
+to enhance the biological relevance of data obtained, Sci. Rep. 6 (2016) 19103. 
+
+https://doi.org/10.1038/srep19103. 
+
+[18]  T. Mulholland, M. McAllister, S. Patek, D. Flint, M. Underwood, A. Sim, J. Edwards, M. 
+
+Zagnoni, Drug screening of biopsy-derived spheroids using a self-generated microfluidic 
+
+concentration gradient, Sci. Rep. 8 (2018) 14672. 
+
+https://doi.org/10.1038/s41598-018-33055-0. 
+
+[19]  A. Grinshpun, N. Gavert, R.Z. Granit, H. Masuri, I. Ben-Porath, S. Breuer, A. Zick, S. 
+
+Rosenberg, M. Maoz, A. Granit, E. Pikarsky, R. Straussman, T. Peretz, A. Sonnenblick, 
+
+Ex-vivo organ culture as potential prioritization tool for breast cancer targeted therapy, 
+
+Cancer Biol. Ther. 19 (2018) 645–648. https://doi.org/10.1080/15384047.2018.1450114. 
+
+[20]  L.F. Horowitz, A.D. Rodriguez, T. Ray, A. Folch, Microfluidics for interrogating live intact 
+
+tissues, Microsyst. Nanoeng. 6 (2020) 1–27. https://doi.org/10.1038/s41378-020-0164-0. 
+
+[21]  S. Misra, C.F. Moro, M. Del Chiaro, S. Pouso, A. Sebestyén, M. Löhr, M. Björnstedt, C.S. 
+
+Verbeke, Ex vivo organotypic culture system of precision-cut slices of human pancreatic 
+
+ductal adenocarcinoma, Sci. Rep. 9 (2019) 2133. 
+
+https://doi.org/10.1038/s41598-019-38603-w. 
+
+[22]  C. Roelants, C. Pillet, Q. Franquet, C. Sarrazin, N. Peilleron, S. Giacosa, L. Guyon, A. 
+
+Fontanell, G. Fiard, J.-A. Long, J.-L. Descotes, C. Cochet, O. Filhol, Ex-Vivo Treatment of 
+
+Tumor Tissue Slices as a Predictive Preclinical Method to Evaluate Targeted Therapies for 
+
+Patients with Renal Carcinoma, Cancers 12 (2020) E232. 
+
+https://doi.org/10.3390/cancers12010232. 
+
+[23]  A. Schmidt, J.E. Huber, Ö. Sercan Alp, R. Gürkov, C.A. Reichel, M. Herrmann, O.T. 
+
+Keppler, T. Leeuw, D. Baumjohann, Complex human adenoid tissue-based ex vivo culture 
+
+systems reveal anti-inflammatory drug effects on germinal center T and B cells, 
+
+EBioMedicine 53 (2020) 102684. https://doi.org/10.1016/j.ebiom.2020.102684. 
+
+[24]  F.L. Archer, Normal and neoplastic human tissue in organ culture. Reaction to 
+
+environmental factors, Arch. Pathol. 85 (1968) 62–71. 
+
+[25]  R.R. Guerrero, D.E. Rounds, J. Booher, An Improved Organ Culture Method for Adult 
+
+Mammalian Lung, In Vitro 13 (1977) 517–524. 
+
+[26]  H. Autrup, L.A. Barrett, F.E. Jackson, M.L. Jesudason, G. Stoner, P. Phelps, B.F. Trump, 
+
+C.C. Harris, Explant culture of human colon, Gastroenterology 74 (1978) 1248–1257. 
+
+https://doi.org/10.1016/0016-5085(78)90701-1. 
+
+[27]  P.P. Williams, J.E. Gallagher, Preparation and long-term cultivation of porcine tracheal and 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+lung organ cultures by alternate exposure to gaseous and liquid medium phases, In Vitro 14 
+
+(1978) 686–696. https://doi.org/10.1007/BF02616165. 
+
+[28]  E.A. Hillman, M.G. Valerio, S.A. Halter, L.A. Barrett-Boone, B.F. Trump, Long-Term 
+
+Explant Culture of Normal Mammary Epithelium, Cancer Res. 43 (1983) 245–257. 
+
+[29]  D. (Dan) Huh, A Human Breathing Lung-on-a-Chip, Ann. Am. Thorac. Soc. 12 (2015) 
+
+S42–S44. https://doi.org/10.1513/AnnalsATS.201410-442MG. 
+
+[30]  C.-W. Chi, Y.-H. Lao, A.H.R. Ahmed, S. He, T. Merghoub, K.W. Leong, S. Wang, Enabling 
+
+continuous immune cell recirculation on a microfluidic array to study immunotherapeutic 
+
+interactions in a recapitulated tumour microenvironment, Lab. Chip 24 (2024) 396–407. 
+
+https://doi.org/10.1039/D3LC00662J. 
+
+[31]  D. Khorsandi, J.-W. Yang, S. Foster, S. Khosravi, N. Hosseinzadeh Kouchehbaghi, F. Zarei, 
+
+Y.B. Lee, F. Runa, A. Gangrade, L. Voskanian, D. Adnan, Y. Zhu, Z. Wang, V. Jucaud, 
+
+M.R. Dokmeci, X. Shen, F. Bishehsari, J.A. Kelber, A. Khademhosseini, N.R. de Barros, 
+
+Patient-Derived Organoids as Therapy Screening Platforms in Cancer Patients, Adv. 
+
+Healthc. Mater. 13 (2024) e2302331. https://doi.org/10.1002/adhm.202302331. 
+
+[32]  C. Chen, W. Lin, Y. Huang, X. Chen, H. Wang, L. Teng, The Essential Factors of 
+
+Establishing Patient-derived Tumor Model, J. Cancer 12 (2021) 28–37. 
+
+https://doi.org/10.7150/jca.51749. 
+
+[33]  E.M. Tosca, D. Ronchi, D. Facciolo, P. Magni, Replacement, Reduction, and Refinement of 
+
+Animal Experiments in Anticancer Drug Development: The Contribution of 3D In Vitro 
+
+Cancer Models in the Drug Efficacy Assessment, Biomedicines 11 (2023) 1058. 
+
+https://doi.org/10.3390/biomedicines11041058. 
+
+[34]  O. Menyhárt, B. Győrffy, Multi-omics approaches in cancer research with applications in 
+
+tumor subtyping, prognosis, and diagnosis, Comput. Struct. Biotechnol. J. 19 (2021) 
+
+949–960. https://doi.org/10.1016/j.csbj.2021.01.009. 
+
+[35]  Off-label Use of Drugs, (n.d.). 
+
+https://www.cancer.org/cancer/managing-cancer/treatment-types/off-label-drug-use.html 
+
+(accessed December 25, 2023). 
+
+[36]  Off-Label Drug Use in Cancer Treatment - NCI, (2014). 
+
+https://www.cancer.gov/about-cancer/treatment/drugs/off-label (accessed December 25, 
+
+2023). 
+
+[37]  R. Hass, C. Bertram, Characterization of human breast cancer epithelial cells (HBCEC) 
+
+derived from long term cultured biopsies, J. Exp. Clin. Cancer Res. CR 28 (2009) 127. 
+
+https://doi.org/10.1186/1756-9966-28-127. 
+
+[38]  L.M. Roelofsen, P. Voabil, M. de Bruijn, P. Herzig, A. Zippelius, T.N. Schumacher, D.S. 
+
+Thommen, Protocol for ex  vivo culture of patient-derived tumor fragments, STAR Protoc. 4 
+
+(2023) 102282. https://doi.org/10.1016/j.xpro.2023.102282. 
+
+[39]  M. Astolfi, B. Péant, M.A. Lateef, N. Rousset, J. Kendall-Dupont, E. Carmona, F. Monet, F. 
+
+Saad, D. Provencher, A.-M. Mes-Masson, T. Gervais, Micro-dissected tumor tissues on 
+
+chip: an ex vivo method for drug testing and personalized therapy, Lab. Chip 16 (2016) 
+
+312–325. https://doi.org/10.1039/C5LC01108F. 
+
+[40]  S.M. Hattersley, C.E. Dyer, J. Greenman, S.J. Haswell, Development of a microfluidic 
+
+device for the maintenance and interrogation of viable tissue biopsies, Lab. Chip 8 (2008) 
+
+1842–1846. https://doi.org/10.1039/B809345H. 
+
+[41]  K. Domansky, W. Inman, J. Serdy, A. Dash, M.H.M. Lim, L.G. Griffith, Perfused multiwell 
+
+plate for 3D liver tissue engineering, Lab. Chip 10 (2010) 51–58. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+https://doi.org/10.1039/B913221J. 
+
+[42]  P.M. van Midwoud, M.T. Merema, E. Verpoorte, G.M.M. Groothuis, A microfluidic 
+
+approach for in vitro assessment of interorgan interactions in drug metabolism using 
+
+intestinal and liver slices, Lab. Chip 10 (2010) 2778–2786. 
+
+https://doi.org/10.1039/C0LC00043D. 
+
+[43]  P.M. van Midwoud, G.M.M. Groothuis, M.T. Merema, E. Verpoorte, Microfluidic biochip 
+
+for the perifusion of precision-cut rat liver slices for metabolism and toxicology studies, 
+
+Biotechnol. Bioeng. 105 (2010) 184–194. https://doi.org/10.1002/bit.22516. 
+
+[44]  S. Wang, A.H.R. Ahmed, X. Jiang, C.-W. Chi, C. Li, Layered microfluidic array, 
+
+US11118150B2, 2021. https://patents.google.com/patent/US11118150B2/en (accessed 
+
+September 17, 2024). 
+
+[45]  A.H.R. Ahmed, Application of Computational Fluid Dynamics as a Simulation-based 
+
+Design Guide in a Microfluidic 3D Living Cell Array (3D LCA) Device, CUNY Acad. 
+
+Works (2013). https://academicworks.cuny.edu/cc_etds_theses/176. 
+
+[46]  A. Lopez-Albaitero, H. Xu, H. Guo, L. Wang, Z. Wu, H. Tran, S. Chandarlapaty, M. 
+
+Scaltriti, Y. Janjigian, E. de Stanchina, N.-K.V. Cheung, Overcoming resistance to 
+
+HER2-targeted therapy with a novel HER2/CD3 bispecific antibody, Oncoimmunology 6 
+
+(2017) e1267891. https://doi.org/10.1080/2162402X.2016.1267891. 
+
+[47]  005557 - NSG Strain Details, (n.d.). https://www.jax.org/strain/005557# (accessed January 
+
+28, 2025). 
+
+[48]  D. Dorrigiv, K. Simeone, L. Communal, J. Kendall-Dupont, A. St-Georges-Robillard, B. 
+
+Péant, E. Carmona, A.-M. Mes-Masson, T. Gervais, Microdissected Tissue vs. Tissue 
+
+Slices—A Comparative Study of Tumor Explant Models Cultured On-Chip and Off-Chip, 
+
+Cancers 13 (2021) 4208. https://doi.org/10.3390/cancers13164208. 
+
+[49]  K. Chitcholtan, E. Asselin, S. Parent, P.H. Sykes, J.J. Evans, Differences in growth 
+
+properties of endometrial cancer in three dimensional (3D) culture and 2D cell monolayer, 
+
+Exp. Cell Res. 319 (2013) 75–87. https://doi.org/10.1016/j.yexcr.2012.09.012. 
+
+[50]  T. Chen, M. Buckley, I. Cohen, L. Bonassar, H.A. Awad, Insights into interstitial flow, 
+
+shear stress, and mass transport effects on ECM heterogeneity in bioreactor-cultivated 
+
+engineered cartilage hydrogels, Biomech. Model. Mechanobiol. 11 (2012) 689–702. 
+
+https://doi.org/10.1007/s10237-011-0343-x. 
+
+[51]  M. Ferrarini, N. Steimberg, M. Ponzoni, D. Belloni, A. Berenzi, S. Girlanda, F. 
+
+Caligaris-Cappio, G. Mazzoleni, E. Ferrero, Ex-Vivo Dynamic 3-D Culture of Human 
+
+Tissues in the RCCS TM Bioreactor Allows the Study of Multiple Myeloma Biology and 
+
+Response to Therapy, PLOS ONE 8 (2013) e71613. 
+
+https://doi.org/10.1371/journal.pone.0071613. 
+
+[52]  D.L. Hughes, A. Hughes, Z. Soonawalla, S. Mukherjee, E. O’Neill, Dynamic Physiological 
+
+Culture of Ex Vivo Human Tissue: A Systematic Review, Cancers 13 (2021) 2870. 
+
+https://doi.org/10.3390/cancers13122870. 
+
+[53]  D. Fukumura, R.K. Jain, Tumor microenvironment abnormalities: Causes, consequences, 
+
+and strategies to normalize, J. Cell. Biochem. 101 (2007) 937–949. 
+
+https://doi.org/10.1002/jcb.21187. 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint Figure 1. Conceptualization, development, functional testing and performance validation of microfluidic tissue array (μFTA). (A) An exploded conceptual CAD rendering of the layered structure and flow direction in the μFTA, showing the top media flow layer (red), bottom tissue seeding layer (green), and the pore-laden middle layer (blue) interfacing the top and bottom. (B) 
+
+First generation PDMS prototype of the 4x4 μFTA, with long, meandering, diffusion-limiting channels between chambers. The bottom layer is perfused with red dye, while the top media layer’s individual channels are shown with different dye colors (red, blue, yellow, green, respectively, from left to right). The typical chamber region in the bottom layer and the catcher location are marked. (C) A second-generation μFTA device with reduced footprint. The bottom and top layers are filled with red and blue dyes, respectively. (D) Microdissected tumor samples trapped in the μFTA catchers. (E) (i-iii) Particle tracking velocimetry at different times scales, using fluorescent 2μm latex beads within the perfused media; insets indicate probing locations. Particle traces (i) in the top layer between chambers; (ii) in the top layer above the tissue catcher of the bottom layer; (iii) in the bottom layer at the catcher. (F) CFD results from COMSOL at the bottom layer, showing the (i) velocity profile, (ii) glucose concentration, and (iii) 
+
+oxygen concentration, under emulated nutrient consumption rates and biotransport factors. (G) 
+
+Valve prototype and testing, shown first as a (i) CAD rendered model, and an (ii) initially open state and (iii) pushed, closed state. (iv-v) A cutaway cross section of the real, PDMS-push valve in the μFTA showing the (iv) open and (v) closed states. (vi-viii) Valve in action showing cross-talk across the valve using a mix of clear or colored food dyes under flow conditions. (vi) 
+
+Image with valve open, within 2 minutes of the flow initiating in both channels - top channel running clear water and the bottom running violet food dye in water. (vii) Image of the device in (vi) with closed valve, taken 5 minutes after flow initiation. (viii) Close valve setup with an orange food dye in top channel, and same violet dye in the other channel. Image taken after 5 minutes since flow began. (ix) Schematic representation of a long term valve test setup, to measure detectable cross-talk across the valved chambers over 24 hours 
+
+Figure 2. Culture and viability or proliferative characterization of CDX and PDX models in the μFTA. Micrographs of the culture of xenografts generated from the cell lines (A) GFP-expressing MDA-MB231 (triple negative) and (B)RFP-expressing BT474 (HER2+) over the course of a week are shown. (C) A patient-derived xenograft model, M37 (HER2+), was cultured for up to 14 days (i-v), with (vi) end stage viability staining. (D) A triple negative patient derived xenograft, M156, was cultured for a week, and proliferation staining was assayed on (i) day 0 and on (ii) day 7. 
+
+Figure 3. Drug screening of cultured PDX model M271 (HER2+) in the μFTA. M271-derived xenografts were cultured for a period of 3 days (72 hours) followed by 4 days (+96 hours) of treatment with vehicle, 1X or 10X Neratinib concentration. (A) Viability staining of the (i) initial tumor state, (ii) vehicle, (iii) 1X neratinib, and (iv) 10X neratinib are shown, with the corresponding phase contrast micrograph in the first column. (B) Proliferation assay via EdU staining kit is (i) initial tumor state, (ii) vehicle, (iii) 1X neratinib, and (iv) 10X neratinib as well, corresponding to the same time points as the viability stain in (A). (C) Western blot assay from the in-vivo arm of the neratinib treated/non-treated mice indicating the high presence of Ki67 and HER2 in mice receiving no treatment (vehicle) compared to neratinib-treated mice. (D) Fluorescence assay analysis via in-house image processing algorithms, measuring the (i) 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted July 2, 2026. ;https://doi.org/10.64898/2026.07.01.735821 doi: bioRxiv preprint
+
+noticeably increased cell death with increased drug dose (10X), and (ii) no statistically significant shift in proliferation over the assayed time points (0 hours, 72 hours, +96 hours of vehicle/drug treatment). (iii) Measurement of the in vivo tumor xenograft size in mice. [*: p<5%, ***:p<1%] 
+
+Figure 4. Immunohistochemical evaluation of M271 microdissected tissue cultured and treated in the μFTA. (A) H&E, HER2, Ki67, and TUNEL staining of representative samples of each condition going from left to right columns are shown, with the initial state of the tumor (Day 0), followed by a 3 day culture with 4 day vehicle treatment (72Hr + 96 hours Vehicle), 3 day culture with 4 day treatment of 1X dose of Neratinib (72Hr + 96 hours 1X Neratinib), and 3 day culture with 4 day treatment of 10X dose of Neratinib (72Hr + 96 hours 10X Neratinib). H&E stains indicate loss of cellularity in drug treated samples. Strong HER2 expression is visible across cells present within the tumor. Ki67 and TUNEL data are summarized in (B) , wherein the change in Ki67 (proliferation) is mild between the drug-treated and vehicle samples, but both TUNEL (cell apoptosis) and necrosis area present a consistent increase with increasing drug dose. (N = 20; n(Day 0) = 6 , n(Vehicle) = 6, n(1X) = 4, n(10X) = 4; *: p<5% , **:p<1%, ).
