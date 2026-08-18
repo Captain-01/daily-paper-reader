@@ -1,0 +1,689 @@
+Title: Modeling and Control of an Eel-Inspired Soft Robot for Design Optimization
+
+URL Source: https://arxiv.org/pdf/2608.14860v1
+
+Published Time: Tue, 18 Aug 2026 00:13:00 GMT
+
+Number of Pages: 7
+
+Markdown Content:
+# Modeling and Control of an Eel-Inspired Soft Robot for Design Optimization 
+
+Zhangjingyi Jiang 1 and Mark Campbell 1
+
+Abstract— Anguilliform locomotion is a highly efficient swimming mode; the advent of new materials for soft robots enables the development of an eel-inspired soft robot. This paper presents a simulation model of an eel-inspired soft robot designed for anguilliform swimming. This model can aid in design optimization and the development of model-based estimation, reasoning, and control systems. A Finite Element Method (FEM) model of an elastic rod is used to capture the soft materials of the robotic fish, which makes it particularly amenable to variation over time as the material properties change. The material model is coupled with a hydrodynamic force model to simulate the behavior of a soft, elongated robot in water. The model is used to demonstrate the effectiveness of the proposed control approaches in achieving desired swimming behaviors. It also provides insights into design decisions, including the robustness of different system configurations and the impact of material degradation and failure. The results show that slightly asymmetric designs are advantageous, offering comparable swimming velocities but greater maneuverability. This model can be used to guide future robotic design decisions aimed at optimizing performance for specific tasks. 
+
+I. INTRODUCTION Anguilliform locomotion, the undulatory swimming style used by eels and other elongated vertebrates [1], is a highly efficient swimming mechanism [2], [3], [4], [5]. Compared to trout, eels use four to six times less energy when swimming at the same speed [2], [3], [4]. Most eel-like robots primarily focus on building a prototype and enabling basic swimming motion rather than optimizing design, improving swimming efficiency, or enhancing goal-seeking capabilities [6], [7], [8], [9]. The beauty of bio-inspired robotics lies in the ability to adapt designs for specific applications. A simulation platform that captures the physical characteristics of the soft robot and basic hydrodynamics enables the optimization of design parameters to meet key system goals, such as cruising and maneuvering, before building a physical prototype. Furthermore, such a model can be used to develop model-based algorithms for estimation, reasoning, and control. Autonomous underwater vehicles (AUVs) have many potential applications [11], one of which is approaching, finding, and sensing new, unexplored areas. A soft eel-like robot with autonomous anguilliform swimming capabil-ities could enable many impactful applications such as undersea infrastructure intelligent maintenance [9], deep sea exploration [12], and under-ice data collection [13].       
+
+> 1Zhangjingyi Jiang, Mark Campbell are with the Department of Mechanical and Aerospace Engineering, Cornell University
+
+zj224@cornell.edu, mc288@cornell.edu  
+
+> Fig. 1. Physical fish robot from UCSD Bioinspired Robotics and Design Lab [10]
+
+An example of such is the modular eel-inspired soft robot (Figure 1) from the Bio-inspired Robotics and Design Lab at the University of California San Diego (UCSD) [10]. Many of these applications are challenging due to the harsh environmental conditions and commu-nication difficulties [14]. The robustness of autonomous robots continuing to operate in these conditions, even when material deterioration, damage, and failure occur, is essential in these deployments because it is extremely difficult and expensive, if not impossible, to locate and retrieve the robots. Optimizing system parameters (either offline or online) to facilitate sustained, efficient swimming that is resilient to damage and deterioration that may occur during operation will extend mission durations and support the robot’s return to base for necessary repairs and maintenance. II. MODEL A Finite Element Method (FEM) model of a free-floating elastic rod (Figure 2) was used to simulate the internal forces and dynamics of the robotic fish. A simplified hydrodynamic force model was used to simulate the external fluid forces acting on the robot. The fish robot is split into n 
+
+> τ
+
+sections, with each 
+
+τ acting on every element within that section. In this paper, ”node” represents a finite element, and ”actuator” represents a collection of nodes with the same torque input. In Figure 2, there are n 
+
+> τ
+
+actuators, each with 4 nodes. A. FEM Model of the Soft Robot A 2-dimensional model of an elastic rod with free-free ends is generated using Finite Element Method (FEM). The rod is separated into ne number of elements. A set number of torque input actuators n 
+
+> τ
+
+are distributed across the rod, simulating n 
+
+> τ
+
++ 1 links. Each node has 3 degrees of freedom: qi = [xi yi
+
+θi
+
+]′. Stacking ne elements together, the model is as follows: 
+
+M ¨q(t) + Kq(t) = Q(t) (1) arXiv:2608.14860v1 [cs.RO] 14 Aug 2026 Fig. 2. FEM model of fish robot with n 
+
+> τtorque inputs.
+
+where M and K are the global mass and stiffness matrices respectively. Q is a vector of global forces, and 
+
+q is a vector of n = 3ne global degrees of freedom. 
+
+Q(t) = 
+
+βww +
+
+βuu (2) where the input forces are expressed in terms of dis-turbances w and control inputs u,
+
+βw is the disturbance input influence coefficient, and 
+
+βu is the control input influence coefficient. The global mass and stiffness matrices M and K can be derived from the mass and stiffness matrices for individual beam finite elements: 
+
+mi =
+
+ρrAcl
+
+420 
+
+
+
+140 0 0 70 0 00 156 22 l 0 54 −13 l
+
+0 22 l 4l2 0 13 l −3l2
+
+70 0 0 140 0 00 54 13 l 0 156 −22 l
+
+0 −13 l −3l2 0 −22 l 4l2
+
+
+
+(3) 
+
+ki = EI l3
+
+ 
+
+> l2Ac
+> I
+
+0 0 − l2Ac 
+
+> I
+
+0 00 12 6l 0 −12 6l
+
+0 6l 4l2 0 −6l 2l2
+
+− l2Ac 
+
+> I
+
+0 0 l2Ac 
+
+> I
+
+0 00 −12 −6l 0 12 −6l
+
+0 6l 2l2 0 −6l 4l2
+
+
+
+(4) where 
+
+ρr is the robot (beam) density, Ac is the cross sectional area, l is the length of beam segment, E is the Young’s Modulus of the beam material, I is the area moment of inertia. The variables used are shown in Table I. These values were inspired by the modular eel-inspired soft robot (Figure 1) [10], with modifications made to reflect a larger fish robot with more active actuators. A key attribute of this model is that each element is parameterized. This allows the parameters of each ele-ment to be independent, thus being capable of capturing the difference in material properties along the soft robot in addition to the change in material properties over time. B. Hydrodynamic Force Model The drag force for an object moving in a fluid can be expressed as follows: 
+
+FD = 12CD
+
+ρ f sv 2 (5) where CD is the drag coefficient, 
+
+ρ f is the fluid density, 
+
+s is surface area, v is object velocity [15]. Drag forces are assumed perpendicular to the robot surface because shear forces are insignificant at relatively high Reynolds numbers (Re) where many fish operate [16], [17]. The hydrodynamic force acting on the side of the robot for each finite element can be expressed as: 
+
+FDside = − 12CD
+
+ρ f s · sign (V · e 
+
+> θ
+
+)( V · e 
+
+> θ
+
+)2 · e 
+
+> θ
+
+(6) where e 
+
+> θ
+
+is the transverse unit vector indicating the direction perpendicular to the finite element, and V is the velocity vector of the finite element, calculated as: 
+
+V =
+
+[ ˙x
+
+˙y
+
+]
+
+=
+
+[1 0 0 0 1 0 
+
+]
+
+˙q (7) The hydrodynamic drag force acting on the tip of the robot head can be expressed as: 
+
+FDhead = − 12CD ·
+
+ρ f se f f · sign (Vhead · er)( Vhead · er)2 · er (8) where er is the radial unit vector indicating the orientation of the robot head, Vhead is the velocity vector of the head, and seff is the effective surface area of the head, calculated as 14 the cross-sectional area of the head. Therefore, the total drag force can be expressed as: 
+
+FD = FDhead + FDside (9) The variables used are shown in Table II. The drag coefficient CD was chosen based on previous measure-ments done on another eel-inspired soft robot [6]. The fluid density 
+
+ρ f was chosen to be that of water because initial experiments for a physical fish robot will be done in water.                                     
+
+> TABLE I FEM Model Parameters Variables Values Number of Elements ne20
+> Number of Torque Inputs (Actuators) n
+> τ5
+> Material Density
+> ρr(kg ·m−3)1200
+> Young’s Modulus of Material E(N·m−2)1x10 6
+> Rod Length L(m)1
+> Rod Cross-Sectional Area AC(m2)7.85 x10 −3
+> Surface Area of an Element s(m2)2
+> πrl /ne
+> Torque Input Locations ℓ
+> τ
+> 1: n
+> τ(m)[1613122356]
+
+III. CONTROLS Like other elongated anguilliform swimmers, Eels gen-erate motion by undulating their bodies with travel-ing waves [18], [19]. Previous works on anguilliform swimming robots have utilized many forms of control, including pulse signals with shift phase to control ac-tuator valves [6], predetermined controls for different gaits (forward, turning, sideways, spinning) [20], and a receding horizon controller [21]. We chose to use an open-loop traveling sinusoidal wave with bias as the torque input because it produces a natural swimming motion while also being simple and efficient, allowing for optimization for swimming inputs. A. Linear Velocity Control The torque input on each joint actuator for linear swimming can be expressed as: τ j = A j sin (
+
+ωt +
+
+ϕ j) (10) where j is the joint index, 
+
+τ j is the torque input on the 
+
+jth joint, A j is the amplitude for the jth joint, 
+
+ω is the oscillation frequency, t is the current time, 
+
+ϕ j is the phase shift for the jth joint. The input vector is then: 
+
+u = [ 
+
+τ1
+
+τ2 . . . 
+
+τn 
+
+> τ
+
+] (11) The set of n 
+
+> τ
+
+amplitude ratios A1: n 
+
+> τ
+
+= [ A1 : A2 : . . . : An 
+
+> τ
+
+]
+
+and 
+
+ω can be optimized to have the highest steady-swimming linear velocity for the current shape design. The magnitude of the linear velocity can be controlled by multiplying the optimized A1: n 
+
+> τ
+
+by a constant CA ∈ [0, 1]
+
+or by multiplying the optimized 
+
+ω by a constant C 
+
+> ω
+
+∈
+
+[0, 1]. Backward swimming can be achieved by reversing ϕ j. The modified linear velocity control torque can be expressed as: 
+
+u = [ CA · A1: n 
+
+> τ
+
+] sin (C 
+
+> ω
+
+·
+
+ωt +
+
+ϕ1: n 
+
+> τ
+
+) (12) B. Angular Velocity Control Turning can be achieved by adding a torque offset to the linear velocity control. The torque input for turning can be expressed as: 
+
+u = [ CA · A1: n 
+
+> τ
+
+] sin (C 
+
+> ω
+
+·
+
+ωt +
+
+ϕ1: n 
+
+> τ
+
+) + 
+
+τO 
+
+> 1: n
+> τ
+
+(13) The torque offset ratio 
+
+τO 
+
+> 1: n
+> τ
+
+= [ 
+
+τO 
+
+> 1
+
+:
+
+τO 
+
+> 2
+
+: . . . :
+
+τOn 
+
+> τ
+
+] can be optimized to have the highest steady-swimming angular velocity for the current shape design. The magnitude of angular velocity and turning radius can be controlled by multiplying the optimized 
+
+τO 
+
+> 1: n
+> τ
+
+by a constant CO 
+
+> τ
+
+∈       
+
+> TABLE II Hydrodynamic Force Parameters Variables Values Drag Coefficient CD0.167 [6] Fluid Density
+> ρf(kg /m3)10 3
+
+[−1, 1]. Turning direction is controlled by the direction of the torque offset. The modified angular velocity control torque can be expressed as: 
+
+u = [ CA · A1: n 
+
+> τ
+
+] sin (C 
+
+> ω
+
+·
+
+ωt +
+
+ϕ1: n 
+
+> τ
+
+) + CO 
+
+> τ
+
+·
+
+τO 
+
+> 1: n
+> τ
+
+(14) The variables used are shown in Table III. The ampli-tude ratio A1: n 
+
+> τ
+
+was found by sweeping combinations of amplitudes A j ∈ [0, 5] and choosing A1: n 
+
+> τ
+
+with the highest steady swimming linear velocity. The torque offset ratio 
+
+τO 
+
+> 1: n
+> τ
+
+was found by sweeping combinations of amplitudes 
+
+τOj ∈ [0, 5] and choosing 
+
+τO 
+
+> 1: n
+> τ
+
+with the highest steady swimming angular velocity. The oscillation frequency 
+
+ω
+
+was chosen based on the predicted limitations of the physical robot actuators.             
+
+> TABLE III Control Parameters Variables Values Amplitude Ratio A1: n
+> τ[20 20 16 4 4 ]
+> Oscillation Frequency
+> ω*(Hz )1.5
+> Phase Shift
+> ϕ(rads )2
+> π/n
+> τ≈1.2566
+> Joint Index j1: n
+> τ[1 2 3 4 5 ]
+> Torque Offset Ratio
+> τO
+> 1: n
+> τ[3.5 5 .5 6 .5 6 .5 3 .5]
+> *all actuators are oscillating at the same frequency
+
+IV. RESULTS AND DISCUSSION In this paper, the model was used to demonstrate the simulated fish robot undergoing linear swimming, turning, and accelerating from and decelerating to rest. The model was then used to study three key design questions, the robustness of a symmetrical design to torque input degradation/failure, the performance of symmetric vs. asymmetric designs, and the robustness of asymmetrical designs to actuator degradation/failure. Steady swimming linear velocity and turning radius were used as a measure of robustness, with lower turning radius indicating the ability to make tighter turns. In sections B, C, D, all of the velocities and turning radii mentioned are optimal values. Thus the robot fish can be made to swim at any velocity lower than said values and any turning radii higher than said values by adjusting the CA,C 
+
+> ω
+
+, and CO 
+
+> τ
+
+values. The simulations were run on a 2.4 GHz 8-Core i9 processor. A current iteration of this simulator can run at over 3300 Hz (time-steps per second). A. Demonstration of Controls Three sets of controls (Table IV) are enacted on the robot to demonstrate swimming straight, slight turning, and hard turning capabilities on the simulated robot (Figure 3). The results show the robot accelerating from rest and varying levels of turning. Adjusting the control parameters is intuitive (increasing CA,C 
+
+> ω
+
+increases ve-locity, and increasing the magnitude of CO 
+
+> τ
+
+decreases the turning radius for tighter turns), and there is a smooth transition between different sets of controls. -1 0 1 2 3 4 5 6 7
+
+> x position (m)
+> -0.5 00.5 11.5 22.5 3
+> y position (m)
+> Demonstrations of Controls 1 - Head Path
+> Linear Swimming/Turning
+> Robot at Initial Postion Robot at Final Position Swimming Straight Slight Left Turn Hard Right Turn
+
+Fig. 3. Demonstration of the robot swimming straight (blue), slight turning left (green), and hard turning right (red) for t = 15 s
+
+each 
+
+Four sets of controls (Table V) are enacted on the robot to demonstrate acceleration from and breaking to rest on the simulated robot (Figure 4). The results show that the robot can accelerate from rest and cruise using the controls proposed above, and the robot can successfully decelerate to rest by reversing the phase shift and flipping the amplitude ratio A1: n
+
+τ .B. Robustness to Actuator Degradation/Failure AUVs face unique challenges compared to other au-tonomous robots, including damage from marine life swimming into or latching onto the robot and the degradation of components over time. Communication difficulties and the harsh deployment environments make retrieval of the robot difficult. Therefore, the ability of the robot to swim back to a base station, even with damage or degradation, is an important design requirement. The model can be used to evaluate the robustness of an individual design to damage and degradation by changing the actuator torque input to reflect actuator degradation, modifying the design parameters to reflect changes of mass and shape due to interactions with the environment, or changing the control law to reflect breakdowns in communication between actuators. 
+
+TABLE IV Control Parameters - Demo 1 Swimming CA C
+
+ω CO
+
+τ Time ∆t (s) Swimming Straight 1 1 0 7
+
+Slight Left Turn 1 1 −0.2 7
+
+Hard Right Turn 0.75 1 1 7
+
+TABLE V Control Parameters Demo 2 Swimming CA C
+
+ω CO
+
+τ Time ∆t (s) Accelerate 1 1 0 12 
+
+Cruise 0 0 0 4
+
+Break* 1 1 0 3.55 
+
+Stopped 0 0 0 10 .45 
+
+*When breaking, 
+
+ϕ becomes negative and A1: n
+
+τ is flipped 0 2 4 6 8 10 12 14       
+
+> x position (m)
+> -1 01
+> y position (m)
+> Demonstrations of Controls 2 - Head Path
+> Acceleration/Deceleration
+> Robot at Initial Postion Robot at Final Position Swimming Straight Cruising Breaking Stopped
+> 0510 15 20 25 30
+> Time (s)
+> 00.2 0.4 0.6
+> Velocity (m/s)
+> Velocity of Robot During Accelaration/Breaking
+> Average Velocity of All Robot Elements (m/s)
+> Swimming Straight Cruising Breaking Stopped
+
+Fig. 4. Demonstration of the robot accelerating (green), cruising (blue), breaking (red), and stopped (cyan) for 12 s, 4s, 4s, 10 s respec-tively 
+
+In this study, we chose to investigate the robustness of an eel-like robotic fish to actuator degradation and failure as a demonstration of model capabilities. Actuator degradation was measured by actuator functionality, where 0% represents the actuator fully turned off. The results (Figure 5) show the steady-swimming linear velocities were more affected by the degradation of torque actuators in the front of the fish ( 
+
+τ1:3 ), especially actuator 2 ( 
+
+τ2), which is consistent with findings from other studies [22]. The results also show turning radii were more affected by torque actuators towards the back of the fish ( 
+
+τ3:4 )0 10 20 30 40 50 60 70 80 90 100                     
+
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)
+> Robustness to Node Degradation
+> Linear Velocity
+> 1degradation (head)
+> 2degradation
+> 3degradation
+> 4degradation
+> 5degradation
+> 010 20 30 40 50 60 70 80 90 100
+> Actuator Functionality (%)
+> 0.3 0.4 0.5 0.6
+> Turning Radius (m)
+> Robustness to Node Degradation
+> Turning Radius
+> 1degradation (head)
+> 2degradation
+> 3degradation
+> 4degradation
+> 5degradation
+
+Fig. 5. Steady swimming linear velocities and turning radii when torque inputs are operating below maximum C. Performance of Symmetric vs. Asymmetric Designs To demonstrate how the model can be used to test different shape designs, we varied the fish robot head and tail cross-sectional areas to produce asymmetrical designs while keeping similar surface area and volume (Table VI). Steady swimming linear velocities and turning radii were used as a measure of performance. Turning radii were calculated by fitting the steady-state swimming path to a circle and calculating the radius. 
+
+TABLE VI Design Parameters 
+
+AH (m2) AT (m2) AH /AT SA (m2) V ( 10 3m3)0.30 
+
+π 0.10 
+
+π 1.5/0.5 0.31 8.5 0.29 
+
+π 0.11 
+
+π 1.45/0.45 0.31 8.4 0.28 
+
+π 0.12 
+
+π 1.4/0.6 0.31 8.3 0.27 
+
+π 0.13 
+
+π 1.35/0.65 0.31 8.2 0.26 
+
+π 0.14 
+
+π 1.3/0.7 0.31 8.1 0.25 
+
+π 0.15 
+
+π 1.25/0.75 0.31 8.0 0.24 
+
+π 0.16 
+
+π 1.2/0.8 0.31 8.0 0.23 
+
+π 0.17 
+
+π 1.15/0.85 0.31 8.9 0.22 
+
+π 0.18 
+
+π 1.1/0.9 0.31 7.9 0.21 
+
+π 0.19 
+
+π 1.05/0.95 0.31 7.9 0.20 
+
+π 0.20 
+
+π 1/1 0.31 7.9 
+
+AH : Cross-sectional area of the head 
+
+AT : Cross-sectional area of the tail 
+
+AH /AT : Head-to-tail ratio 
+
+SA : Surface Area 
+
+The results (Figure 6) show for CA = 1, slightly asymmetric designs had comparable forward swimming velocity as the symmetric design, but lower reverse swimming velocity. For CA = 0.75 , slightly asymmetric designs had similar forward and reverse velocities as symmetric designs. For CA = 0.5, asymmetric designs had higher reverse velocities than symmetric designs. As for turning radii, slightly asymmetric designs had much lower forward turning radii and similar reverse turning radii when compared to symmetric designs. When head to tail ratio drops before 1.3/0.7, the reverse turning radii greatly increases. A fish robot deployed in the ocean will swim at below-maximum velocity most of the time. In addition, high maneuverability is needed to swim around obstacles. Therefore, a slightly asymmetric design (1.25/0.75) is recommended. D. Robustness of Asymmetrical Designs to Actuator Degradation/Failure Swimming behaviors were measured for various actua-tor functionalities to test the robustness of asymmetrical designs to actuator degradations and failures. The results (Figure 7) show actuator degradations towards the head have a larger impact on linear velocity for all three designs. It also shows 
+
+τ3 and 
+
+τ4 degradation have a larger impact on turning radii on both designs, whereas 
+
+τ1 and τ2 mostly impacts reverse turning radii for asymmetric designs. This is consistent with results from previous sections. 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1       
+
+> Head To Tail Ratio
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)
+> Forward/Reverse Velocity Profiles
+> CA= 1
+> 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1
+> Head To Tail Ratio
+> 00.5 11.5 2
+> Turning Radius (m)
+> Forward/Reverse Turning Radius Profiles
+> CO= 1
+> 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1
+> Head To Tail Ratio
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s) CA= 0.75
+> 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1
+> Head To Tail Ratio
+> 00.5 11.5 2
+> Turning Radius (m)  CO= 0.75
+> 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1
+> Head To Tail Ratio
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s) CA= 0.5
+> 1.4/0.6 1.35/0.65 1.3/0.7 1.25/0.75 1.2/0.8 1.15/0.85 1.1/0.9 1.05/0.95 1/1
+> Head To Tail Ratio
+> 00.5 11.5 2
+> Turning Radius (m)  CO= 0.5
+> Forward Linear Velocity Reverse Linear Velocity Symmetrical Design Linear Velocity Forward Turning Radius Reverse Turining Radius Symmetrical Design Turning Radius
+
+Fig. 6. A comparison of steady swimming linear velocities for symmetric and asymmetric robot designs at CA = 1,CA = 0.75 , and 
+
+CA = 0.5 (left column). A comparison of turning radii for symmetric and asymmetric robot designs at CO 
+
+> τ
+
+= 1,CO 
+
+> τ
+
+= 0.75 , and CO 
+
+> τ
+
+= 0.5
+
+(right column). 
+
+V. CONCLUSIONS AND FUTURE WORK This paper developed a simulation model for design optimization and controller testing of a fish robot and proposed a control method for anguilliform swimming. Results show the control law can successfully be used to swim straight, complete soft and hard turns, and accelerate from and decelerate to rest. A comparison of steady swimming linear velocities and turning radii when undergoing actuator degradation shows the actuators towards the front of the fish body have a higher impact on linear swimming, and actuators towards the back have a higher impact on turning radii when degraded. A comparison of symmetric vs asymmetric robot designs shows asymmetric designs provide comparable swimming velocities but greater maneuverability. The results demonstrate the model’s capability to assess the performance of different designs and their ro-bustness to actuator degradation and failure. By manip-ulating the actuator torque input, adjusting the design parameters to accommodate additional or reduced mass, or modifying the control law to address breakdowns in communication between actuators, the model can be used to offer insights into the resilience of a variety of designs under diverse conditions. Some notable advantages of the model include its modular nature and efficient simulation capabilities (over 0 20 40 60 80 100                                              
+
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)  1Degradation
+> Linear Velocity
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 0.5 11.5
+> Turning Radius (m)  1Degradation
+> Turning Radius
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)  2Degradation
+> Linear Velocity
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 0.5 11.5
+> Turning Radius (m)  2Degradation
+> Turning Radius
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)  3Degradation
+> Linear Velocity
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 0.5 11.5
+> Turning Radius (m)  3Degradation
+> Turning Radius
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)  4Degradation
+> Linear Velocity
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 0.5 11.5
+> Turning Radius (m)  4Degradation
+> Turning Radius
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 00.2 0.4 0.6 0.8
+> Velocity (m/s)  5Degradation
+> Linear Velocity
+> 1.2/0.8 Forward Velocity 1.1/0.9 Forward Velocity 1.0/1.0 Forward/Reverse Velocity 1.1/0.9 Reverse Velocity 1.2/0.8 Reverse Velocity
+> 020 40 60 80 100
+> Actuator Functionality (%)
+> 0.5 11.5
+> Turning Radius (m)  5Degradation
+> Turning Radius
+> 1.2/0.8 Forward Turning Radius 1.1/0.9 Forward Turning Radius 1.0/1.0 Forward/Reverse Turning Radius 1.1/0.9 Reverse Turning Radius 1.2/0.8 Reverse Turning Radius
+
+Fig. 7. Linear velocities and turning radii for design 1 (rod with length l = 1m rod with AH = 0.30 
+
+πm2 and AT = 0.10 
+
+πm2 - blue), design 2 (l = 1m, AH = 0.25 
+
+πm2 and AT = 0.15 
+
+πm2 - green), and design 3 (l = 1m, AH = 0.20 
+
+πm2 and AT = 0.20 
+
+πm2 - red) for forward (solid line) and reverse (dotted line) steady swimming. 
+
+3300 Hz), enabling seamless integration with different robot models tailored to specific design specifications while facilitating rapid iteration and evaluation of de-sign iterations. Furthermore, the model facilitates the evaluation of controller designs, allowing for testing in different scenarios and environments. The model can also be used to enable fault detection and recovery in addition to design optimization-based controllers such as model predictive control (MPC) controllers. The model can optimize and fine-tune the design using cost functions that encompass parameters such as steady swimming behaviors, size and mass considerations, power consumption, and performance in completing tasks such as navigating digital obstacle courses. After predefined design goals are met, filters can be implemented to refine the optimization process. Overall, the proposed model offers a comprehensive framework for assessing and optimizing designs, encom-passing various factors such as robustness, controller per-formance, modularity, cost considerations, and simula-tion speed, thereby supporting informed decision-making in the design and development of robotic systems. References 
+
+[1] G. B. GILLIS, “Undulatory Locomotion in Elongate Aquatic Vertebrates: Anguilliform Swimming since Sir James Gray1,” American Zoologist, vol. 36, no. 6, pp. 656–665, 08 2015. [2] V. van Ginneken, E. Antonissen, U. K. Müller, R. Booms, E. Eding, J. Verreth, and G. van den Thillart, “Eel migration to the sargasso: remarkably high swimming efficiency and low energy costs,” Journal of Experimental Biology, vol. 208, no. 7, pp. 1329–1335, 2005. [3] G. V. d. Thillart, A. Palstra, and V. V. Ginneken, “Simulated migration of european silver eel; swim capacity and cost of transport,” Journal of Marine Science and Technology, vol. 15, no. 5, p. 1, 2007. [4] A. Palstra, V. van Ginneken, and G. van den Thillart, “Cost of transport and optimal swimming speed in farmed and wild european silver eels (anguilla anguilla),” Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology, vol. 151, no. 1, pp. 37–44, 2008. [5] E. D. Tytell, I. Borazjani, F. Sotiropoulos, T. V. Baker, E. J. Anderson, and G. V. Lauder, “Disentangling the functional roles of morphology and motion in the swimming of fish,” Integrative and comparative biology, vol. 50, no. 6, pp. 1140– 1154, 2010. [6] D. Q. Nguyen and V. A. Ho, “Anguilliform swimming per-formance of an eel-inspired soft robot,” Soft Robotics, vol. 9, no. 3, pp. 425–439, 2022. [7] Z. Zuo, Z. Wang, B. Li, and S. Ma, “Serpentine locomotion of a snake-like robot in water environment,” in 2008 IEEE In-ternational Conference on Robotics and Biomimetics. IEEE, 2009, pp. 25–30. [8] R. Thandiackal, K. Melo, L. Paez, J. Herault, T. Kano, K. Akiyama, F. Boyer, D. Ryczko, A. Ishiguro, and A. J. Ijspeert, “Emergence of robust self-organized undulatory swimming based on local hydrodynamic force sensing,” Science robotics, vol. 6, no. 57, p. eabf6354, 2021. [9] F. Lyu, X. Xu, X. Zha, Z. Li, and H. Yuan, “A snake eel inspired multi-joint underwater inspection robot for undersea infrastructure intelligent maintenance,” in OCEANS 2022-Chennai. IEEE, 2022, pp. 1–6. [10] J. Cervera-Torralba, Y. Kang, E. M. Khan, I. Adibnazari, and M. T. Tolley, “Lost-core injection molding of fluidic elastomer actuators for the fabrication of a modular eel-inspired soft robot,” in 2024 7th IEEE-RAS International Conference on Soft Robotics, 2024. [11] G. Li, T.-W. Wong, B. Shih, C. Guo, L. Wang, J. Liu, T. Wang, X. Liu, J. Yan, B. Wu et al., “Bioinspired soft robots for deep-sea exploration,” Nature Communications, vol. 14, no. 1, p. 7097, 2023. [12] K. L. C. Bell, M. C. Quinzin, D. Amon, S. Poulton, A. Hope, O. Sarti, T. E. Cañete, A. M. Smith, H. I. Baldwin, D. M. Lira et al., “Exposing inequities in deep-sea exploration and research: results of the 2022 global deep-sea capacity assess-ment,” Frontiers in Marine Science, 2023. [13] L. Freitag, S. Singh, K. Ball, T. Johnson, D. Giaya, A. Muen-chow, and P. Washam, “Experimental results in acoustic communications under shore-fast greenland ice,” in Oceans 2019-Marseille. IEEE, 2019, pp. 1–6. [14] A. A. A. El-Banna, K. Wu, and B. M. ElHalawany, “Op-portunistic cooperative transmission for underwater commu-nication based on the water’s key physical variables,” IEEE Sensors Journal, vol. 20, no. 5, pp. 2792–2802, 2020. [15] Y. A. Çengel and J. M. Cimbala, Fluid Mechanics. McGraw-Hill Science/Engineering/Math, 2006. [16] T. Y.-T. Wu, “Hydromechanics of swimming of fishes and cetaceans,” in Advances in Applied Mechanics, ser. Advances in Applied Mechanics, C.-S. Yih, Ed. Elsevier, 1971, vol. 11, pp. 1–63. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0065215608703405 [17] S. Vogel, Life in Moving Fluids: the Physical Biology of Flow, 2nd ed. Princeton, NJ: Princeton University Press, 1994. [18] E. D. Tytell and G. V. Lauder, “The hydrodynamics of eel swimming: I. wake structure,” Journal of Experimental Biology, vol. 207, no. 11, pp. 1825–1841, 2004. [19] V. Di Santo, E. Goerig, D. K. Wainwright, O. Akanyeti, J. C. Liao, T. Castro-Santos, and G. V. Lauder, “Convergence of undulatory swimming kinematics across a diversity of fishes,” Proceedings of the National Academy of Sciences, vol. 118, no. 49, p. e2113206118, 2021. [20] T. Knutsen, J. Ostrowski, and K. McIsaac, “Designing an un-derwater eel-like robot and developing anguilliform locomotion control,” Harvard University, 2004. [21] I. Adibnazari, H. Sharma, J. C. Torralba, B. Kramer, and M. T. Tolley, “Full-body optimal control of a swimming soft robot enabled by data-driven model reduction,” in Southern California Robotics Symposium, 2023. [22] J. L. Lim and G. V. Lauder, “Mechanisms of anguilliform locomotion in fishes studied using simple three-dimensional physical models,” Bioinspiration & Biomimetics, vol. 11, no. 4, p. 046006, 2016.

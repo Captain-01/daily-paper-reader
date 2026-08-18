@@ -1,0 +1,92 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-18T19:41:03.247580+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2608.14860v1",
+      "source": "arxiv",
+      "title": "Modeling and Control of an Eel-Inspired Soft Robot for Design Optimization",
+      "abstract": "Anguilliform locomotion is a highly efficient swimming mode; the advent of new materials for soft robots enables the development of an eel-inspired soft robot. This paper presents a simulation model of an eel-inspired soft robot designed for anguilliform swimming. This model can aid in design optimization and the development of model-based estimation, reasoning, and control systems. A Finite Element Method (FEM) model of an elastic rod is used to capture the soft materials of the robotic fish, which makes it particularly amenable to variation over time as the material properties change. The material model is coupled with a hydrodynamic force model to simulate the behavior of a soft, elongated robot in water. The model is used to demonstrate the effectiveness of the proposed control approaches in achieving desired swimming behaviors. It also provides insights into design decisions, including the robustness of different system configurations and the impact of material degradation and failure. The results show that slightly asymmetric designs are advantageous, offering comparable swimming velocities but greater maneuverability. This model can be used to guide future robotic design decisions aimed at optimizing performance for specific tasks.",
+      "authors": [
+        "Zhangjingyi Jiang",
+        "Mark Campbell"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-08-14T19:54:40+00:00",
+      "link": "https://arxiv.org/pdf/2608.14860v1",
+      "tags": [
+        "keyword:sakar-selman"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Soft robotic modeling and control aligned with EPFL MicroBos lab research on soft microrobots",
+      "llm_evidence_cn": "软体机器人建模与控制，与EPFL MicroBos实验室的软体微型机器人方向一致",
+      "llm_evidence": "软体机器人建模与控制，与EPFL MicroBos实验室的软体微型机器人方向一致",
+      "canonical_evidence": "软体机器人建模与控制，与EPFL MicroBos实验室的软体微型机器人方向一致",
+      "llm_tldr_en": "Presents a FEM-based simulation of an eel-inspired soft robot, coupling elastic rod material with hydrodynamic forces to support design optimization and model-based control. Handles time-varying material properties, enabling estimation, reasoning, and control for soft robots.",
+      "llm_tldr_cn": "针对软体机器人的设计和控制难题，论文提出一种基于有限元的仿鳗鱼软体机器人仿真模型，将弹性杆材料模型与水动力模型耦合，以模拟水中细长软体机器人的运动。模型特别适用于材料性能随时间变化的情形，可用于设计优化以及基于模型的估计、推理和控制开发。该工作为软体机器人的水下游动建模和控制提供了有力工具，对该方向研究有重要参考价值。",
+      "llm_tldr": "针对软体机器人的设计和控制难题，论文提出一种基于有限元的仿鳗鱼软体机器人仿真模型，将弹性杆材料模型与水动力模型耦合，以模拟水中细长软体机器人的运动。模型特别适用于材料性能随时间变化的情形，可用于设计优化以及基于模型的估计、推理和控制开发。该工作为软体机器人的水下游动建模和控制提供了有力工具，对该方向研究有重要参考价值。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "Find latest publications from EPFL MicroBos lab",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2608.11973v2",
+      "source": "arxiv",
+      "title": "Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization",
+      "abstract": "The rapid growth of scientific publications makes it increasingly difficult for researchers to identify relevant new studies and effectively comprehend them. Existing academic discovery platforms typically rely on static topic subscriptions or embedding-based similarity and provide only abstracts or short summaries, offering limited support for nuanced intent modeling and in-depth paper summarization. We present Sci-Surf, an intent-centric knowledge discovery system that integrates feedback-driven personalized recommendation with multi-modal blog-style paper digestion. Our approach refines user intent representations through LLM-based user profiling, while generating structured summaries that synthesize textual and visual information from full papers. The demo presents an end-to-end academic discovery pipeline and demonstrates measurable improvements in both recommendation quality and digestion quality through real-user evaluations. Specifically, the integration of verbalized profiles led to a 10.4% average improvement in predictive alignment with real-world user preferences throughout a month-long online evaluation.",
+      "authors": [
+        "Fang Guo",
+        "Qi Zhu",
+        "Rongcan Pei",
+        "Shuqi He",
+        "Hui Chen",
+        "Yue Zhang"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR"
+      ],
+      "published": "2026-08-12T12:02:17+00:00",
+      "link": "https://arxiv.org/pdf/2608.11973v2",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Intent-centric scientific literature discovery system with feedback-driven recommendation and summarization directly assists finding recent relevant papers",
+      "llm_evidence_cn": "以意图为中心的科学文献发现系统，结合反馈推荐与摘要，直接辅助查找最新相关论文",
+      "llm_evidence": "以意图为中心的科学文献发现系统，结合反馈推荐与摘要，直接辅助查找最新相关论文",
+      "canonical_evidence": "以意图为中心的科学文献发现系统，结合反馈推荐与摘要，直接辅助查找最新相关论文",
+      "llm_tldr_en": "Sci-Surf refines user intent via LLM-based profiling and integrates feedback-driven personalized recommendation with multi-modal blog-style paper digestion, helping researchers discover and understand new relevant publications despite rapid literature growth.",
+      "llm_tldr_cn": "科研文献增长迅速，现有学术发现平台多依赖静态订阅或相似度，对细粒度意图和深度解读支持不足。Sci-Surf提出意图中心的知识发现系统，通过LLM用户画像细化意图表示，并融合反馈驱动的个性化推荐与多模态博客式论文解读。该系统可帮助研究者更有效地发现并理解最新相关论文，对检索特定作者或实验室的新成果具有直接实用价值。",
+      "llm_tldr": "科研文献增长迅速，现有学术发现平台多依赖静态订阅或相似度，对细粒度意图和深度解读支持不足。Sci-Surf提出意图中心的知识发现系统，通过LLM用户画像细化意图表示，并融合反馈驱动的个性化推荐与多模态博客式论文解读。该系统可帮助研究者更有效地发现并理解最新相关论文，对检索特定作者或实验室的新成果具有直接实用价值。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "Find recent papers by Selman Sakar",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

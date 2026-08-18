@@ -1,0 +1,246 @@
+Title: Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization
+
+URL Source: https://arxiv.org/pdf/2608.11973v2
+
+Published Time: Fri, 14 Aug 2026 00:24:33 GMT
+
+Number of Pages: 5
+
+Markdown Content:
+# Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization 
+
+## Fang Guo ∗
+
+Zhejiang University Hangzhou, China guofang@westlake.edu.cn 
+
+## Qi Zhu ∗
+
+Zhejiang University Hangzhou, China qizhu.zju.research@gmail.com 
+
+## Rongcan Pei ∗
+
+Tongji University Shanghai, China prc@tongji.edu.cn 
+
+## Shuqi He 
+
+Google Cloud United States shuqihe95@gmail.com 
+
+## Hui Chen 
+
+Zhejiang University Hangzhou, China 3220102841@zju.edu.cn 
+
+## Yue Zhang 
+
+Westlake University Hangzhou, China zhangyue@westlake.edu.cn 
+
+Abstract 
+
+The rapid growth of scientific publications makes it increasingly difficult for researchers to identify relevant new studies and effec-tively comprehend them. Existing academic discovery platforms typically rely on static topic subscriptions or embedding-based similarity and provide only abstracts or short summaries, offering limited support for nuanced intent modeling and in-depth paper summarization. We present Sci-Surf 1, an intent-centric knowledge discovery system that integrates feedback-driven personalized rec-ommendation with multi-modal blog-style paper digestion. Our approach refines user intent representations through LLM-based user profiling, while generating structured summaries that syn-thesize textual and visual information from full papers. The demo presents an end-to-end academic discovery pipeline and demon-strates measurable improvements in both recommendation quality and digestion quality through real-user evaluations. Specifically, the integration of verbalized profiles led to a 10.4% average im-provement in predictive alignment with real-world user preferences throughout a month-long online evaluation. 
+
+CCS Concepts 
+
+• Do Not Use This Code → Generate the Correct Terms for Your Paper ; Generate the Correct Terms for Your Paper ; Generate the Correct Terms for Your Paper; Generate the Correct Terms for Your Paper. 
+
+ACM Reference Format: 
+
+Fang Guo, Qi Zhu, Rongcan Pei, Shuqi He, Hui Chen, and Yue Zhang. 2018. Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization. In Proceedings of Make sure to 
+
+> ∗Equal contribution.
+> 1Project page: Sci-Surf Website. Code and prompts: GitHub Repository. Demo video: Video Demo. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
+> Conference acronym ’XX, Woodstock, NY
+> © 2018 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-XXXX-X/2018/06 https://doi.org/XXXXXXX.XXXXXXX
+
+enter the correct conference title from your rights confirmation email (Con-ference acronym ’XX). ACM, New York, NY, USA, 5 pages. https://doi.org/ XXXXXXX.XXXXXXX 
+
+1 Introduction 
+
+The volume of publications in computer science is expanding at an unprecedented rate. For example, recent analyses [4] show that the number of annual CS journal publications has grown from roughly 20,000 in the year 2000 to over 120,000 in the year 2023, with the pace expected to accelerate further. This surge of scholarly output presents two fundamental challenges for modern academic discov-ery. First, researchers must identify publications that genuinely align with their research objectives amid an overwhelming stream of new work. Second, even when relevant papers are retrieved, effec-tively understanding their key contributions, methodologies, and implications requires substantial cognitive effort. Addressing these two challenges in a unified manner remains a central bottleneck in contemporary academic discovery systems. Existing work on academic discovery primarily focuses on im-proving retrieval effectiveness. Embedding-based scientific retrieval models [1, 3, 8, 12] and LLM-based techniques such as query rewrit-ing, expansion, and agentic search [6, 7, 10, 13] improve query– document matching, while human-in-the-loop systems leverage active learning to reduce screening effort [5, 11]. However, most approaches operate in single-turn settings and do not maintain per-sistent representations of user intent. Similarly, deployed academic discovery platforms 234 provide interactive search experiences but largely optimize for immediate retrieval rather than continuously modeling and refining evolving user interests. A second challenge lies in paper understanding. Existing plat-forms typically present abstracts or short TLDR-style summaries, which often omit methodological intuition, contextual background, and visual evidence essential for understanding modern scientific papers. As a result, even when relevant papers are successfully retrieved, researchers must still spend substantial effort digesting and interpreting them. To address these challenges, we introduce Sci-Surf , an intent-centric academic discovery system that enables feedback-driven intent modeling with enhanced content presentation. It integrates  
+
+> 2https://www.scholarinbox.com/
+> 3https://www.semanticscholar.org/
+> 4https://www.alphaxiv.org/ arXiv:2608.11973v2 [cs.IR] 13 Aug 2026 Conference acronym ’XX, June 03–05, 2018, Woodstock, NY Guo et al.
+
+Fetching 
+
+Parsing 
+
+Metadata 
+
+Vector 
+
+Image 
+
+## PAPER CONTENT PROCESSING 
+
+Digestion 
+
+Interest Input 
+
+> Paper1
+> Paper2
+> Paper3
+> …
+> Paper1
+> Paper3
+> Paper2
+> …
+
+Retrieval Result 
+
+LLM-Based Reranking 
+
+Vector Search 
+
+## DAILY RECOMMENDATION 
+
+Blogs 
+
+User Intent Profile 
+
+User Intent 
+
+Profile 
+
+## Day 0 User Onboarding  Offline Daily Feed Generation Day 1+ 
+
+Verbalized 
+
+Profile 
+
+& Indexing  Daily Batch 
+
+Database 
+
+Reranking 
+
+Result       
+
+> Paper1
+> Paper3
+> Paper2
+> Abstract: xxxxxxxxxxx
+> Blog: xxxxxxxxxxxxxxx
+> Abstract: xxxxxxxxxxx
+> Blog: xxxxxxxxxxxxxxx
+> Abstract: xxxxxxxxxxx
+> Blog: xxxxxxxxxxxxxxx
+
+User Profile 
+
+Verbalization 
+
+## Online Delivery 
+
+Daily Recommend 
+
+-ation List 
+
+‘I am interested 
+
+in AI4Science 
+
+domain, especially…’ 
+
+Query 
+
+Understanding 
+
+Figure 1: Overview of Sci-Surf. User intent is initialized during onboarding and continuously refined from interaction feedback, while newly published papers are processed into personalized recommendations and blog-style digests. 
+
+two complementary components: (1) feedback-aware reranking ,which iteratively verbalizes user intent profiles by leveraging large language models (LLMs) to reason over historical feedback; and (2) multi-modal blog-style paper digestion , which generates structured, extended summaries by synthesizing textual content and visual elements from the original paper into an accessible blog-style narrative. To support these capabilities in a real-world setting, Sci-Surf adopts a publication-synchronized, batch-based workflow (Figure 1). Newly released arXiv papers are collected at fixed daily intervals and processed offline as a daily batch. LLM operations are executed during this pipeline to generate structured paper digests and daily personalized recommendations. This design shifts heavy computa-tion away from user query time and decouples system processing from real-time user interaction. Specifically, the system operates in two phases. On Day 0 , users provide free-form descriptions of their research interests, which are normalized by an LLM into a structured intent profile . This intent profile serves as a long-term personalization anchor and is continuously refined based on user interactions. Beginning on 
+
+Day 1+ , Sci-Surf enters a daily feed generation pipeline consisting of three components: (1) Paper Content Processing , which collects newly released papers into the daily batch and processes them for indexing and blog-style digestion; (2) Daily Recommendation ,which aligns the processed papers with the stored intent profile to generate daily recommendations; and (3) User Profile Verbalization ,which periodically analyzes accumulated user feedback (e.g., likes and dislikes) and updates the system’s internal representation of the intent profile, thereby influencing subsequent recommendation cycles. In summary, Sci-Surf makes three contributions: (1) Autonomous Intent Refinement , which leverages LLM-based reasoning to con-tinuously refine user intent profiles from interaction histories and bridge the gap between high-recall retrieval and long-term user interests; (2) Structured Multimodal Digestion , a blog-style pa-per understanding pipeline that synthesizes textual insights and visual evidence into accessible research digests; and (3) Longitudi-nal Real-User Evaluation , which validates both recommendation quality and digestion faithfulness through real-user studies, demon-strating the effectiveness of verbalized intent profiles in a dynamic academic discovery setting. 
+
+2 Sci-Surf Workflow 
+
+Figure 1 illustrates the Sci-Surf workflow. The system consists of a user onboarding stage (Day 0) and a recurring daily feed generation stage (Day 1+). 
+
+2.1 User Onboarding 
+
+User onboarding occurs on Day 0 and initializes a persistent se-mantic intent profile. Users provide free-form descriptions of their research interests in natural language. The system normalizes this input into a structured intent profile through LLM-based semantic modeling. The resulting intent profile serves as a long-term personalization anchor that guides the subsequent daily feed generation pipeline. In line with our batch-based design, recommendations are generated during the next-day scheduled cycle rather than at onboarding time, thereby avoiding real-time heavy computation and ensuring scalable, low-latency delivery. 
+
+2.2 Daily Feed Generation 
+
+Beginning on Day 1, Sci-Surf enters the publication-synchronized daily pipeline. Each day, newly published papers are aggregated into a daily batch, within which both content processing and in-tent matching are performed offline. As illustrated in Figure 1, the pipeline consists of three components: Paper Content Processing, Personalized Recommendation, and User Profile Verbalization. Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization Conference acronym ’XX, June 03–05, 2018, Woodstock, NY 
+
+2.2.1 Paper Content Processing. The paper content processing module collects newly released papers into the daily batch and processes them for indexing and blog-style digestion. 
+
+Paper Fetching, Parsing, and Indexing. The workflow begins with the large-scale acquisition of newly released papers from the 
+
+arXiv Computer Science category, which receives 300–500 new submissions daily. To ensure robust ingestion, both HTML and PDF versions of each paper are fetched. The HTML version pro-vides well-structured sections, captions, figures, and tables, while the PDF parser serves as a fallback to ensure high coverage when HTML content is incomplete or malformed. The PDF stream ad-ditionally enables vision-language model (VLM) based digestion, whose effectiveness is evaluated in the Experiments section. Each paper is parsed into a structured representation containing textual chunks, visual elements (figures and tables), and mathemati-cal expressions. These elements are stored across three coordinated components: (1) a metadata database for bibliographic information (e.g., title, authors, publication date), (2) a vector store (e.g., FAISS) populated with semantic embeddings derived from abstracts, and (3) an object store for visual content that supports multi-modal digestion. 
+
+Paper Digestion. As shown in Figure 1, once new papers are ingested, Sci-Surf enters the digestion stage, where each article is transformed into a structured, multi-modal blog-style digest. In-stead of generating summaries at recommendation time, the system precomputes digests for all newly batched papers, enabling low-latency access to high-quality overviews during ranking. The summary prompt is carefully designed to ensure clarity, consistency, and interpretability. Each digest follows the sequence: 
+
+TL;DR overview , motivation , contributions , method summary , anal-ysis of figures/tables , experimental results , and future outlook . This format gives readers both a high-level snapshot and a concise walk-through of the paper’s key elements. Benefiting from rich elements generated during the previous content processing stage, we are able to inject all relevant elements, including image paths, tables, original text, and equations, into the prompt. We then instruct the LLM to insert image placeholders at appropriate positions. After the blog post is generated, we sys-tematically replace all matched placeholders with the correspond-ing storage paths. By integrating these elements, the digest offers richer, more context-aware insight than conventional text-only summaries. As a result, the digestion module converts raw full-text and multi-modal content into concise, high-quality summaries that support downstream personalized recommendations. 
+
+2.2.2 Daily Recommendation. This part of the pipeline delivers personalized and timely research updates based on each user’s stored intent profile. As shown in Figure 1, the personalized recom-mendation module consists of two stages: (1) a vector search stage, and (2) an LLM-based reranking stage. 
+
+Vector Search. Using the structured user intent profile, the system performs embedding-based retrieval over the abstracts of newly ingested papers. We adopt GritLM [9] as the base retriever due to its strong performance in our offline evaluation. The intent profile is embedded and matched against paper embeddings stored in the vector database. To ensure timeliness and reduce noise, retrieved candidates are further refined through: (i) a freshness constraint prioritizing sub-missions from the past 3–5 days, (ii) de-duplication to prevent resur-facing previously recommended items, and (iii) similarity thresh-olding to remove weak semantic matches. This stage produces a relevance-ranked candidate set for subsequent reranking. 
+
+LLM-based Reranking. Although vector retrieval provides efficient semantic matching, it may not fully capture nuanced con-textual relevance. Therefore, the top candidates are passed to an LLM-based reranking stage. In this stage, the LLM evaluates the alignment between each paper’s pre-generated digest and the user’s structured intent profile, enabling deeper reasoning beyond embed-ding similarity. The reranker refines the ordering of candidates by considering finer-grained factors such as methodological focus, problem setting, and application domain. This second-stage reasoning improves precision and ensures that recommended papers better reflect the user’s research trajectory. The reranked top-𝑘 papers are finalized as the daily recommen-dation list and delivered to the user. Subsequent user interactions with these recommendations are logged and incorporated into the profile verbalization process in future recommendation cycles. In our demo, we set 𝑘 = 5. 
+
+2.2.3 Personalization via User Profile Verbalization. To support lon-gitudinal personalization, Sci-Surf features a feedback-driven user intent profile verbalization component that self-improves recom-mendation quality along the user journey. Given a user 𝑢 with historical interactions over 𝑁 days, we define: 
+
+• D = {𝑑 1, 𝑑 2, . . . , 𝑑 𝑁 }: Set of days with positive feedback 
+
+• P 𝑖 = {𝑝 𝑖, 1, 𝑝 𝑖, 2, . . . , 𝑝 𝑖,𝑘 𝑖 }: Set of recommended papers for day 
+
+𝑑 𝑖 
+
+• Y 𝑖 ⊆ P 𝑖 : Set of positively labeled papers (liked) for day 𝑑 𝑖 
+
+• 𝑞 𝑖 : Query/research interest for day 𝑑 𝑖 
+
+We split days chronologically into 70% training D𝑡𝑟𝑎𝑖𝑛 and 30% validation days D𝑣𝑎𝑙 .For each training day 𝑑 𝑖 ∈ D 𝑡𝑟𝑎𝑖𝑛 , we construct a list of labeled examples {𝑝, 𝑦 }, where 𝑦 ∈ { 0, 1} is the positive or null feedback received from the user. 
+
+Profile Extraction 
+
+We use an LLM-based Verbalizer V to extract user preferences from PDF content: 
+
+𝜋 𝑢 = V (T , {PDF (𝑝 ) : (𝑝, ·) ∈ T }) (1) where 𝜋 𝑢 denotes the user profile, consisting of a persona descrip-tion 𝜋 𝑝𝑒𝑟𝑠𝑜𝑛𝑎 𝑢 , a set of negative constraints 𝜋 𝑛𝑒𝑔 𝑢 = {𝑐 1, . . . , 𝑐 𝑚 }, and a set of ranking heuristics 𝜋 ℎ𝑒𝑢𝑟 𝑢 = {ℎ1, . . . , ℎ 𝑙 }.We utilize the validation set D𝑣𝑎𝑙 to improve the verbalization prompt. Once the user profile has been extracted, it will be in-stantiated to the LLM reranker prompt in addition to the interest description the user provided. The complete user profile verbalization prompt and personalized ranking prompt are provided in our github repository for reference. In practice, we find that the iterative updating profile as part of Conference acronym ’XX, June 03–05, 2018, Woodstock, NY Guo et al. 
+
+the ranking prompt, instead of fully rewriting, has the most robust behavior across different users. 
+
+3 Experiments 
+
+We evaluate Sci-Surf from two complementary perspectives: (1) 
+
+Personalized Recommendation Effectiveness , covering both retrieval and reranking performance, and (2) Digestion Faith-fulness , assessing the factual consistency of generated blog-style digests through automatic and human evaluation. 
+
+3.1 Personalized Recommendation Effectiveness 
+
+Table 1: Retrieval performance on the LitSearch benchmark.             
+
+> Method Recall@5 Recall@20
+> BM25 0.522 0.673 SPECTER 0.515 0.668 GritLM 0.705 0.823 BGE-M3 0.673 0.802 Hybrid 0.682 0.811
+
+3.1.1 Offline Retrieval Benchmark. We evaluate retrieval quality on LitSearch , a benchmark containing 597 scientific queries and expert relevance judgments. We compare BM25, three embedding-based retrievers: SPECTER, GritLM, and BGE-M3 [2], and a hybrid BM25+embedding baseline using Reciprocal Rank Fusion (RRF). Table 1 reports Recall@5 and Recall@20. Embedding-based re-trieval consistently outperforms BM25, with GritLM achieving the best performance: 0.705 for Recall@5 and 0.823 for Recall@20. Hy-brid fusion provides limited additional benefit, suggesting that lexical signals contribute little beyond strong semantic retrieval. We therefore adopt GritLM as the default retriever in Sci-Surf. 
+
+Table 2: Evaluation of personalized recommendations on 15 real users. “+ Profile” denotes the inclusion of verbalized user profiles in the reranking prompt.          
+
+> Setting Rel.% Very Rel. Rel.
+> Baseline 18.9% 0.5% 18.4% + Profile 29.3% 3.6% 25.7%
+
+3.1.2 Reranking Evaluation with Real-User Interaction Logs. To eval-uate the effectiveness of the LLM-based reranking module in a realistic deployment setting, we use interaction logs from 15 ac-tive Sci-Surf users collected between November 2025 and May 2026 to construct verbalized user profiles. We perform an ablation study comparing ranking outputs generated with and without user profiles. For each user, papers appearing exclusively in either the personalized or baseline top-5 recommendation list are manually annotated in a blind evaluation. Annotators label each paper as highly relevant , domain-relevant ,or irrelevant . We report Very Rel. , Rel. , and Rel.% , corresponding to the proportions of highly relevant papers, domain-relevant papers, and their combined proportion, respectively. Table 2 summarizes the aggregated results. Incorporating verbal-ized user profiles increases overall relevance ( Rel.% ) from 18.9% to 29.3% and improves the proportion of highly relevant papers from 0.5% to 3.6%. These results indicate that profile verbalization effec-tively captures fine-grained research preferences beyond generic retrieval signals, leading to recommendations that are more closely aligned with users’ current interests. 
+
+3.2 Digestion Faithfulness 
+
+3.2.1 Automated Hallucination Detection. To evaluate the factual faithfulness of blog-style digests, we conduct a hallucination de-tection study on 1,000 paper–blog pairs using DeepSeek-Reasoner. Given the full paper text and the corresponding digest, the model identifies unsupported or inconsistent statements and categorizes them as either critical errors (substantial misrepresentations) or 
+
+minor issues (e.g., imprecise phrasing or incomplete grounding). To balance performance and cost, we compare Gemini-2.5-Flash with Qwen-32B and Qwen-235B-A22B using HTML-parsed, JSON-formatted inputs. Overall, Gemini substantially outperforms both Qwen models in factual reliability. The JSON-based Gemini pipeline achieves the lowest hallucination rate, averaging 0.22 critical and 0.76 minor errors per digest, compared with over 2 critical and 1.8 minor errors for both Qwen variants. PDF-based Gemini remains competitive (0.43/0.86 critical/minor errors) but is consistently outperformed by structured JSON inputs, suggesting that cleaner representations improve factual grounding and reduce error propagation during digest generation. 
+
+3.2.2 Human Evaluation Study. To verify the reliability of the LLM-based detector, we conduct a human evaluation study measuring alignment between model and human judgments. We recruit three users and sample 30 recommended papers per user (90 digests in total). Annotators evaluate each digest following the same rubric as the automated detector. Agreement is measured with Pearson correlation and Cohen’s 𝜅 .For overall faithfulness, the Pearson correlation reaches 0.61, and Cohen’s 𝜅 is 0.45, indicating moderate-to-strong consistency. These findings suggest that the proposed LLM-based detector serves as a reasonably reliable proxy for human evaluation, providing ad-ditional evidence that the generated blog-style digests maintain a satisfactory level of factual faithfulness to the original papers. 
+
+4 Conclusion 
+
+Sci-Surf is an intent-centric academic discovery system that inte-grates feedback-driven recommendation with multi-modal blog-style paper digestion. By leveraging LLM-based user profiling to maintain evolving intent representations and generating structured, faithful digests from full papers, the system supports both nuanced preference modeling and in-depth content comprehension. Mov-ing forward, we plan to incorporate richer feedback modeling and conduct larger-scale user studies to further improve intent under-standing. Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization Conference acronym ’XX, June 03–05, 2018, Woodstock, NY 
+
+References 
+
+[1] Fengyu Cai, Xinran Zhao, Tong Chen, Sihao Chen, Hongming Zhang, Iryna Gurevych, and Heinz Koeppl. 2024. MixGR: Enhancing retriever generalization for scientific domain through complementary granularity. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing . 10369– 10391. [2] Jianlv Chen, Shitao Xiao, Peitian Zhang, Kun Luo, Defu Lian, and Zheng Liu. 2024. BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation. In Annual Meeting of the Association for Computational Linguistics . https://api.semanticscholar.org/ CorpusID:267413218 [3] Arman Cohan, Sergey Feldman, Iz Beltagy, Doug Downey, and Daniel S. Weld. 2020. SPECTER: Document-level Representation Learning using Citation-informed Transformers. ArXiv abs/2004.07180 (2020). https://api.semanticscholar. org/CorpusID:215768677 [4] Pádraig Cunningham and Barry Smyth. 2025. An analysis of the impact of gold open access publications in computer science. Commun. ACM 68, 8 (2025), 62–69. [5] Fang Guo, Yun Luo, Linyi Yang, and Yue Zhang. 2023. Scimine: An efficient sys-tematic prioritization model based on richer semantic information. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 205–215. [6] Yichen He, Guanhua Huang, Peiyuan Feng, Yuan Lin, Yuchen Zhang, Hang Li, et al. 2025. Pasa: An llm agent for comprehensive academic paper search. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 11663–11679. [7] Xinbei Ma, Yeyun Gong, Pengcheng He, Hai Zhao, and Nan Duan. 2023. Query rewriting in retrieval-augmented large language models. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing . 5303–5315. [8] Priyanka Mandikal and Raymond Mooney. 2024. Sparse meets dense: A hybrid approach to enhance scientific document retrieval. arXiv preprint arXiv:2401.04055 
+
+(2024). [9] Niklas Muennighoff, Hongjin Su, Liang Wang, Nan Yang, Furu Wei, Tao Yu, Aman-preet Singh, and Douwe Kiela. 2024. Generative Representational Instruction Tuning. ArXiv abs/2402.09906 (2024). https://api.semanticscholar.org/CorpusID: 267681873 [10] Xiaofeng Shi, Yuduo Li, Qian Kou, Longbin Yu, Jinxin Xie, and Hua Zhou. 2025. Spar: Scholar paper retrieval with llm-based agents for enhanced academic search. 
+
+arXiv preprint arXiv:2507.15245 (2025). [11] Rens Van De Schoot, Jonathan De Bruin, Raoul Schram, Parisa Zahedi, Jan De Boer, Felix Weijdema, Bianca Kramer, Martijn Huijts, Maarten Hoogerwerf, Gerbrich Ferdinands, et al. 2021. An open source machine learning framework for efficient and transparent systematic reviews. Nature machine intelligence 3, 2 (2021), 125–133. [12] Yunyi Zhang, Ruozhen Yang, Siqi Jiao, SeongKu Kang, and Jiawei Han. 2025. Scientific paper retrieval with llm-guided semantic-based ranking. arXiv preprint arXiv:2505.21815 (2025). [13] Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Haonan Chen, Zheng Liu, Zhicheng Dou, and Ji-Rong Wen. 2025. Large language models for information retrieval: A survey. ACM Transactions on Information Systems 44, 1 (2025), 1–54. 
+
+Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009

@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-18",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T19:42:53",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/18/2608.14860v1-modeling-and-control-of-an-eel-inspired-soft-robot-for-design-optimization",
+      "section": "deep",
+      "title_en": "Modeling and Control of an Eel-Inspired Soft Robot for Design Optimization",
+      "authors": "Zhangjingyi Jiang, Mark Campbell",
+      "date": "2026-08-14",
+      "pdf": "https://arxiv.org/pdf/2608.14860v1",
+      "score": "8.0",
+      "evidence": "软体机器人建模与控制，与EPFL MicroBos实验室的软体微型机器人方向一致",
+      "tldr": "鳗鲡式游动高效，软机器人材料发展推动其应用。本文建立弹性杆有限元与流体动力耦合的仿真模型，用于模拟软体鳗鱼机器人在水中的行为。通过该模型验证控制策略，并发现轻微非对称设计可在游泳速度几乎不变时显著增强机动性。该模型为设计优化与模型化控制提供有力工具。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Anguilliform locomotion is a highly efficient swimming mode; the advent of new materials for soft robots enables the development of an eel-inspired soft robot. This paper presents a simulation model of an eel-inspired soft robot designed for anguilliform swimming. This model can aid in design optimization and the development of model-based estimation, reasoning, and control systems. A Finite Element Method (FEM) model of an elastic rod is used to capture the soft materials of the robotic fish, which makes it particularly amenable to variation over time as the material properties change. The material model is coupled with a hydrodynamic force model to simulate the behavior of a soft, elongated robot in water. The model is used to demonstrate the effectiveness of the proposed control approaches in achieving desired swimming behaviors. It also provides insights into design decisions, including the robustness of different system configurations and the impact of material degradation and failure. The results show that slightly asymmetric designs are advantageous, offering comparable swimming velocities but greater maneuverability. This model can be used to guide future robotic design decisions aimed at optimizing performance for specific tasks.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/18/2608.11973v2-sci-surf-navigating-scientific-literature-discovery-through-human-feedback-and-intelligent-summarization",
+      "section": "quick",
+      "title_en": "Sci-Surf: Navigating Scientific Literature Discovery through Human Feedback and Intelligent Summarization",
+      "authors": "Fang Guo, Qi Zhu, Rongcan Pei, Shuqi He, Hui Chen, Yue Zhang",
+      "date": "2026-08-12",
+      "pdf": "https://arxiv.org/pdf/2608.11973v2",
+      "score": "6.0",
+      "evidence": "以意图为中心的科学文献发现系统，结合反馈推荐与摘要，直接辅助查找最新相关论文",
+      "tldr": "科研文献激增使研究者难以发现相关新论文并深入理解。现有平台多依赖静态订阅或嵌入相似度，仅提供摘要或短摘要，难以建模细粒度意图。本文提出Sci-Surf，一个意图中心的文献发现系统，结合基于反馈的个性化推荐与多模态博客式论文解读。系统通过LLM用户画像细化意图表示，并生成融合全文文本与图像的结构化摘要。真实用户评估显示，引入言语化画像使一个月在线评测中的预测对齐度平均提升10.4%，验证了推荐与消化质量的双重提升。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "The rapid growth of scientific publications makes it increasingly difficult for researchers to identify relevant new studies and effectively comprehend them. Existing academic discovery platforms typically rely on static topic subscriptions or embedding-based similarity and provide only abstracts or short summaries, offering limited support for nuanced intent modeling and in-depth paper summarization. We present Sci-Surf, an intent-centric knowledge discovery system that integrates feedback-driven personalized recommendation with multi-modal blog-style paper digestion. Our approach refines user intent representations through LLM-based user profiling, while generating structured summaries that synthesize textual and visual information from full papers. The demo presents an end-to-end academic discovery pipeline and demonstrates measurable improvements in both recommendation quality and digestion quality through real-user evaluations. Specifically, the integration of verbalized profiles led to a 10.4% average improvement in predictive alignment with real-world user preferences throughout a month-long online evaluation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
