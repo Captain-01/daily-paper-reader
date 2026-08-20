@@ -6,22 +6,26 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-08-19
-- 运行时间：2026-08-19 19:23:22 UTC
+- 最新运行日期：2026-08-20
+- 运行时间：2026-08-20 20:38:09 UTC
 - 运行状态：成功
-- 本次总论文数：0
-- 精读区：0
-- 速读区：0
+- 本次总论文数：2
+- 精读区：1
+- 速读区：1
 
 ### 今日简报（AI）
-> 今日无新推荐，系统未产出可展示论文。
-- 详情：[/202608/19/README](/202608/19/README)
+今日聚焦2篇微流控芯片前沿：深度学习分类循环肿瘤细胞（9.0分）与3D打印芯片设计方法（7.0分）。最值得看的是基于深度学习的细胞表型识别，数据高效且可解释，直接支撑液体活检；3D打印方向则关注制造感知的物理设计优化。下一步建议普通读者留意深度学习在肿瘤早筛中的应用潜力，同时关注3D打印芯片降低成本后的临床转化。
+- 详情：[/202608/20/README](/202608/20/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning](/202608/20/2608.16870v1-data-efficient-and-interpretable-classification-of-circulating-tumor-cell-phenotypes-in-microfluidic-devices-via-deep-learning)  
+   标签：评分：9.0/10、query:sakar-selman
+   evidence：微流控装置与深度学习分类契合Sakar Selman在EPFL MicroBos实验室的研究方向
 
 ### 速读区论文标签
-- 本次无速读推荐。
+1. [Print-Aware Synthesis and Physical Design Methodologies for 3D-Printed Microfluidic Biochips](/202608/20/2608.16267v1-print-aware-synthesis-and-physical-design-methodologies-for-3d-printed-microfluidic-biochips)  
+   标签：评分：7.0/10、query:sakar-selman
+   evidence：与微流控芯片和3D打印研究直接相关，很可能属于EPFL MicroBos实验室的研究方向。
 
 
 <div class="dpr-home-promo-card">

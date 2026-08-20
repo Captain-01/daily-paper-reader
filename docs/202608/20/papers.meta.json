@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-20",
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T20:38:15",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/20/2608.16870v1-data-efficient-and-interpretable-classification-of-circulating-tumor-cell-phenotypes-in-microfluidic-devices-via-deep-learning",
+      "section": "deep",
+      "title_en": "Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning",
+      "authors": "Serena Su, Yifan Wang, Senwei Liang",
+      "date": "2026-08-17",
+      "pdf": "https://arxiv.org/pdf/2608.16870v1",
+      "score": "9.0",
+      "evidence": "微流控装置与深度学习分类契合Sakar Selman在EPFL MicroBos实验室的研究方向",
+      "tldr": "循环肿瘤细胞表型分类对预测转移潜力非常关键，但轨迹数据稀缺且神经网络缺乏可解释性。为此，提出SubSeq数据增强方法，随机提取局部轨迹子序列促进从局部模式学习；并用梯度加权类激活映射识别驱动分类的轨迹特征与微流控区域。实验显示SubSeq显著提升准确率，且证明局部轨迹段已包含足够生物物理信息，全轨迹存在冗余。该框架将微流控几何视为物理编码器，为诊断设备的设计优化提供机制性洞见。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Accurate classification of circulating tumor cell (CTC) phenotypes can provide valuable information for assessing metastatic potential. Label free microfluidic devices provide a hydrodynamic obstacle course that transforms subtle biophysical characteristics of CTCs, including size and deformability, into distinct kinematic trajectories. However, the highly nonlinear fluid structure interactions governing these trajectories make the inverse problem of inferring cellular phenotype from trajectory data analytically intractable. While deep neural networks (DNNs) have emerged as a powerful approach for addressing this inverse problem, their effectiveness is constrained by the limited availability of trajectory data and the lack of physical interpretability.   To address these challenges, we propose an interpretable and data efficient DNN framework for trajectory based CTC classification. To mitigate the scarcity of data, we develop Subsequence (SubSeq), a targeted augmentation strategy that randomly extracts informative local trajectory segments during training to promote learning from localized patterns. We further apply Gradient Weighted Class Activation Mapping to identify the trajectory features and physical regions of the microfluidic device that drive model predictions. Experimental results demonstrate that SubSeq improves classification accuracy over the evaluated baseline and augmentation methods. Furthermore, interpretability analysis suggests that localized trajectory segments contain substantial biophysical information relevant to accurate classification. This provides justification for SubSeq and also highlights the redundancy of full-length trajectories. More broadly, the proposed framework views microfluidic geometries as physical encoders of cellular mechanical properties, providing mechanistic insights that may inform the future design of diagnostic devices.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/20/2608.16267v1-print-aware-synthesis-and-physical-design-methodologies-for-3d-printed-microfluidic-biochips",
+      "section": "quick",
+      "title_en": "Print-Aware Synthesis and Physical Design Methodologies for 3D-Printed Microfluidic Biochips",
+      "authors": "Yushen Zhang, Tsun-Ming Tseng, Ulf Schlichtmann",
+      "date": "2026-08-17",
+      "pdf": "https://arxiv.org/pdf/2608.16267v1",
+      "score": "7.0",
+      "evidence": "与微流控芯片和3D打印研究直接相关，很可能属于EPFL MicroBos实验室的研究方向。",
+      "tldr": "树脂3D打印为微流控芯片制造提供了低成本快速原型方案，但设计流程依赖人工且存在过固化等制造误差。本文提出一个协同设计自动化框架，涵盖交互设计工具、功能器件自动综合、低成本混合器制造及面向制造的设计策略。该框架提升了打印保真度，推动了3D打印微流控芯片的实用化。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Microfluidic devices are widely used in diagnostics, chemical synthesis, and biological analysis, but their development often depends on complex fabrication and design processes. Resin-based three-dimensional (3D) printing has emerged as a promising alternative to conventional microfabrication because it enables low-cost, rapid prototyping of complex multi-layer structures. However, the practical realization of 3D-printed microfluidic biochips remains challenging due to manual and expertise-intensive design workflows, the rigid nature of commonly used printing materials, and fabrication inaccuracies such as over-curing that distort internal features and may block narrow channels. In this paper, we present a cohesive design automation framework for 3D-printed microfluidics that addresses these challenges across both device design and fabrication. The framework combines interactive design tools, automated synthesis methods for functional 3D microfluidic devices, techniques for developing low-cost 3D-printed mixers, and design-for-manufacturing strategies to improve print fidelity on low-cost resin printers.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
