@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-26",
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T20:27:26",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/26/2608.22673v1-collective-self-sorting-on-a-chip",
+      "section": "quick",
+      "title_en": "Collective self-sorting on a chip",
+      "authors": "Emanuel F. Teixeira, Thieu van den Bergh, Arjen Klok, Tijn Heesakkers, Alexandre Morin",
+      "date": "2026-08-24",
+      "pdf": "https://arxiv.org/pdf/2608.22673v1",
+      "score": "7.0",
+      "evidence": "微流控活性粒子自排序装置，与EPFL MicroBos实验室活性物质微机器人研究高度契合",
+      "tldr": "活性粒子混合物中，速度差异可驱动自发空间去混合，而限制几何的曲率能增强分离效果。本文通过粒子模拟筛选出高效分离的几何条件，设计出弯曲微流控单元序列，将去混合机制转化为连续分离器件。实验表明，二元Quincke-roller混合液流经器件时逐步去混合，下游实现显著富集。该策略为基于运动性和几何限制的自主微流控分离提供了新途径，无需外部场操控。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "We harness two established ingredients for collective demixing: differential speed and curvature to create a self-sorting device. In binary mixtures, motility differences drive spontaneous spatial segregation, while confinement geometry determines how rapidly and strongly this demixing develops. Using particle based simulations, we systematically identify the geometrical conditions that promote efficient segregation and use these results to guide the design of a finite sorting architecture. We then translate these physical mechanisms into a sequence of curved microfluidic units that progressively amplify the separation of the two species and direct them toward distinct collection regions. Experiments with binary Quincke-roller mixtures confirm that an initially mixed suspension progressively demixes as it propagates through the device, leading to strong enrichment downstream. Our results demonstrate how collective active demixing can be converted into a functional continuous sorting strategy, providing a route toward autonomous microfluidic separation based on particle motility and confinement geometry.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/26/2608.24809v1-structurally-bounded-agentic-graph-exploration-for-evidence-grounded-scholarly-deepsearch",
+      "section": "quick",
+      "title_en": "Structurally-bounded Agentic Graph Exploration for Evidence-Grounded Scholarly DeepSearch",
+      "authors": "Rima Hazra, Sayan Layek, Somnath Banerjee, Soumen Chakrabarti, Animesh Mukherjee",
+      "date": "2026-08-25",
+      "pdf": "https://arxiv.org/pdf/2608.24809v1",
+      "score": "6.0",
+      "evidence": "基于引文图的受限智能体学术深度搜索方法，可直接应用于查找某课题组的最新论文",
+      "tldr": "学术深度搜索通常采用开放式智能体循环，成本高且不可解释。Crase 通过单次查询获取种子论文，扩展1.5跳引用邻域，并依据蕴含关系剪枝边，以时间感知随机游走排序。在LitSearch等基准上将召回率提升至基线深度智能体的3倍，成本仅为其约三分之一。该方法提供了一种有界、可检视的检索范式，兼顾效果与效率。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "We present Crase, a bounded and inspectable alternative to deep research agents for scholarly search. Instead of an open-ended search loop, Crase queries a search engine once for seed papers, expands them along their 1.5-hop citation neighborhood, prunes citation edges whose claims lack entailment support, and ranks the remaining papers with a recency-aware random walk. This makes the candidate set, the reason each paper is kept, and the stopping condition explicit and fixed before inference. On LitSearch and one further benchmarks over a 500K-paper arXiv corpus, Crase outperforms deep research agents built on proprietary models by up to 3$\\times$ recall@50 at roughly a third of the cost.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

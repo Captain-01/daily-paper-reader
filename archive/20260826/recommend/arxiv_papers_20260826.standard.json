@@ -1,0 +1,98 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-26T20:26:07.986309+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2608.22673v1",
+      "source": "arxiv",
+      "title": "Collective self-sorting on a chip",
+      "abstract": "We harness two established ingredients for collective demixing: differential speed and curvature to create a self-sorting device. In binary mixtures, motility differences drive spontaneous spatial segregation, while confinement geometry determines how rapidly and strongly this demixing develops. Using particle based simulations, we systematically identify the geometrical conditions that promote efficient segregation and use these results to guide the design of a finite sorting architecture. We then translate these physical mechanisms into a sequence of curved microfluidic units that progressively amplify the separation of the two species and direct them toward distinct collection regions. Experiments with binary Quincke-roller mixtures confirm that an initially mixed suspension progressively demixes as it propagates through the device, leading to strong enrichment downstream. Our results demonstrate how collective active demixing can be converted into a functional continuous sorting strategy, providing a route toward autonomous microfluidic separation based on particle motility and confinement geometry.",
+      "authors": [
+        "Emanuel F. Teixeira",
+        "Thieu van den Bergh",
+        "Arjen Klok",
+        "Tijn Heesakkers",
+        "Alexandre Morin"
+      ],
+      "primary_category": "cond-mat.soft",
+      "categories": [
+        "cond-mat.soft",
+        "cond-mat.stat-mech",
+        "physics.app-ph"
+      ],
+      "published": "2026-08-24T00:18:02+00:00",
+      "link": "https://arxiv.org/pdf/2608.22673v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Microfluidic self-sorting of active Quincke-roller mixtures, central to EPFL MicroBos lab's active-matter microrobotics research",
+      "llm_evidence_cn": "微流控活性粒子自排序装置，与EPFL MicroBos实验室活性物质微机器人研究高度契合",
+      "llm_evidence": "微流控活性粒子自排序装置，与EPFL MicroBos实验室活性物质微机器人研究高度契合",
+      "canonical_evidence": "微流控活性粒子自排序装置，与EPFL MicroBos实验室活性物质微机器人研究高度契合",
+      "llm_tldr_en": "Simulations identify geometry for efficient demixing of active colloids via differential speed and curvature. Curved microfluidic units amplify species separation, confirmed with Quincke rollers, achieving scalable on-chip sorting.",
+      "llm_tldr_cn": "针对二元活性胶体在微流控环境中自发分选缺乏系统设计准则的问题，本文利用粒子模拟识别了差异速度与曲率促进高效分离的几何条件，并将其转化为逐级弧形微流控单元。实验采用二元Quincke滚子混合物验证，初始混合悬浊液能够持续分离并定向进入不同收集区。该工作给出了可扩展的芯片式集体自分类装置设计原理，对活性物质分选与微型机器人系统具有直接参考价值。",
+      "llm_tldr": "针对二元活性胶体在微流控环境中自发分选缺乏系统设计准则的问题，本文利用粒子模拟识别了差异速度与曲率促进高效分离的几何条件，并将其转化为逐级弧形微流控单元。实验采用二元Quincke滚子混合物验证，初始混合悬浊液能够持续分离并定向进入不同收集区。该工作给出了可扩展的芯片式集体自分类装置设计原理，对活性物质分选与微型机器人系统具有直接参考价值。",
+      "llm_tags": [
+        "query:sakar-selman:composite"
+      ],
+      "matched_query_tag": "query:sakar-selman:composite",
+      "matched_query_text": "Papers central to 查找sakar selman和epfl microbos实验室的最新论文及毕设, especially work that connects or combines: Sakar Selman publications; r; EPFL MicroBos laboratory; Find recent papers by Selman Sakar; Find latest publications from EPFL MicroBos lab.",
+      "matched_requirement_id": "req-composite-sakar-selman",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.24809v1",
+      "source": "arxiv",
+      "title": "Structurally-bounded Agentic Graph Exploration for Evidence-Grounded Scholarly DeepSearch",
+      "abstract": "We present Crase, a bounded and inspectable alternative to deep research agents for scholarly search. Instead of an open-ended search loop, Crase queries a search engine once for seed papers, expands them along their 1.5-hop citation neighborhood, prunes citation edges whose claims lack entailment support, and ranks the remaining papers with a recency-aware random walk. This makes the candidate set, the reason each paper is kept, and the stopping condition explicit and fixed before inference. On LitSearch and one further benchmarks over a 500K-paper arXiv corpus, Crase outperforms deep research agents built on proprietary models by up to 3$\\times$ recall@50 at roughly a third of the cost.",
+      "authors": [
+        "Rima Hazra",
+        "Sayan Layek",
+        "Somnath Banerjee",
+        "Soumen Chakrabarti",
+        "Animesh Mukherjee"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "published": "2026-08-25T16:51:26+00:00",
+      "link": "https://arxiv.org/pdf/2608.24809v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Bounded agentic graph exploration for evidence-grounded scholarly DeepSearch, directly applicable to finding recent papers from a specific research group",
+      "llm_evidence_cn": "基于引文图的受限智能体学术深度搜索方法，可直接应用于查找某课题组的最新论文",
+      "llm_evidence": "基于引文图的受限智能体学术深度搜索方法，可直接应用于查找某课题组的最新论文",
+      "canonical_evidence": "基于引文图的受限智能体学术深度搜索方法，可直接应用于查找某课题组的最新论文",
+      "llm_tldr_en": "Crase performs bounded scholarly DeepSearch: seed query, 1.5-hop citation expansion, entailment pruning, and recency-aware random-walk ranking. On 500K arXiv papers, it achieves up to 3x recall@50 over deep research agents at one-third the cost.",
+      "llm_tldr_cn": "针对开放式深度研究智能体候选集不透明、成本高的问题，本文提出Crase：只查询一次搜索引擎获取种子论文，沿1.5跳引文邻域扩展，剪除缺乏蕴含支持的引文边，并用考虑时效的随机游走排序。在LitSearch等基准和50万篇arXiv语料上，Crase的recall@50最高比专有大模型深度研究智能体高3倍，成本约为其三分之一。该方法为学术深度搜索提供了有界、可检查且低成本的新选择。",
+      "llm_tldr": "针对开放式深度研究智能体候选集不透明、成本高的问题，本文提出Crase：只查询一次搜索引擎获取种子论文，沿1.5跳引文邻域扩展，剪除缺乏蕴含支持的引文边，并用考虑时效的随机游走排序。在LitSearch等基准和50万篇arXiv语料上，Crase的recall@50最高比专有大模型深度研究智能体高3倍，成本约为其三分之一。该方法为学术深度搜索提供了有界、可检查且低成本的新选择。",
+      "llm_tags": [
+        "query:sakar-selman:composite"
+      ],
+      "matched_query_tag": "query:sakar-selman:composite",
+      "matched_query_text": "Papers central to 查找sakar selman和epfl microbos实验室的最新论文及毕设, especially work that connects or combines: Sakar Selman publications; r; EPFL MicroBos laboratory; Find recent papers by Selman Sakar; Find latest publications from EPFL MicroBos lab.",
+      "matched_requirement_id": "req-composite-sakar-selman",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
