@@ -1,24 +1,8 @@
 {
   "label": "2026-08-29",
   "date": "2026-08-29",
-  "generated_at": "2026-08-29T03:02:50",
-  "count": 1,
-  "papers": [
-    {
-      "paper_id": "202608/29/2608.22673v1-collective-self-sorting-on-a-chip",
-      "section": "deep",
-      "title_en": "Collective self-sorting on a chip",
-      "authors": "Emanuel F. Teixeira, Thieu van den Bergh, Arjen Klok, Tijn Heesakkers, Alexandre Morin",
-      "date": "2026-08-24",
-      "pdf": "https://arxiv.org/pdf/2608.22673v1",
-      "score": "8.0",
-      "evidence": "微流控活性物质分选研究，与EPFL MicroBos实验室研究主题一致",
-      "tldr": "针对二元活性粒子混合物，利用差分速度和曲率驱动集体去混现象，通过粒子模拟系统识别能高效分离的几何条件，设计有限排序架构并转化为弯曲微流控单元序列。实验证实混合悬浊液在器件中传播时逐步去混，下游获得强富集，展示了将集体活性去混转化为连续自主微流控分离的可行途径。",
-      "tags": "query:sakar-selman",
-      "abstract_en": "We harness two established ingredients for collective demixing: differential speed and curvature to create a self-sorting device. In binary mixtures, motility differences drive spontaneous spatial segregation, while confinement geometry determines how rapidly and strongly this demixing develops. Using particle based simulations, we systematically identify the geometrical conditions that promote efficient segregation and use these results to guide the design of a finite sorting architecture. We then translate these physical mechanisms into a sequence of curved microfluidic units that progressively amplify the separation of the two species and direct them toward distinct collection regions. Experiments with binary Quincke-roller mixtures confirm that an initially mixed suspension progressively demixes as it propagates through the device, leading to strong enrichment downstream. Our results demonstrate how collective active demixing can be converted into a functional continuous sorting strategy, providing a route toward autonomous microfluidic separation based on particle motility and confinement geometry.",
-      "source": "arxiv",
-      "selection_source": "fresh_fetch"
-    }
-  ],
+  "generated_at": "2026-08-29T21:27:18",
+  "count": 0,
+  "papers": [],
   "errors": []
 }
