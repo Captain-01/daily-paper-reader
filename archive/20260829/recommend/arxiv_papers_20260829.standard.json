@@ -1,0 +1,57 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-08-29T03:01:50.705635+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2608.22673v1",
+      "source": "arxiv",
+      "title": "Collective self-sorting on a chip",
+      "abstract": "We harness two established ingredients for collective demixing: differential speed and curvature to create a self-sorting device. In binary mixtures, motility differences drive spontaneous spatial segregation, while confinement geometry determines how rapidly and strongly this demixing develops. Using particle based simulations, we systematically identify the geometrical conditions that promote efficient segregation and use these results to guide the design of a finite sorting architecture. We then translate these physical mechanisms into a sequence of curved microfluidic units that progressively amplify the separation of the two species and direct them toward distinct collection regions. Experiments with binary Quincke-roller mixtures confirm that an initially mixed suspension progressively demixes as it propagates through the device, leading to strong enrichment downstream. Our results demonstrate how collective active demixing can be converted into a functional continuous sorting strategy, providing a route toward autonomous microfluidic separation based on particle motility and confinement geometry.",
+      "authors": [
+        "Emanuel F. Teixeira",
+        "Thieu van den Bergh",
+        "Arjen Klok",
+        "Tijn Heesakkers",
+        "Alexandre Morin"
+      ],
+      "primary_category": "cond-mat.soft",
+      "categories": [
+        "cond-mat.soft",
+        "cond-mat.stat-mech",
+        "physics.app-ph"
+      ],
+      "published": "2026-08-24T00:18:02+00:00",
+      "link": "https://arxiv.org/pdf/2608.22673v1",
+      "tags": [
+        "keyword:sakar-selman",
+        "query:sakar-selman"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Microfluidic active-matter sorting study consistent with EPFL MicroBos laboratory research themes",
+      "llm_evidence_cn": "微流控活性物质分选研究，与EPFL MicroBos实验室研究主题一致",
+      "llm_evidence": "微流控活性物质分选研究，与EPFL MicroBos实验室研究主题一致",
+      "canonical_evidence": "微流控活性物质分选研究，与EPFL MicroBos实验室研究主题一致",
+      "llm_tldr_en": "This paper presents a microfluidic device that uses differential speed and curvature to sort binary active-particle mixtures, confirmed with Quincke-roller experiments.",
+      "llm_tldr_cn": "针对二元活性粒子混合物难以高效分离的问题，本文利用速度差与曲率两种机制构建自排序微流控芯片。通过粒子模拟系统性地筛选促进分离的几何条件，设计出一系列弯曲微流控单元，逐步放大不同粒子的分离并将其导向不同收集区。二元Quincke-roller混合实验验证了该方法能有效实现渐进式空间分离，为微流控芯片上的无源分选提供了新策略。",
+      "llm_tldr": "针对二元活性粒子混合物难以高效分离的问题，本文利用速度差与曲率两种机制构建自排序微流控芯片。通过粒子模拟系统性地筛选促进分离的几何条件，设计出一系列弯曲微流控单元，逐步放大不同粒子的分离并将其导向不同收集区。二元Quincke-roller混合实验验证了该方法能有效实现渐进式空间分离，为微流控芯片上的无源分选提供了新策略。",
+      "llm_tags": [
+        "query:sakar-selman"
+      ],
+      "matched_query_tag": "query:sakar-selman",
+      "matched_query_text": "EPFL MicroBos laboratory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

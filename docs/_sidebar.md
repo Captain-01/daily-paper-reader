@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-08-29 <!--dpr-date:20260829-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/29/2608.22673v1-collective-self-sorting-on-a-chip" data-sidebar-item="{&quot;title&quot;: &quot;Collective self-sorting on a chip&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.22673v1-collective-self-sorting-on-a-chip&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;微流控活性物质分选研究，与EPFL MicroBos实验室研究主题一致&quot;}">Collective self-sorting on a chip</a>
   * 2026-08-26 <!--dpr-date:20260826-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202608/26/2608.22673v1-collective-self-sorting-on-a-chip" data-sidebar-item="{&quot;title&quot;: &quot;Collective self-sorting on a chip&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.22673v1-collective-self-sorting-on-a-chip&quot;, &quot;score&quot;: &quot;7.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;sakar-selman&quot;}], &quot;evidence&quot;: &quot;微流控活性粒子自排序装置，与EPFL MicroBos实验室活性物质微机器人研究高度契合&quot;}">Collective self-sorting on a chip</a>
