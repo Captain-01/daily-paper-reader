@@ -1,0 +1,39 @@
+{
+  "label": "2026-08-30",
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T22:34:36",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202608/30/2608.22673v1-collective-self-sorting-on-a-chip",
+      "section": "deep",
+      "title_en": "Collective self-sorting on a chip",
+      "authors": "Emanuel F. Teixeira, Thieu van den Bergh, Arjen Klok, Tijn Heesakkers, Alexandre Morin",
+      "date": "2026-08-24",
+      "pdf": "https://arxiv.org/pdf/2608.22673v1",
+      "score": "9.0",
+      "evidence": "芯片集体自分选与EPFL MicroBioRobotics实验室研究方向吻合",
+      "tldr": "针对微流控中混合粒子分离难题，本文利用差异速度和弯曲几何诱导的集体去混效应，在芯片上构建自分类装置。通过粒子模拟系统探索约束几何对分离效率的影响，设计出多级弯曲微流控单元，使二元混合物在流动传播中逐步去混并导向不同出口。实验采用二元Quincke滚动体混合物，验证了初始混合悬液在装置中持续分离，下游收集区显著富集。该工作无需外部场即可实现连续分离，为基于粒子运动性和几何结构的自主微流控分离提供了可行途径。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "We harness two established ingredients for collective demixing: differential speed and curvature to create a self-sorting device. In binary mixtures, motility differences drive spontaneous spatial segregation, while confinement geometry determines how rapidly and strongly this demixing develops. Using particle based simulations, we systematically identify the geometrical conditions that promote efficient segregation and use these results to guide the design of a finite sorting architecture. We then translate these physical mechanisms into a sequence of curved microfluidic units that progressively amplify the separation of the two species and direct them toward distinct collection regions. Experiments with binary Quincke-roller mixtures confirm that an initially mixed suspension progressively demixes as it propagates through the device, leading to strong enrichment downstream. Our results demonstrate how collective active demixing can be converted into a functional continuous sorting strategy, providing a route toward autonomous microfluidic separation based on particle motility and confinement geometry.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202608/30/2608.25732v1-pcb-integrated-copt-micromagnets-for-magnetophoresis",
+      "section": "deep",
+      "title_en": "PCB-Integrated CoPt Micromagnets for Magnetophoresis",
+      "authors": "Melissa Mitchell, Henrique Mira, Simon Bending, Chris Bell, Ali Mohammadi",
+      "date": "2026-08-26",
+      "pdf": "https://arxiv.org/pdf/2608.25732v1",
+      "score": "8.0",
+      "evidence": "CoPt微磁体磁泳平台与EPFL MicroBos实验室的微流控磁操控研究方向高度吻合",
+      "tldr": "磁泳技术依赖高梯度磁场，但传统磁体与微流控集成度低、加工复杂。本文提出基于PCB技术的CoPt微磁体平台，在Kapton基板铜焊盘上电镀任意形状的CoPt合金，经600°C退火形成L10有序相，使面内剩磁从0.24T提升至1.4T（约6倍）。实验验证微通道内磁性纳米颗粒捕获效果与COMSOL有限元模拟高度吻合。该平台兼容PCB工艺，可扩展至高通量生物分离与诊断应用。",
+      "tags": "query:sakar-selman",
+      "abstract_en": "Integration of magnetic material with scalable microfluidic platforms can significantly improve the throughput and precision in biotechnology processes. In this work we have developed a new magnetic platform based on printed circuit board (PCB) technology. Cobalt-Platinum (CoPt) micromagnets are electroplated on copper pads with an arbitrary footprint on a Kapton substrate to enable generation of different magnetic field gradients. The magnets are characterized by XRD and VSM, before and after thermal annealing. The ordered L10 phase appear in XRD results after annealing at 600 °C, and VSM results show around six times increase for in-plane magnetic remanence from 0.24T to 1.4T. The near equiatomic ratios of Co:Pt is confirmed by EDX observations. The performance of these magnets is experimentally validated by trapping magnetic nanoparticles in microfluidic channels. These results are in excellent agreement with FEA models presented in COMSOL Multiphysics.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
